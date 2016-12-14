@@ -1,0 +1,27 @@
+@import "globals";
+
+.resources {
+  position: absolute;
+  top: 0; right: 0;
+  width: 320px; height: 100%;
+  background-color: $grey-2;
+
+  > .tabs {
+    height: 40px;
+    background-color: $grey-9;
+
+    > button {
+      height: 40px;
+      padding: 10px;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+
+      &:hover,
+      &.active {
+        background-color: $grey-8;
+      }
+    }
+  }
+}

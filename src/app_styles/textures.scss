@@ -1,0 +1,82 @@
+@import "game";
+
+@mixin texture($prefix) {
+
+  // Floor
+  &-dirt {
+    background: url($prefix + 'assets/batch-1.png') 0 * $size-cell 12 * $size-cell;
+  }
+  &-water {
+    background: url($prefix + 'assets/batch-1.png') 3 * $size-cell 24 * $size-cell;
+  }
+  &-sand {
+    background: url($prefix + 'assets/batch-1.png') 5 * $size-cell 25 * $size-cell;
+  }
+  &-grass {
+    background: url($prefix + 'assets/batch-1.png') 12 * $size-cell 28 * $size-cell;
+  }
+  &-stone {
+    background: url($prefix + 'assets/batch-2.png') 22 * $size-cell 1 * $size-cell;
+  }
+
+  // Wall
+  &-wall_wood {
+    background: url($prefix + 'assets/batch-1.png') 28 * $size-cell 22 * $size-cell;
+  }
+  &-wall_stone {
+    background: url($prefix + 'assets/batch-1.png') 18 * $size-cell 17 * $size-cell;
+  }
+  &-wall_brick {
+    background: url($prefix + 'assets/batch-2.png') 25 * $size-cell 5 * $size-cell;
+  }
+
+  // Actor
+  &-solider {
+    background: url($prefix + 'assets/batch-1.png') 29 * $size-cell 4 * $size-cell;
+  }
+
+  // Door
+  &-door_wood {
+    background: url($prefix + 'assets/batch-1.png') 22 * $size-cell 1 * $size-cell;
+  }
+
+  // Asset
+  &-barrel {
+    background: url($prefix + 'assets/batch-2.png') 3 * $size-cell 29 * $size-cell;
+  }
+  &-bin_closed {
+    background: url($prefix + 'assets/batch-1.png') 4 * $size-cell 3 * $size-cell;
+  }
+  &-bin_opened {
+    background: url($prefix + 'assets/batch-2.png') 4 * $size-cell 30 * $size-cell;
+  }
+  &-box_wood {
+    background: url($prefix + 'assets/batch-2.png') 3 * $size-cell 28 * $size-cell;
+  }
+  &-asset_stone_1 {
+    background: url($prefix + 'assets/batch-2.png') 25 * $size-cell 19 * $size-cell;
+  }
+
+  // Decor
+  &-grass_1 {
+    background: url($prefix + 'assets/batch-2.png') 18 * $size-cell 26 * $size-cell;
+  }
+  &-grass_2 {
+    background: url($prefix + 'assets/batch-2.png') 17 * $size-cell 26 * $size-cell;
+  }
+  &-grass_3 {
+    background: url($prefix + 'assets/batch-2.png') 18 * $size-cell 25 * $size-cell;
+  }
+  &-grass_4 {
+    background: url($prefix + 'assets/batch-2.png') 17 * $size-cell 25 * $size-cell;
+  }
+  &-stone_1 {
+    background: url($prefix + 'assets/batch-2.png') 24 * $size-cell 20 * $size-cell;
+  }
+  &-stone_2 {
+    background: url($prefix + 'assets/batch-2.png') 23 * $size-cell 20 * $size-cell;
+  }
+  &-log_1 {
+    background: url($prefix + 'assets/batch-2.png') 28 * $size-cell 28 * $size-cell;
+  }
+}

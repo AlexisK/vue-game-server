@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e2e1d601-7b4d-4496-b62b-81dc9f5e2efb" name="Default" comment="" />
+    <ignored path="server.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="server" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="cell.component.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="component.vue" />
+        <option value="index.vue" />
+        <option value="component.html" />
+        <option value="component.scss" />
+        <option value="component.vue.js" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app_modules/components/index.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/TodoList/TodoList.component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/Test/index.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/test/test.component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/todo-list/todo-list.component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/todo-list/index.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/utils.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/services/state.services.js" />
+        <option value="$PROJECT_DIR$/.eslintrc.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/block.model.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/map-object.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/scene..component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/cell/index.js" />
+        <option value="$PROJECT_DIR$/src/app_styles/game.scss" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/texture-helper/index.js" />
+        <option value="$PROJECT_DIR$/src/App.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/texture-helper/texture-helper.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/texture-helper/texture-helper.component.scss" />
+        <option value="$PROJECT_DIR$/src/app_styles/colors.scss" />
+        <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/index.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.scss" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/block-brush/block-brush.component.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/block-brush/block-brush.component.scss" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/texture-helper/texture-helper.component.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/texture-helper/texture-helper.component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/scene.component.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/index.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/block-brush/block-brush.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/scene.component.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/services/client-storage.service.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/map.model.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/map-type.model.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/scene.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/scene.component.scss" />
+        <option value="$PROJECT_DIR$/src/instances/map-type.js" />
+        <option value="$PROJECT_DIR$/src/app_styles/textures.scss" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/services/index.js" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/app_modules/services/db.service.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/block-group.model.js" />
+        <option value="$PROJECT_DIR$/src/instances/block-group.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/block-type.model.js" />
+        <option value="$PROJECT_DIR$/src/instances/block-type.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1920" />
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instances" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="texture-helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource-menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app_modules/components/todo-list" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app_modules/components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2e1d601-7b4d-4496-b62b-81dc9f5e2efb" name="Default" comment="" />
+      <created>1481617818391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1481617818391</updated>
+      <workItem from="1481617819484" duration="22000" />
+      <workItem from="1481617877486" duration="115000" />
+      <workItem from="1481617997476" duration="43673000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43810000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1920" y="24" width="1920" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <marker date="1481633123497" expanded="true" signature="212:323" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="384:590" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="632:2056" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="766:1546" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="825:1217" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="895:1013" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="1019:1123" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="1238:1337" ph="//..." />
+            <marker date="1481633123497" expanded="true" signature="1369:1459" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="1465:1540" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="1635:2054" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="2165:2455" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="2269:2435" ph="{...}" />
+            <marker date="1481633123497" expanded="true" signature="2331:2428" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <marker date="1481641235823" expanded="true" signature="17:1156" ph="{...}" />
+            <marker date="1481641235823" expanded="true" signature="101:138" ph="{...}" />
+            <marker date="1481641235823" expanded="true" signature="144:212" ph="//..." />
+            <marker date="1481641235823" expanded="true" signature="233:255" ph="[...]" />
+            <marker date="1481641235823" expanded="true" signature="318:461" ph="{...}" />
+            <marker date="1481641235823" expanded="true" signature="348:455" ph="{...}" />
+            <marker date="1481641235823" expanded="true" signature="374:445" ph="{...}" />
+            <marker date="1481641235823" expanded="true" signature="517:1154" ph="{...}" />
+            <marker date="1481641235823" expanded="true" signature="583:1019" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/map-object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <marker date="1481646246568" expanded="true" signature="23:40" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_styles/game.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_styles/colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <marker date="1481715027119" expanded="true" signature="191:348" ph="//..." />
+            <marker date="1481715027119" expanded="true" signature="582:3228" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="604:641" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="663:871" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="893:1427" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="1154:1421" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="1449:1517" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="1539:2892" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="1562:1933" ph="[...]" />
+            <marker date="1481715027119" expanded="true" signature="1576:1743" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="1757:1923" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="1956:2886" ph="[...]" />
+            <marker date="1481715027119" expanded="true" signature="1970:2051" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="2065:2230" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="2244:2327" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="2341:2600" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="2458:2586" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="2614:2876" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="2732:2862" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="2914:2978" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="3000:3226" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="3037:3088" ph="{...}" />
+            <marker date="1481715027119" expanded="true" signature="3109:3220" ph="[...]" />
+            <marker date="1481715027119" expanded="true" signature="3147:3209" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481632938689" expanded="true" signature="0:2543" ph="{&quot;name&quot;: &quot;server&quot;...}" />
+            <marker date="1481632938689" expanded="true" signature="172:468" ph="{&quot;dev&quot;: &quot;node build/dev-server.js&quot;...}" />
+            <marker date="1481632938689" expanded="true" signature="488:513" ph="{&quot;vue&quot;: &quot;^2.1.0&quot;...}" />
+            <marker date="1481632938689" expanded="true" signature="536:2475" ph="{&quot;autoprefixer&quot;: &quot;^6.4.0&quot;...}" />
+            <marker date="1481632938689" expanded="true" signature="2490:2541" ph="{&quot;node&quot;: &quot;&gt;= 4.0.0&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding>
+            <marker date="1481715817924" expanded="true" signature="31:426" ph="{...}" />
+            <marker date="1481715817924" expanded="true" signature="145:424" ph="{...}" />
+            <marker date="1481715817924" expanded="true" signature="210:420" ph="{...}" />
+            <marker date="1481715817924" expanded="true" signature="370:414" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/block-brush/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/block-brush/block-brush.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <marker date="1481716411482" expanded="true" signature="15:109" ph="{&quot;name&quot;: 'block-brush'...}" />
+            <marker date="1481716411482" expanded="true" signature="80:106" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/block-brush/block-brush.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <marker date="1481716575044" expanded="true" signature="64:198" ph="{...}" />
+            <marker date="1481716575044" expanded="true" signature="103:196" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/cell/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/cell/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/texture-helper/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/texture-helper/texture-helper.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <marker date="1481708976965" expanded="true" signature="33:550" ph="{...}" />
+            <marker date="1481708976965" expanded="true" signature="72:129" ph="{...}" />
+            <marker date="1481708976965" expanded="true" signature="140:548" ph="{...}" />
+            <marker date="1481708976965" expanded="true" signature="229:544" ph="{...}" />
+            <marker date="1481708976965" expanded="true" signature="504:538" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/texture-helper/texture-helper.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding>
+            <marker date="1481716835692" expanded="true" signature="15:135" ph="{&quot;name&quot;: 'texture-helper'...}" />
+            <marker date="1481716835692" expanded="true" signature="97:132" ph="{...}" />
+            <marker date="1481716835692" expanded="true" signature="114:125" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/block-brush/block-brush.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="73" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="73" />
+          <folding>
+            <marker date="1481718650509" expanded="true" signature="75:144" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/services/client-storage.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <marker date="1481723444449" expanded="true" signature="71:684" ph="{...}" />
+            <marker date="1481723444449" expanded="true" signature="172:334" ph="{...}" />
+            <marker date="1481723444449" expanded="true" signature="255:296" ph="{...}" />
+            <marker date="1481723444449" expanded="true" signature="358:397" ph="{...}" />
+            <marker date="1481723444449" expanded="true" signature="421:505" ph="{...}" />
+            <marker date="1481723444449" expanded="true" signature="524:589" ph="{...}" />
+            <marker date="1481723444449" expanded="true" signature="607:682" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding>
+            <marker date="1481724295123" expanded="true" signature="22:1366" ph="..." />
+            <marker date="1481724295123" expanded="true" signature="45:440" ph="..." />
+            <marker date="1481724295123" expanded="true" signature="483:624" ph="..." />
+            <marker date="1481724295123" expanded="true" signature="667:807" ph="..." />
+            <marker date="1481724295123" expanded="true" signature="850:991" ph="..." />
+            <marker date="1481724295123" expanded="true" signature="1034:1175" ph="..." />
+            <marker date="1481724295123" expanded="true" signature="1218:1359" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/map-type.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <marker date="1481724763690" expanded="true" signature="57:59" ph="{...}" />
+            <marker date="1481724763690" expanded="true" signature="82:231" ph="{...}" />
+            <marker date="1481724763690" expanded="true" signature="187:229" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/scene.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding>
+            <marker date="1481722073832" expanded="true" signature="8:71" ph="..." />
+            <marker date="1481722073832" expanded="true" signature="88:927" ph="{&quot;name&quot;: 'scene'...}" />
+            <marker date="1481722073832" expanded="true" signature="148:210" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="223:316" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="240:309" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="331:925" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="363:840" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="396:830" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="439:718" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="484:597" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="603:700" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="747:816" ph="{...}" />
+            <marker date="1481722073832" expanded="true" signature="869:919" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/scene.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <marker date="1481724884816" expanded="true" signature="27:128" ph="{...}" />
+            <marker date="1481724884816" expanded="true" signature="76:126" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="47" />
+          <folding>
+            <marker date="1481717004426" expanded="true" signature="17:102" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/texture-helper/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/texture-helper/texture-helper.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <marker date="1481708947901" expanded="true" signature="27:351" ph="..." />
+            <marker date="1481708947901" expanded="true" signature="93:344" ph="..." />
+            <marker date="1481708947901" expanded="true" signature="167:333" ph="..." />
+            <marker date="1481708947901" expanded="true" signature="205:318" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/map.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="65" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="65" />
+          <folding>
+            <marker date="1481723801625" expanded="true" signature="36:131" ph="..." />
+            <marker date="1481723801625" expanded="true" signature="152:154" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="214:3041" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="313:403" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="416:508" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="569:632" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="651:806" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="837:954" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="868:948" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="980:2055" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="1031:1080" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="1147:1385" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="1440:1887" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="1558:1877" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="1720:1863" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="1961:2049" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="2086:2408" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="2100:2387" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="2189:2377" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="2443:2717" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="2747:3039" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="2770:2874" ph="{...}" />
+            <marker date="1481723801625" expanded="true" signature="2931:2985" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instances/map-type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1481725557126" expanded="true" signature="125:274" ph="{...}" />
+            <marker date="1481725557126" expanded="true" signature="153:271" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_styles/textures.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="56" column="77" selection-start-line="56" selection-start-column="77" selection-end-line="56" selection-end-column="77" />
+          <folding>
+            <marker date="1481725670640" expanded="true" signature="41:2376" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="64:153" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="164:253" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="263:352" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="363:453" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="464:553" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="579:669" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="685:775" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="791:880" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="905:994" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1020:1109" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1133:1222" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1238:1326" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1342:1431" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1445:1534" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1553:1643" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1668:1758" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1771:1861" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1874:1964" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="1977:2067" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="2080:2170" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="2183:2273" ph="{...}" />
+            <marker date="1481725670640" expanded="true" signature="2284:2374" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/block.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <marker date="1481646232896" expanded="true" signature="78:262" ph="{...}" />
+            <marker date="1481646232896" expanded="true" signature="160:260" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1481708890825" expanded="true" signature="13:419" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/scene.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="36" />
+          <folding>
+            <marker date="1481724869280" expanded="true" signature="51:605" ph="..." />
+            <marker date="1481724869280" expanded="true" signature="109:174" ph="..." />
+            <marker date="1481724869280" expanded="true" signature="205:269" ph="..." />
+            <marker date="1481724869280" expanded="true" signature="408:598" ph="..." />
+            <marker date="1481724869280" expanded="true" signature="474:587" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/resource-menu/resource-menu.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <marker date="1481724376474" expanded="true" signature="232:323" ph="{...}" />
+            <marker date="1481724376474" expanded="true" signature="341:917" ph="{&quot;name&quot;: 'resource-menu'...}" />
+            <marker date="1481724376474" expanded="true" signature="394:433" ph="{...}" />
+            <marker date="1481724376474" expanded="true" signature="446:914" ph="{...}" />
+            <marker date="1481724376474" expanded="true" signature="540:907" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/services/state.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1481638637182" expanded="true" signature="24:80" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/services/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <marker date="1481728455274" expanded="true" signature="17:179" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/services/db.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1481728487825" expanded="true" signature="16:189" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1481728463962" expanded="true" signature="36:499" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding>
+            <marker date="1481727875048" expanded="true" signature="81:281" ph="..." />
+            <marker date="1481727875048" expanded="true" signature="132:274" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/block-group.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <marker date="1481728629955" expanded="true" signature="24:200" ph="{...}" />
+            <marker date="1481728629955" expanded="true" signature="156:198" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instances/block-group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <marker date="1481728640663" expanded="true" signature="88:1208" ph="{...}" />
+            <marker date="1481728640663" expanded="true" signature="117:247" ph="{...}" />
+            <marker date="1481728640663" expanded="true" signature="277:406" ph="{...}" />
+            <marker date="1481728640663" expanded="true" signature="436:566" ph="{...}" />
+            <marker date="1481728640663" expanded="true" signature="596:725" ph="{...}" />
+            <marker date="1481728640663" expanded="true" signature="755:885" ph="{...}" />
+            <marker date="1481728640663" expanded="true" signature="915:1044" ph="{...}" />
+            <marker date="1481728640663" expanded="true" signature="1074:1204" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <marker date="1481728802252" expanded="true" signature="15:559" ph="{&quot;name&quot;: 'cell'...}" />
+            <marker date="1481728802252" expanded="true" signature="72:107" ph="{...}" />
+            <marker date="1481728802252" expanded="true" signature="89:100" ph="{...}" />
+            <marker date="1481728802252" expanded="true" signature="122:557" ph="{...}" />
+            <marker date="1481728802252" expanded="true" signature="156:351" ph="{...}" />
+            <marker date="1481728802252" expanded="true" signature="182:224" ph="{...}" />
+            <marker date="1481728802252" expanded="true" signature="387:475" ph="{...}" />
+            <marker date="1481728802252" expanded="true" signature="501:551" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instances/block-type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <marker date="1481728831164" expanded="true" signature="132:2968" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="180:255" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="290:364" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="399:473" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="508:583" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="618:693" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="740:844" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="878:984" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="1018:1124" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="1175:1276" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="1322:1424" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="1477:1578" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="1618:1722" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="1762:1866" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="1906:2008" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2048:2155" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2205:2282" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2319:2396" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2433:2510" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2547:2624" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2661:2738" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2775:2852" ph="{...}" />
+            <marker date="1481728831164" expanded="true" signature="2889:2964" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/block-type.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <marker date="1481728819044" expanded="true" signature="72:189" ph="{...}" />
+            <marker date="1481728819044" expanded="true" signature="145:187" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene/cell/cell.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

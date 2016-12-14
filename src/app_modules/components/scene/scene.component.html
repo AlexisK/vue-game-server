@@ -1,0 +1,18 @@
+<div v-if="mapRef && mapRef.isInited" class="scene">
+    <h2>Scene</h2>
+
+    <div v-if="isEdit" class="panel">
+        <button @click="isEdit = false">Save</button>
+    </div>
+    <div v-else class="panel">
+        <button @click="isEdit = true">Edit</button>
+    </div>
+
+    <resource-menu v-if="isEdit" @brushselected="handleBrush"/>
+
+    <div class="field" :style="{backgroundColor: mapRef.model.ambient}">
+        <div class="field-row" v-for="(row, y) in mapRef.schema">
+            <cell v-for="(col, x) in row" :blockList="col" @clicked="handleClick($event, x, y)"/>
+        </div>
+    </div>
+</div>

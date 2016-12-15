@@ -1,6 +1,12 @@
 import { BlockGroup } from '../app_modules/models/block-group.model';
 
 module.exports = {
+    water : new BlockGroup({
+        isWalkable     : false,
+        isCollide      : false,
+        isDestructible : false,
+        level          : 1,
+    }),
     floor : new BlockGroup({
         isWalkable     : true,
         isCollide      : false,
@@ -15,7 +21,7 @@ module.exports = {
     }),
     roof  : new BlockGroup({
         isWalkable     : false,
-        isCollide      : true,
+        isCollide      : false,
         isDestructible : false,
         level          : 5,
     }),

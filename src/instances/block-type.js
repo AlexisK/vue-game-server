@@ -6,11 +6,11 @@ module.exports = {
 
     // Floor
     floor_water : new BlockType({
-        blockGroup : blockGroup.floor,
+        blockGroup : blockGroup.water,
         texture    : 'water'
     }),
     floor_water_2 : new BlockType({
-        blockGroup : blockGroup.floor,
+        blockGroup : blockGroup.water,
         texture    : 'water_2'
     }),
     floor_dirt  : new BlockType({

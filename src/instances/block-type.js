@@ -9,6 +9,10 @@ module.exports = {
         blockGroup : blockGroup.floor,
         texture    : 'water'
     }),
+    floor_water_2 : new BlockType({
+        blockGroup : blockGroup.floor,
+        texture    : 'water_2'
+    }),
     floor_dirt  : new BlockType({
         blockGroup : blockGroup.floor,
         texture    : 'dirt'
@@ -24,6 +28,10 @@ module.exports = {
     floor_stone : new BlockType({
         blockGroup : blockGroup.floor,
         texture    : 'stone'
+    }),
+    floor_wood : new BlockType({
+        blockGroup : blockGroup.floor,
+        texture    : 'wood'
     }),
 
     // Wall
@@ -43,11 +51,17 @@ module.exports = {
         texture    : 'wall_brick',
     }),
 
+    // Roof
+    roof_metal : new BlockType({
+        blockGroup : blockGroup.roof,
+        texture    : 'roof_metal',
+    }),
+
     // Actor
-    actor_solider : new BlockType({
+    actor_solider_pistol : new BlockType({
         blockGroup : blockGroup.actor,
         maxHealth  : 4,
-        texture    : 'solider'
+        texture    : 'actor_solider_pistol'
     }),
 
     // Door
@@ -78,6 +92,11 @@ module.exports = {
         maxHealth  : 8,
         texture    : 'box_wood'
     }),
+    asset_box_wood_2   : new BlockType({
+        blockGroup : blockGroup.asset,
+        maxHealth  : 8,
+        texture    : 'box_wood_2'
+    }),
     asset_stone_1    : new BlockType({
         blockGroup : blockGroup.asset,
         maxHealth  : 8,
@@ -100,6 +119,14 @@ module.exports = {
     decor_grass_4 : new BlockType({
         blockGroup : blockGroup.decor,
         texture    : 'grass_4'
+    }),
+    decor_grass_5 : new BlockType({
+        blockGroup : blockGroup.decor,
+        texture    : 'grass_5'
+    }),
+    decor_grass_6 : new BlockType({
+        blockGroup : blockGroup.decor,
+        texture    : 'grass_6'
     }),
     decor_stone_1 : new BlockType({
         blockGroup : blockGroup.decor,

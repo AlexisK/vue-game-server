@@ -1,0 +1,15 @@
+@import "game";
+@import "textures";
+
+.actor {
+  position: absolute;
+  top: 0; left: 0;
+  width: $size-cell;
+  height: $size-cell;
+
+  .texture {
+    width: $size-cell;
+    height: $size-cell;
+    @include texture('../../../../../');
+  }
+}

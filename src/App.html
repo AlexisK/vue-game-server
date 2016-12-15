@@ -1,8 +1,18 @@
 <div id="app">
-    <h1>Scene test</h1>
-    <scene :map-ref="mapRef"/>
-    <texture-helper :texture="'./static/img/batch-1.png'" :width="30" :height="30" />
-    <texture-helper :texture="'./static/img/batch-2.png'" :width="30" :height="30" />
-    <texture-helper :texture="'./static/img/batch-3.png'" :width="30" :height="30" />
-    <texture-helper :texture="'./static/img/batch-4.png'" :width="30" :height="30" />
+    <div class="header">
+        <strong>Current mode:</strong>
+        <button @click="serverMode = !serverMode" v-if="serverMode">SERVER</button>
+        <button @click="serverMode = !serverMode" v-else>CLIENT</button>
+    </div>
+    <hr />
+    <div v-if="serverMode" class="mode mode-server">
+        <scene-editor :map-ref="mapRef"/>
+        <texture-helper :texture="'./static/img/batch-1.png'" :width="30" :height="30" />
+        <texture-helper :texture="'./static/img/batch-2.png'" :width="30" :height="30" />
+        <texture-helper :texture="'./static/img/batch-3.png'" :width="30" :height="30" />
+        <texture-helper :texture="'./static/img/batch-4.png'" :width="30" :height="30" />
+    </div>
+    <div v-else class="mode mode-client">
+        <scene-player :level-ref="levelRef"/>
+    </div>
 </div>

@@ -56,9 +56,9 @@ export class Map {
 
         });
 
-        for (let y = 0; y < this.model.width; y++) {
+        for (let y = 0; y < this.model.height; y++) {
             Map._recalculateSchema_fetchList(newSchema, y);
-            for (let x = 0; x < this.model.height; x++) {
+            for (let x = 0; x < this.model.width; x++) {
                 Map._recalculateSchema_fetchList(newSchema[y], x, true);
 
                 if ( !newSchema[y][x][this.model.defaultBlockType.blockGroup.level] ) {

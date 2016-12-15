@@ -3,7 +3,7 @@ import Cell from './cell';
 import ResourceMenu from './resource-menu';
 
 export default {
-    name: 'scene',
+    name: 'scene-editor',
     props: ['mapRef'],
     components: {
         cell: Cell,

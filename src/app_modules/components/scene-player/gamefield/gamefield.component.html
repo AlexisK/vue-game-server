@@ -1,0 +1,6 @@
+<div class="gamefield" v-if="levelRef"  :style="{backgroundColor: levelRef.map.model.ambient}" @contextmenu.stop.prevent>
+    <div class="field-row" v-for="(row, y) in levelRef.map.schema">
+        <cell v-for="(col, x) in row" :blockList="col"/>
+    </div>
+    <actor v-for="actor in levelRef.actors" :actor="actor"></actor>
+</div>

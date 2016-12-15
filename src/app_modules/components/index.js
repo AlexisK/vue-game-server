@@ -1,4 +1,5 @@
 module.exports = {
     'texture-helper': require('./texture-helper'),
-    scene: require('./scene'),
+    'scene-editor': require('./scene-editor'),
+    'scene-player': require('./scene-player'),
 };

@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e2e1d601-7b4d-4496-b62b-81dc9f5e2efb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/actor/actor.component.scss" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/actor/actor.component.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/gamefield.component.html" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/gamefield.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/gamefield.component.scss" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/gamefield.component.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-player/scene-player.component.html" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-player/scene-player.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-player/scene-player.component.js" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-player/scene-player.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/game-logic/session.logic.js" afterPath="$PROJECT_DIR$/src/app_modules/game-logic/session.logic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/actor.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/actor.model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/level.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/level.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/services/game-scene.service.js" afterPath="$PROJECT_DIR$/src/app_modules/services/game-scene.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/actor-type.js" afterPath="$PROJECT_DIR$/src/instances/actor-type.js" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +29,8 @@
       <file leaf-file-name="level.model.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app_modules/models/level.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            <state relative-caret-position="307">
+              <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -518,7 +509,7 @@
       <workItem from="1481617819484" duration="22000" />
       <workItem from="1481617877486" duration="115000" />
       <workItem from="1481617997476" duration="54897000" />
-      <workItem from="1481801943134" duration="12968000" />
+      <workItem from="1481801943134" duration="15702000" />
     </task>
     <task id="LOCAL-00001" summary="map-editor, actor placement">
       <created>1481801988397</created>
@@ -534,11 +525,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481811628103</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="detect collissions">
+      <created>1481817562645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481817562645</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68002000" />
+    <option name="totallyTimeSpent" value="70736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="24" width="1920" height="1056" extended-state="6" />
@@ -577,7 +575,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="map-editor, actor placement" />
     <MESSAGE value="ticks, logic, facing and movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="ticks, logic, facing and movement" />
+    <MESSAGE value="detect collissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="detect collissions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1326,8 +1325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app_modules/models/level.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="307">
+          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
           <folding />
         </state>
       </provider>

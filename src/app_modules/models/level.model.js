@@ -37,23 +37,92 @@ export class Level {
         let blockY   = gameSceneService.unitToBlock(y);
         let blockNX  = Math.floor(blockX);
         let blockNY  = Math.floor(blockY);
-        let blockNY2  = blockNY+1;
+        let blockCX  = Math.ceil(blockX);
+        let blockCY  = Math.ceil(blockY);
 
-        if ( collisions[blockNY] ) {
-            if ( collisions[blockNY][blockNX] || collisions[blockNY][blockNX+1] ) {
-                console.log('collission!');
+        if ( collisions[blockNY] && collisions[blockNY][blockNX] ) {
+            console.log('collission top-left!');
+            let diffX = blockCX - blockX;
+            let diffY = blockCY - blockY;
+
+            if ( diffX < diffY ) {
+                if (!collisions[blockNY][blockCX]) {
+                    x = gameSceneService.blockToUnit(blockCX);
+                } else {
+                    y = gameSceneService.blockToUnit(blockCY);
+                }
+            } else {
+                if (!collisions[blockCY][blockNX]) {
+                    y = gameSceneService.blockToUnit(blockCY);
+                } else {
+                    x = gameSceneService.blockToUnit(blockCX);
+                }
             }
-        }
-        if ( collisions[blockNY2] ) {
-            if ( collisions[blockNY2][blockNX] || collisions[blockNY2][blockNX+1] ) {
-                console.log('collission!');
+
+        } else if ( collisions[blockNY] && collisions[blockNY][blockCX] ) {
+            console.log('collission top-right!');
+            let diffX = blockX - blockNX;
+            let diffY = blockCY - blockY;
+
+            if ( diffX < diffY ) {
+                if (!collisions[blockNY][blockNX]) {
+                    x = gameSceneService.blockToUnit(blockNX);
+                } else {
+                    y = gameSceneService.blockToUnit(blockCY);
+                }
+            } else {
+                if (!collisions[blockCY][blockCX]) {
+                    y = gameSceneService.blockToUnit(blockCY);
+                } else {
+                    x = gameSceneService.blockToUnit(blockNX);
+                }
             }
+
+        } else if ( collisions[blockCY] && collisions[blockCY][blockNX] ) {
+            console.log('collission bottom left!');
+            let diffX = blockCX - blockX;
+            let diffY = blockY - blockNY;
+
+            if ( diffX < diffY ) {
+                if (!collisions[blockCY][blockCX]) {
+                    x = gameSceneService.blockToUnit(blockCX);
+                } else {
+                    y = gameSceneService.blockToUnit(blockNY);
+                }
+            } else {
+                if (!collisions[blockNY][blockNX]) {
+                    y = gameSceneService.blockToUnit(blockNY);
+                } else {
+                    x = gameSceneService.blockToUnit(blockCX);
+                }
+            }
+
+        } else if ( collisions[blockCY] && collisions[blockCY][blockCX] ) {
+            console.log('collission bottom right!');
+            let diffX = blockX - blockNX;
+            let diffY = blockY - blockNY;
+
+            if ( diffX < diffY ) {
+                if (!collisions[blockCY][blockNX]) {
+                    x = gameSceneService.blockToUnit(blockNX);
+                } else {
+                    y = gameSceneService.blockToUnit(blockNY);
+                }
+            } else {
+                if (!collisions[blockNY][blockCX]) {
+                    y = gameSceneService.blockToUnit(blockNY);
+                } else {
+                    x = gameSceneService.blockToUnit(blockNX);
+                }
+            }
+
         }
 
         console.log(
             blockX,
             blockY,
-            Math.tan(angle)
+            blockNX,
+            blockNY
         );
         return [x, y];
     }

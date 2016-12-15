@@ -30,7 +30,8 @@
         let actor = new Actor(actorTypes.solider);
         console.log(actor);
 
-        this.levelRef.registerActor(actor, 10, 10);
+        this.levelRef.registerActor(actor, 300, 300);
+        this.levelRef.start();
 
     },
   };

@@ -6,7 +6,7 @@ class GameSceneService {
     }
 
     unitToBlock(val) {
-        return Math.floor(val / this.unitsPerBlock);
+        return val / this.unitsPerBlock;
     }
 }
 

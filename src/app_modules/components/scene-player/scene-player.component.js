@@ -19,6 +19,9 @@ export default {
         return {
         };
     },
+    mounted: function() {
+        this.$el.getElementsByClassName('focusInput')[0].focus();
+    },
     methods: {
         handlePointer(x, y) {
             doOnActor(this).then(actor => actor.facePotentialPosition(x, y));
@@ -52,9 +55,6 @@ export default {
         },
         handleShiftUp() {
             doOnActor(this).then(actor => actor.controller.isSprinting = false);
-        },
-        onFocus() {
-            this.$el.getElementsByClassName('focusInput')[0].focus();
         }
     },
 };

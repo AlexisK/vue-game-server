@@ -1,4 +1,5 @@
 <div class="scene-player" v-if="levelRef">
+    <h1>Scene</h1>
     <input class="focusInput" type="text"
            @keydown.stop.prevent.87="handleWDown"
            @keyup.stop.prevent.87="handleWUp"
@@ -10,8 +11,7 @@
            @keyup.stop.prevent.83="handleSUp"
            @keydown.stop.prevent.16="handleShiftDown"
            @keyup.stop.prevent.16="handleShiftUp"/>
-    <h1>Scene</h1>
+    <hr />
     <gamefield :levelRef="levelRef"
-               @pointerupdate="handlePointer"
-               @focused="onFocus"></gamefield>
+               @pointerupdate="handlePointer"></gamefield>
 </div>

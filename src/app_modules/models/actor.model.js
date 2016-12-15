@@ -1,5 +1,7 @@
 import { ActorController } from './actor-controller.model';
 
+import {Level} from '../models/level.model';
+
 export class Actor {
     health;
     model;
@@ -27,29 +29,37 @@ export class Actor {
         this.rotation = Math.atan2(this.y - this.controller.facingY, this.x - this.controller.facingX);
     }
 
-    stepForward() {
-        let rotation = this.rotation;
-        let distance = this.controller.isSprinting && this.model.sprintSpeed || this.model.runSpeed;
-        this.x -= distance * Math.cos(rotation);
-        this.y -= distance * Math.sin(rotation);
+    stepForward(c) {
+        this._stepAny(c, 0, this.controller.isSprinting && this.model.sprintSpeed || this.model.runSpeed);
     }
 
-    stepRight() {
-        this._stepAny(Math.PI / 2);
+    stepRight(c) {
+        this._stepAny(c, Math.PI / 2);
     }
 
-    stepLeft() {
-        this._stepAny(-Math.PI / 2);
+    stepLeft(c) {
+        this._stepAny(c, -Math.PI / 2);
     }
 
-    stepBackwards() {
-        this._stepAny(Math.PI);
+    stepBackwards(c) {
+        this._stepAny(c, Math.PI);
     }
 
-    _stepAny(angle) {
+    _stepAny(collisions, angle, speed) {
+        speed = speed || this.model.walkSpeed;
+        collisions = collisions || {};
+
         let rotation = this.rotation + angle;
-        let distance = this.model.walkSpeed;
-        this.x -= distance * Math.cos(rotation);
-        this.y -= distance * Math.sin(rotation);
+        let distance = speed;
+
+        let coords = Level.filterPositionCollision(
+            collisions,
+            this.x - distance * Math.cos(rotation),
+            this.y - distance * Math.sin(rotation),
+            rotation
+        );
+
+        this.x = coords[0];
+        this.y = coords[1];
     }
 }

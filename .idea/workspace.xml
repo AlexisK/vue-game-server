@@ -4,8 +4,6 @@
     <list default="true" id="e2e1d601-7b4d-4496-b62b-81dc9f5e2efb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/level.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/level.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/block-group.js" afterPath="$PROJECT_DIR$/src/instances/block-group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/block-type.js" afterPath="$PROJECT_DIR$/src/instances/block-type.js" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="level.model.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app_modules/models/level.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            <state relative-caret-position="472">
+              <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
               <folding>
                 <element signature="n#!!block;n#filterPositionCollision#0;n#Level#0" expanded="false" />
               </folding>
@@ -513,7 +511,7 @@
       <workItem from="1481617819484" duration="22000" />
       <workItem from="1481617877486" duration="115000" />
       <workItem from="1481617997476" duration="54897000" />
-      <workItem from="1481801943134" duration="16557000" />
+      <workItem from="1481801943134" duration="16670000" />
     </task>
     <task id="LOCAL-00001" summary="map-editor, actor placement">
       <created>1481801988397</created>
@@ -543,11 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481820296062</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="movement with collissions">
+      <created>1481821170712</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1481821170712</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71591000" />
+    <option name="totallyTimeSpent" value="71704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="24" width="1920" height="1056" extended-state="6" />
@@ -588,7 +593,8 @@
     <MESSAGE value="ticks, logic, facing and movement" />
     <MESSAGE value="detect collissions" />
     <MESSAGE value="block collissions" />
-    <option name="LAST_COMMIT_MESSAGE" value="block collissions" />
+    <MESSAGE value="movement with collissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="movement with collissions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1338,8 +1344,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app_modules/models/level.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        <state relative-caret-position="472">
+          <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
           <folding>
             <element signature="n#!!block;n#filterPositionCollision#0;n#Level#0" expanded="false" />
           </folding>

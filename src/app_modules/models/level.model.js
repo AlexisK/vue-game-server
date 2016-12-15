@@ -41,8 +41,8 @@ export class Level {
      * @returns {*[]}
      *
      * before you start optimisations note 2 things:
-     * 1. This is shitty-to-read algorithm of checking boxes
-     * 2. This shitty-to-read algorithm has O(1) complexity, so fuck-off except of trying to optimize it!
+     * 1. This is shitty-to-read algorithm of checking boxes collissions
+     * 2. This shitty-to-read algorithm has O(1) complexity, so if you thinking to rewrite it JUST FUCK OFF!
      */
     static filterPositionCollision(collisions, x, y, angle) {
         let blockX   = gameSceneService.unitToBlock(x);

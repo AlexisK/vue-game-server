@@ -3,8 +3,8 @@ const blockType = require('./block-type');
 
 module.exports = {
     default : new MapType({
-        width            : 26,
-        height           : 20,
+        width            : 28,
+        height           : 24,
         defaultBlockType : blockType.floor_dirt,
         ambient: '#000'
     })

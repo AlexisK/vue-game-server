@@ -1,7 +1,7 @@
 import {MapObject} from './map-object';
 
 export class Block extends MapObject {
-    model;
+    model = {};
     isDestroyed = false;
     health = 0;
 

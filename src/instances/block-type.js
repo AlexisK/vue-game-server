@@ -63,6 +63,16 @@ module.exports = {
         maxHealth  : 4,
         texture    : 'actor_solider_pistol'
     }),
+    actor_solider_rifle : new BlockType({
+        blockGroup : blockGroup.actor,
+        maxHealth  : 4,
+        texture    : 'actor_solider_rifle'
+    }),
+    actor_solider_sniper : new BlockType({
+        blockGroup : blockGroup.actor,
+        maxHealth  : 4,
+        texture    : 'actor_solider_sniper'
+    }),
 
     // Door
     door_wood : new BlockType({
@@ -79,27 +89,27 @@ module.exports = {
     }),
     asset_bin_closed : new BlockType({
         blockGroup : blockGroup.asset,
-        maxHealth  : 3,
+        maxHealth  : 5,
         texture    : 'bin_closed'
     }),
     asset_bin_opened : new BlockType({
         blockGroup : blockGroup.asset,
-        maxHealth  : 3,
+        maxHealth  : 5,
         texture    : 'bin_opened'
     }),
     asset_box_wood   : new BlockType({
         blockGroup : blockGroup.asset,
-        maxHealth  : 8,
+        maxHealth  : 14,
         texture    : 'box_wood'
     }),
     asset_box_wood_2   : new BlockType({
         blockGroup : blockGroup.asset,
-        maxHealth  : 8,
+        maxHealth  : 14,
         texture    : 'box_wood_2'
     }),
     asset_stone_1    : new BlockType({
         blockGroup : blockGroup.asset,
-        maxHealth  : 8,
+        maxHealth  : 26,
         texture    : 'asset_stone_1'
     }),
 

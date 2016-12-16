@@ -14,6 +14,9 @@ export default {
         },
         formatBgCls(block, level) {
             return ['bg bg-', level, ' cls-', block.model.texture].join('');
+        },
+        damageCls(block) {
+            return ['destruction destruction-'+Math.round(10 * (block.health / block.model.maxHealth))].join('');
         }
     }
 };

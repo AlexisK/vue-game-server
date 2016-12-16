@@ -12,7 +12,7 @@
     &.cls-wall_wood,
     &.cls-wall_stone,
     &.cls-wall_brick {
-      box-shadow: 0 0 10px rgba(0,0,0,.7);
+      box-shadow: 0 0 10px rgba(0,0,0,1);
       z-index: 1;
     }
 
@@ -40,6 +40,47 @@
       opacity: 0.5;
       z-index: 11;
     }
+  }
+}
+
+@mixin destruction($prefix) {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: url($prefix + 'assets/destruction-map.png');
+  z-index: 90;
+
+  &-0 {
+    background-position: 1 * $size-cell 0;
+  }
+  &-1 {
+    background-position: 2 * $size-cell 0;
+  }
+  &-2 {
+    background-position: 3 * $size-cell 0;
+  }
+  &-3 {
+    background-position: 4 * $size-cell 0;
+  }
+  &-4 {
+    background-position: 5 * $size-cell 0;
+  }
+  &-5 {
+    background-position: 6 * $size-cell 0;
+  }
+  &-6 {
+    background-position: 7 * $size-cell 0;
+  }
+  &-7 {
+    background-position: 8 * $size-cell 0;
+  }
+  &-8 {
+    background-position: 9 * $size-cell 0;
+  }
+  &-9 {
+    background-position: 10 * $size-cell 0;
+  }
+  &-10, &-NaN {
+    background: transparent;
   }
 }
 
@@ -90,7 +131,11 @@
     background-size: 42px 36px;
   }
   &-actor_solider_rifle {
-    background: url($prefix + 'assets/actor_rifle_0.png') 50% 50%;
+    background: url($prefix + 'assets/actor_rifle_0.png') 82% 50%;
+    background-size: 55px 36px;
+  }
+  &-actor_solider_sniper {
+    background: url($prefix + 'assets/actor_sniper_0.png') 82% 50%;
     background-size: 55px 36px;
   }
 

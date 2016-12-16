@@ -7,10 +7,11 @@ export class Projectile {
     y;
     rotation;
     lifeCooldown;
-    onDelete;
+    level;
 
     constructor(model) {
         this.lifeCooldown = model.life;
+        this.speed = model.speed + Math.random() * model.speedRnd;
         this.model = model;
     }
 
@@ -19,14 +20,15 @@ export class Projectile {
             collisions = collisions || {};
 
             let rotation = this.rotation;
-            let distance = this.model.speed;
+            let distance = this.speed;
 
             let coords = Level.filterProjectilePositionCollision(
                 collisions,
                 this.x - distance * Math.cos(rotation),
                 this.y - distance * Math.sin(rotation),
                 (hitX, hitY) => {
-                    this.onDelete();
+                    this.level.hitWithProjectile(hitX, hitY, this);
+                    this.level.removeProjectile(this);
                 }
             );
 
@@ -34,7 +36,7 @@ export class Projectile {
             this.y = coords[1];
             this.lifeCooldown -= 1;
         } else {
-            this.onDelete();
+            this.level.removeProjectile(this);
         }
     }
 }

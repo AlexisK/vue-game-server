@@ -7,7 +7,12 @@ module.exports = {
         maxHealth: 4,
         walkSpeed: 1.5,
         runSpeed: 2.5,
-        sprintSpeed: 3.5,
-        blockType: blockType.actor_solider_pistol
+        sprintSpeed: 3.5
+    }),
+    sniper: new ActorType({
+        maxHealth: 3,
+        walkSpeed: 1.0,
+        runSpeed: 2.0,
+        sprintSpeed: 3.5
     })
 };

@@ -20,7 +20,7 @@ module.exports = {
         level          : 4,
     }),
     roof  : new BlockGroup({
-        isWalkable     : false,
+        isWalkable     : true,
         isCollide      : false,
         isDestructible : false,
         level          : 5,

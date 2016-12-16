@@ -1,5 +1,5 @@
 
-const TICKMS = 20;
+const TICKMS = 17;
 
 export class SessionLogic {
     _tickInterval;
@@ -43,7 +43,7 @@ export class SessionLogic {
     }
 
     tickProjectile(projectile) {
-        projectile.move(this._level.collisions);
+        projectile.move(this._level.hitCollisions);
     }
 
     tickActor(actor) {
@@ -62,7 +62,7 @@ export class SessionLogic {
         }
         actor.faceFromPotential();
         if ( actor.controller.isFiring ) {
-            actor.actionFire(this._level.collisions);
+            actor.actionFire();
         }
     }
 }

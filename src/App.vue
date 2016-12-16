@@ -29,8 +29,8 @@
 
         this.levelRef = new Level(this.mapRef);
 
-        let pistol = new Weapon(weaponTypes.pistol);
-        let actor = new Actor(actorTypes.solider, pistol);
+        let weapon = new Weapon(weaponTypes.rifle);
+        let actor = new Actor(actorTypes.solider, weapon);
         console.log(actor);
 
         this.levelRef.registerActor(actor, 300, 300);

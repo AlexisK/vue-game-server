@@ -4,6 +4,7 @@ export class WeaponType {
     maxAmmo;
     spreadStand;
     spreadWalk;
+    spreadRun;
     spreadSprint;
     projectile;
     blockType;

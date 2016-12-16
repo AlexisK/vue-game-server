@@ -12,6 +12,13 @@ export class Weapon {
         this.ammo  = model.maxAmmo;
     }
 
+    getProjectileRotation() {
+        let spread = this.actor.controller.isRunning && (this.actor.controller.isSprinting && this.model.spreadSprint || this.model.spreadRun) ||
+                this.actor.controller.isMoving && this.model.spreadWalk || this.model.spreadStand;
+
+        return this.actor.rotation - (spread / 2) + (Math.random() * spread);
+    }
+
     actionFire() {
         if ( this.isReadyToFire ) {
             this.isReadyToFire = false;
@@ -20,10 +27,7 @@ export class Weapon {
             let projectile      = new Projectile(this.model.projectile);
             projectile.x        = this.actor.x + 16;
             projectile.y        = this.actor.y + 16;
-            projectile.rotation = this.actor.rotation;
-            projectile.onDelete = () => {
-                this.actor.level.removeProjectile(projectile);
-            };
+            projectile.rotation = this.getProjectileRotation();
 
             this.actor.level.spawnProjectile(projectile);
 

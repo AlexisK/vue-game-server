@@ -6,10 +6,31 @@ module.exports = {
     pistol: new WeaponType({
         shootCooldown: 15,
         maxAmmo: 10,
-        spreadStand: 5,
-        spreadWalk: 10,
-        spreadSprint: 20,
+        spreadStand: 0.07,
+        spreadWalk: 0.07,
+        spreadRun: 0.09,
+        spreadSprint: 0.12,
         projectile: projectileType.pistol,
         blockType: blockType.actor_solider_pistol
+    }),
+    rifle: new WeaponType({
+        shootCooldown: 5,
+        maxAmmo: 30,
+        spreadStand: 0.05,
+        spreadWalk: 0.1,
+        spreadRun: 0.2,
+        spreadSprint: 0.4,
+        projectile: projectileType.rifle,
+        blockType: blockType.actor_solider_rifle
+    }),
+    sniper: new WeaponType({
+        shootCooldown: 50,
+        maxAmmo: 4,
+        spreadStand: 0.01,
+        spreadWalk: 0.15,
+        spreadRun: 0.3,
+        spreadSprint: 0.5,
+        projectile: projectileType.sniper,
+        blockType: blockType.actor_solider_sniper
     })
 };

@@ -1,12 +1,15 @@
 import { SessionLogic } from '../game-logic/session.logic';
 import gameSceneService from '../services/game-scene.service';
+import { Block } from "./block.model";
+
+const Vue = require('vue');
 
 export class Level {
     map;
     actors;
     projectiles;
     logic;
-    //collisions;
+    schema;
 
     constructor(map) {
         this.map    = map;
@@ -14,11 +17,28 @@ export class Level {
         this.projectiles = [];
         this.logic  = new SessionLogic();
         this.logic.setLevel(this);
-        //this.collisions = {};
+
+        this._createSchema();
+    }
+
+
+    // Initialization
+    _createSchema() {
+        this.schema = [];
+        this.map.schema.forEach((row, y) => {
+            this.schema[y] = [];
+            this.map.schema[y].forEach((levelMap, x) => {
+                this.schema[y][x] = {};
+                Object.keys(levelMap).forEach(level => {
+                    this.schema[y][x][level] = new Block(levelMap[level].model);
+                });
+            });
+        })
     }
 
     start() {
         this.recalculateCollisions();
+        this.recalculateHitCollisions();
         this.logic.start();
         console.log(this.collisions);
     }
@@ -27,6 +47,8 @@ export class Level {
         this.logic.stop();
     }
 
+
+    // Registering entities
     registerActor(actor, x, y) {
         actor.x = x;
         actor.y = y;
@@ -36,6 +58,7 @@ export class Level {
     }
 
     spawnProjectile(projectile) {
+        projectile.level = this;
         this.logic.projectiles.push(projectile);
         this.projectiles.push(projectile);
     }
@@ -45,6 +68,26 @@ export class Level {
         this.projectiles.splice(this.projectiles.indexOf(projectile), 1);
     }
 
+
+    // Hit logic
+    hitWithProjectile(x, y, projectile) {
+        let levelMap = this.schema[y][x];
+        Object.keys(levelMap).forEach(level => {
+            let block = levelMap[level];
+            if ( block.model.blockGroup.isDestructible ) {
+                block.health -= projectile.model.damage;
+                //console.log(block);
+                if ( block.health <= 0 ) {
+                    Vue.delete(this.schema[y][x], level);
+                    this.recalculateCollisions();
+                    this.recalculateHitCollisions();
+                }
+            }
+        });
+    }
+
+
+    // Collission detection
     /**
      * ----------------------------- !!! R E A D !!! -----------------------------
      * @param collisions
@@ -192,18 +235,18 @@ export class Level {
         return [x, y];
     }
 
-    recalculateCollisions() {
+    _recalculateCollisions(condition, key) {
         let newCollisions = {};
         for (let y = 0; y < this.map.model.height; y++) {
             newCollisions[y] = newCollisions[y] || {};
             for (let x = 0; x < this.map.model.width; x++) {
 
-                let indexes = Object.keys(this.map.schema[y][x]);
+                let indexes = Object.keys(this.schema[y][x]);
                 for (let i = 0; i < indexes.length; i++) {
                     let ind   = indexes[i];
-                    let block = this.map.schema[y][x][ind];
+                    let block = this.schema[y][x][ind];
 
-                    if ( !block.model.blockGroup.isWalkable || block.model.blockGroup.isCollide ) {
+                    if ( condition(block.model.blockGroup) ) {
                         newCollisions[y][x] = true;
                         break;
                     }
@@ -211,7 +254,15 @@ export class Level {
 
             }
         }
-        this.collisions = newCollisions;
+        this[key] = newCollisions;
+    }
+
+    recalculateCollisions() {
+        this._recalculateCollisions(grp => !grp.isWalkable || grp.isCollide, 'collisions');
+    }
+
+    recalculateHitCollisions() {
+        this._recalculateCollisions(grp => grp.isDestructible, 'hitCollisions' );
     }
 
 }

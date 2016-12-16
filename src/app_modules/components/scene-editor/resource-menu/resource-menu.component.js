@@ -18,10 +18,10 @@ export default {
 
         return {
             tab              : 0,
-            blockTypes_floor : filterBlockType(initialList, 'floor'),
+            blockTypes_floor : filterBlockType(initialList, 'floor').concat(filterBlockType(initialList, 'water')),
             blockTypes_wall  : filterBlockType(initialList, 'wall'),
             blockTypes_roof  : filterBlockType(initialList, 'roof'),
-            blockTypes_asset : filterBlockType(initialList, 'asset'),
+            blockTypes_asset : filterBlockType(initialList, 'asset').concat(filterBlockType(initialList, 'door')),
             blockTypes_decor : filterBlockType(initialList, 'decor'),
             blockTypes_other : initialList
         };

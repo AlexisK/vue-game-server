@@ -71,7 +71,7 @@ export class Actor {
         this.weapon.tickCooldown();
     }
 
-    actionFire(collisions) {
-        this.weapon.actionFire(collisions);
+    actionFire() {
+        this.weapon.actionFire();
     }
 }

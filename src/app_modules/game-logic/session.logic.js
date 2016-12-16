@@ -8,6 +8,7 @@ export class SessionLogic {
     isProcessingTick = false;
     tickTimePeriod = TICKMS;
     actors = [];
+    projectiles = [];
 
     constructor() {
 
@@ -35,12 +36,18 @@ export class SessionLogic {
     tick() {
         this.isProcessingTick = true;
         // logic
+        this.projectiles.forEach(this.tickProjectile.bind(this));
         this.actors.forEach(this.tickActor.bind(this));
 
         this.isProcessingTick = false;
     }
 
+    tickProjectile(projectile) {
+        projectile.move(this._level.collisions);
+    }
+
     tickActor(actor) {
+        actor.tickCooldowns();
         if ( actor.controller.isMovingForward ) {
             actor.stepForward(this._level.collisions);
         }
@@ -54,5 +61,8 @@ export class SessionLogic {
             actor.stepBackwards(this._level.collisions);
         }
         actor.faceFromPotential();
+        if ( actor.controller.isFiring ) {
+            actor.actionFire(this._level.collisions);
+        }
     }
 }

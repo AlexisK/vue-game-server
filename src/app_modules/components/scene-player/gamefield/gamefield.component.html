@@ -3,10 +3,11 @@
         <cell v-for="(col, x) in row" :blockList="col"/>
     </div>
     <actor v-for="actor in levelRef.actors" :actor="actor"></actor>
+    <projectile v-for="projectile in levelRef.projectiles" :projectile="projectile"></projectile>
     <div class="overlay"
          @contextmenu.stop.prevent
          @mousemove="handleMouseMove"
          @click.stop.prevent
-         @mousedown.stop.prevent="handleClick"
-         @mouseup.stop.prevent></div>
+         @mousedown.stop.prevent="handleMouseDown"
+         @mouseup.stop.prevent="handleMouseUp"></div>
 </div>

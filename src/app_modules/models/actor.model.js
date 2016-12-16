@@ -6,11 +6,15 @@ export class Actor {
     health;
     model;
     controller;
+    weapon;
+    level;
     x        = 0;
     y        = 0;
     rotation = 0;
 
-    constructor(model) {
+    constructor(model, weapon) {
+        this.weapon = weapon;
+        this.weapon.actor = this;
         this.model      = model;
         this.health     = model.maxHealth;
         this.controller = new ActorController();
@@ -61,5 +65,13 @@ export class Actor {
 
         this.x = coords[0];
         this.y = coords[1];
+    }
+
+    tickCooldowns() {
+        this.weapon.tickCooldown();
+    }
+
+    actionFire(collisions) {
+        this.weapon.actionFire(collisions);
     }
 }

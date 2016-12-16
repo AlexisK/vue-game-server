@@ -86,7 +86,12 @@
 
   // Actor
   &-actor_solider_pistol {
-    background: url($prefix + 'assets/actor.png') 0 0;
+    background: url($prefix + 'assets/actor_pistol_0.png') 50% 50%;
+    background-size: 42px 36px;
+  }
+  &-actor_solider_rifle {
+    background: url($prefix + 'assets/actor_rifle_0.png') 50% 50%;
+    background-size: 55px 36px;
   }
 
   // Door

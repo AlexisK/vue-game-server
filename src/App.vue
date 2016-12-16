@@ -7,8 +7,10 @@
   import {Map} from './app_modules/models/map.model';
   import {Level} from './app_modules/models/level.model';
   import {Actor} from './app_modules/models/actor.model';
+  import {Weapon} from './app_modules/models/weapon.model';
 
   const actorTypes = require('./instances/actor-type.js');
+  const weaponTypes = require('./instances/weapon-type.js');
 
   export default {
     name: 'app',
@@ -27,7 +29,8 @@
 
         this.levelRef = new Level(this.mapRef);
 
-        let actor = new Actor(actorTypes.solider);
+        let pistol = new Weapon(weaponTypes.pistol);
+        let actor = new Actor(actorTypes.solider, pistol);
         console.log(actor);
 
         this.levelRef.registerActor(actor, 300, 300);

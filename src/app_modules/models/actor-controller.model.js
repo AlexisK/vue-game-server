@@ -3,6 +3,7 @@ export class ActorController {
     isMovingLeft;
     isMovingRight;
     isMovingBackwards;
+    isFiring;
     isRunning;
     isSprinting;
     facingX;

@@ -4,12 +4,14 @@ import gameSceneService from '../services/game-scene.service';
 export class Level {
     map;
     actors;
+    projectiles;
     logic;
     //collisions;
 
     constructor(map) {
         this.map    = map;
         this.actors = [];
+        this.projectiles = [];
         this.logic  = new SessionLogic();
         this.logic.setLevel(this);
         //this.collisions = {};
@@ -28,8 +30,19 @@ export class Level {
     registerActor(actor, x, y) {
         actor.x = x;
         actor.y = y;
+        actor.level = this;
         this.logic.actors.push(actor);
         this.actors.push(actor);
+    }
+
+    spawnProjectile(projectile) {
+        this.logic.projectiles.push(projectile);
+        this.projectiles.push(projectile);
+    }
+
+    removeProjectile(projectile) {
+        this.logic.projectiles.splice(this.logic.projectiles.indexOf(projectile), 1);
+        this.projectiles.splice(this.projectiles.indexOf(projectile), 1);
     }
 
     /**
@@ -163,6 +176,19 @@ export class Level {
         //    blockNX,
         //    blockNY
         //);
+        return [x, y];
+    }
+
+    static filterProjectilePositionCollision(collisions, x, y, onHit) {
+        let blockX   = gameSceneService.unitToBlock(x);
+        let blockY   = gameSceneService.unitToBlock(y);
+        let blockNX  = Math.floor(blockX);
+        let blockNY  = Math.floor(blockY);
+
+        if ( collisions[blockNY] && collisions[blockNY][blockNX] ) {
+            onHit(blockNX, blockNY);
+        }
+
         return [x, y];
     }
 

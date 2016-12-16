@@ -55,6 +55,13 @@ export default {
         },
         handleShiftUp() {
             doOnActor(this).then(actor => actor.controller.isSprinting = false);
+        },
+
+        handleActionFireStart() {
+            doOnActor(this).then(actor => actor.controller.isFiring = true);
+        },
+        handleActionFireStop() {
+            doOnActor(this).then(actor => actor.controller.isFiring = false);
         }
     },
 };

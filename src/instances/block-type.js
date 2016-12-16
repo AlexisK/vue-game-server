@@ -50,6 +50,11 @@ module.exports = {
         maxHealth  : 300,
         texture    : 'wall_brick',
     }),
+    wall_glass : new BlockType({
+        blockGroup : blockGroup.wall,
+        maxHealth  : 3,
+        texture    : 'wall_glass',
+    }),
 
     // Roof
     roof_metal : new BlockType({

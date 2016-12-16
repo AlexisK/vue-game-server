@@ -119,6 +119,9 @@
   &-wall_brick {
     background: url($prefix + 'assets/batch-2.png') 25 * $size-cell 5 * $size-cell;
   }
+  &-wall_glass {
+    background: url($prefix + 'assets/batch-1.png') 6 * $size-cell 8 * $size-cell;
+  }
 
   // Roof
   &-roof_metal {

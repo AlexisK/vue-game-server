@@ -13,7 +13,9 @@
     <div class="overlay"
          @contextmenu.stop.prevent
          @mousemove="handleMouseMove"
+         @dragstart.stop.prevent
          @click.stop.prevent
+         @mousemove.stop.prevent
          @mousedown.stop.prevent="handleMouseDown"
          @mouseup.stop.prevent="handleMouseUp"></div>
 </div>

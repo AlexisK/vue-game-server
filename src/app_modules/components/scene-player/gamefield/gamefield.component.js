@@ -11,7 +11,10 @@ export default {
     },
     props      : ['levelRef'],
     data() {
-        return {};
+        return {
+            isLeftEmmitted: false,
+            isRightEmmitted: false,
+        };
     },
     methods: {
         handleMouseMove(ev) {
@@ -19,19 +22,23 @@ export default {
             this.$emit('pointerupdate', ev.clientX - Math.round(rect.left) - 16, ev.clientY - Math.round(rect.top) - 16);
         },
         handleMouseDown(ev) {
-            this.$emit('focused');
             if ( ev.button === 2 ) {
-                this.$emit('pointerrightdown');
-            } else {
+                if ( !this.isRightEmmitted ) {
+                    this.$emit('pointerrightdown');
+                    this.isRightEmmitted = true;
+                }
+            } else if (!this.isLeftEmmitted) {
                 this.$emit('pointerleftdown');
+                this.isLeftEmmitted = true;
             }
         },
         handleMouseUp(ev) {
-            this.$emit('focused');
             if ( ev.button === 2 ) {
                 this.$emit('pointerrightup');
+                this.isRightEmmitted = false;
             } else {
                 this.$emit('pointerleftup');
+                this.isLeftEmmitted = false;
             }
         }
     }

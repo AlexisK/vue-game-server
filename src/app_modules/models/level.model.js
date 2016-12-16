@@ -222,14 +222,14 @@ export class Level {
         return [x, y];
     }
 
-    static filterProjectilePositionCollision(collisions, x, y, onHit) {
+    static filterProjectilePositionCollision(collisions, x, y) {
         let blockX   = gameSceneService.unitToBlock(x);
         let blockY   = gameSceneService.unitToBlock(y);
         let blockNX  = Math.floor(blockX);
         let blockNY  = Math.floor(blockY);
 
         if ( collisions[blockNY] && collisions[blockNY][blockNX] ) {
-            onHit(blockNX, blockNY);
+            return [x, y, blockNX, blockNY];
         }
 
         return [x, y];

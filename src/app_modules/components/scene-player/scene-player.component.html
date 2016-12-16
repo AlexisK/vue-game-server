@@ -10,10 +10,12 @@
            @keydown.stop.prevent.83="handleSDown"
            @keyup.stop.prevent.83="handleSUp"
            @keydown.stop.prevent.16="handleShiftDown"
-           @keyup.stop.prevent.16="handleShiftUp"/>
+           @keyup.stop.prevent.16="handleShiftUp"
+           @keydown.stop.prevent.69="handleActionFireStart"
+           @keyup.stop.prevent.69="handleActionFireStop"/>
     <hr/>
     <gamefield :levelRef="levelRef"
                @pointerupdate="handlePointer"
-               @pointerleftdown="handleActionFireStart"
-               @pointerleftup="handleActionFireStop"></gamefield>
+               @pointerrightdown="handleActionFireStart"
+               @pointerrightup="handleActionFireStop"></gamefield>
 </div>

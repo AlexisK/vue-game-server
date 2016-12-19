@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2e1d601-7b4d-4496-b62b-81dc9f5e2efb" name="Default" comment="complicate projectile speeds, different projectile length">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-client/index.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/components/app-server/index.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/controllers/client.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/controllers/server.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app_modules/services/server.connection.service.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app_modules/game-logic/session.logic.js" afterPath="$PROJECT_DIR$/src/app_modules/controllers/game.controller.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app_modules/services/connection.service.js" afterPath="$PROJECT_DIR$/src/app_modules/services/client.connection.service.js" />
+    <list default="true" id="e2e1d601-7b4d-4496-b62b-81dc9f5e2efb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/index.js" afterPath="$PROJECT_DIR$/src/app_modules/components/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/level.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/level.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/projectile-type.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/projectile-type.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/weapon-type.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/weapon-type.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/weapon.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/weapon.model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/services/index.js" afterPath="$PROJECT_DIR$/src/app_modules/services/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/projectile-type.js" afterPath="$PROJECT_DIR$/src/instances/projectile-type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/weapon-type.js" afterPath="$PROJECT_DIR$/src/instances/weapon-type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.html" afterPath="$PROJECT_DIR$/src/App.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html" afterPath="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js" afterPath="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.html" afterPath="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.js" afterPath="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/controllers/client.controller.js" afterPath="$PROJECT_DIR$/src/app_modules/controllers/client.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/controllers/server.controller.js" afterPath="$PROJECT_DIR$/src/app_modules/controllers/server.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/services/client.connection.service.js" afterPath="$PROJECT_DIR$/src/app_modules/services/client.connection.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/services/server.connection.service.js" afterPath="$PROJECT_DIR$/src/app_modules/services/server.connection.service.js" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+      <file leaf-file-name="App.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,26 +95,26 @@
         <option value="$PROJECT_DIR$/src/instances/block-type.js" />
         <option value="$PROJECT_DIR$/src/app_styles/textures.scss" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.js" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.scss" />
-        <option value="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.html" />
-        <option value="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html" />
-        <option value="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.scss" />
         <option value="$PROJECT_DIR$/src/app_modules/components/index.js" />
-        <option value="$PROJECT_DIR$/src/App.html" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/app_modules/controllers/game.controller.js" />
-        <option value="$PROJECT_DIR$/src/app_modules/controllers/client.controller.js" />
-        <option value="$PROJECT_DIR$/src/app_modules/controllers/server.controller.js" />
-        <option value="$PROJECT_DIR$/src/app_modules/services/server.connection.service.js" />
-        <option value="$PROJECT_DIR$/src/app_modules/services/client.connection.service.js" />
         <option value="$PROJECT_DIR$/src/app_modules/models/weapon.model.js" />
         <option value="$PROJECT_DIR$/src/app_modules/models/weapon-type.model.js" />
         <option value="$PROJECT_DIR$/src/instances/weapon-type.js" />
         <option value="$PROJECT_DIR$/src/instances/projectile-type.js" />
         <option value="$PROJECT_DIR$/src/app_modules/models/projectile-type.model.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/services/client.connection.service.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/controllers/server.controller.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/controllers/client.controller.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/services/server.connection.service.js" />
+        <option value="$PROJECT_DIR$/src/App.html" />
       </list>
     </option>
   </component>
@@ -219,42 +205,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="instances" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -278,28 +228,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,7 +285,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -457,7 +423,7 @@
       <workItem from="1481617877486" duration="115000" />
       <workItem from="1481617997476" duration="54897000" />
       <workItem from="1481801943134" duration="41371000" />
-      <workItem from="1482149515263" duration="2309000" />
+      <workItem from="1482149515263" duration="4652000" />
     </task>
     <task id="LOCAL-00001" summary="map-editor, actor placement">
       <created>1481801988397</created>
@@ -522,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481906066480</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="preparation for connection&#10;">
+      <created>1482151848808</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1482151848808</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98714000" />
+    <option name="totallyTimeSpent" value="101057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="24" width="1920" height="1056" extended-state="6" />
@@ -572,7 +545,8 @@
     <MESSAGE value="projectiles flying" />
     <MESSAGE value="separate hit collisions" />
     <MESSAGE value="complicate projectile speeds, different projectile length" />
-    <option name="LAST_COMMIT_MESSAGE" value="complicate projectile speeds, different projectile length" />
+    <MESSAGE value="preparation for connection&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="preparation for connection&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1084,49 +1058,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding>
-            <marker date="1482149687517" expanded="true" signature="15:82" ph="{&quot;name&quot;: 'app-server'...}" />
-            <marker date="1482149687517" expanded="true" signature="53:79" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding>
-            <marker date="1482149703229" expanded="true" signature="15:82" ph="{&quot;name&quot;: 'app-client'...}" />
-            <marker date="1482149703229" expanded="true" signature="53:79" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,61 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/controllers/client.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1482150751180" expanded="true" signature="30:34" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/controllers/server.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1482150755132" expanded="true" signature="30:34" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/services/server.connection.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <marker date="1482150801331" expanded="true" signature="58:176" ph="{...}" />
-            <marker date="1482150801331" expanded="true" signature="127:174" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/services/client.connection.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-          <folding>
-            <marker date="1482150807391" expanded="true" signature="58:176" ph="{...}" />
-            <marker date="1482150807391" expanded="true" signature="127:174" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1482149885962" expanded="true" signature="13:874" ph="..." />
-            <marker date="1482149885962" expanded="true" signature="38:245" ph="..." />
-            <marker date="1482149885962" expanded="true" signature="309:722" ph="..." />
-            <marker date="1482149885962" expanded="true" signature="764:867" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app_modules/models/weapon.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1279,14 +1160,6 @@
             <marker date="1482151111717" expanded="true" signature="24:264" ph="{...}" />
             <marker date="1482151111717" expanded="true" signature="220:262" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,10 +1202,141 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <marker date="1482151994367" expanded="true" signature="7:325" ph="..." />
+            <marker date="1482151994367" expanded="true" signature="514:1138" ph="{&quot;name&quot;: 'app'...}" />
+            <marker date="1482151994367" expanded="true" signature="560:705" ph="{...}" />
+            <marker date="1482151994367" expanded="true" signature="577:698" ph="{...}" />
+            <marker date="1482151994367" expanded="true" signature="732:1135" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <marker date="1482153803203" expanded="true" signature="23:390" ph="..." />
+            <marker date="1482153803203" expanded="true" signature="66:201" ph="..." />
+            <marker date="1482153803203" expanded="true" signature="82:190" ph="..." />
+            <marker date="1482153803203" expanded="true" signature="256:383" ph="..." />
+            <marker date="1482153803203" expanded="true" signature="319:372" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-server/app-server.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <marker date="1482153588874" expanded="true" signature="86:209" ph="{&quot;name&quot;: 'app-server'...}" />
+            <marker date="1482153588874" expanded="true" signature="124:206" ph="{...}" />
+            <marker date="1482153588874" expanded="true" signature="141:199" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/controllers/server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <marker date="1482153958673" expanded="true" signature="96:224" ph="{...}" />
+            <marker date="1482153958673" expanded="true" signature="144:222" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/controllers/client.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <marker date="1482154023656" expanded="true" signature="96:302" ph="{...}" />
+            <marker date="1482154023656" expanded="true" signature="149:186" ph="{...}" />
+            <marker date="1482154023656" expanded="true" signature="202:300" ph="{...}" />
+            <marker date="1482154023656" expanded="true" signature="234:294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <marker date="1482154065579" expanded="true" signature="86:231" ph="{&quot;name&quot;: 'app-client'...}" />
+            <marker date="1482154065579" expanded="true" signature="124:206" ph="{...}" />
+            <marker date="1482154065579" expanded="true" signature="141:199" ph="{...}" />
+            <marker date="1482154065579" expanded="true" signature="221:229" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
+          <folding>
+            <marker date="1482154065575" expanded="true" signature="23:252" ph="..." />
+            <marker date="1482154065575" expanded="true" signature="66:245" ph="..." />
+            <marker date="1482154065575" expanded="true" signature="82:234" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/services/client.connection.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <marker date="1482153357941" expanded="true" signature="58:529" ph="{...}" />
+            <marker date="1482153357941" expanded="true" signature="127:134" ph="{...}" />
+            <marker date="1482153357941" expanded="true" signature="153:463" ph="{...}" />
+            <marker date="1482153357941" expanded="true" signature="246:456" ph="{...}" />
+            <marker date="1482153357941" expanded="true" signature="295:358" ph="{...}" />
+            <marker date="1482153357941" expanded="true" signature="394:444" ph="{...}" />
+            <marker date="1482153357941" expanded="true" signature="494:527" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/services/server.connection.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding>
+            <marker date="1482154133303" expanded="true" signature="48:246" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="123:184" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="201:244" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="278:973" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="392:436" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="456:718" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="501:710" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="784:970" ph="{...}" />
+            <marker date="1482154133303" expanded="true" signature="883:964" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>

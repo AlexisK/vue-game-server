@@ -1,6 +1,10 @@
+import {ServerController} from '../../controllers/server.controller';
+
 export default {
     name : 'app-server',
     data() {
-        return {};
+        return {
+            controller: new ServerController()
+        };
     },
 };

@@ -9,14 +9,17 @@ import {Weapon} from './app_modules/models/weapon.model';
 const actorTypes = require('./instances/actor-type.js');
 const weaponTypes = require('./instances/weapon-type.js');
 
+const MODES = ['demo', 'client', 'server', 'editor'];
+
 export default {
     name: 'app',
     components,
     data() {
         return {
+            modes: MODES,
             mapRef: null,
             levelRef: null,
-            serverMode: false
+            appMode: MODES[0]
         };
     },
     created: function () {

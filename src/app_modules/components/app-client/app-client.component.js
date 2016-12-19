@@ -1,6 +1,13 @@
+import {ClientController} from '../../controllers/client.controller';
+
 export default {
     name : 'app-client',
     data() {
-        return {};
+        return {
+            controller: new ClientController()
+        };
     },
+    methods: {
+
+    }
 };

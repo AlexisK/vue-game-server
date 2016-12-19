@@ -1,0 +1,14 @@
+<div class="app-server">
+    <h1>Server</h1>
+    <div class="info">
+        <label>
+            <span>Connect to:</span>
+            <strong>{{controller.publicKey}}</strong>
+        </label>
+    </div>
+    <div class="connections" v-if="controller.server">
+        <div v-for="connRef in controller.server.connections">
+            <div>{{connRef.id}}</div>
+        </div>
+    </div>
+</div>

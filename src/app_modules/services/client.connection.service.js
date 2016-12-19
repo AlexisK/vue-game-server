@@ -15,7 +15,7 @@ class ClientConnectionService {
                 this.handleServerMessage(data);
             });
             this.connection.send({
-                action: 'getState'
+                action: 'getLevelState'
             });
         });
         this.connection.on('close', () => {

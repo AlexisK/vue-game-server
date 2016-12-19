@@ -34,6 +34,7 @@ export class Map {
         this.autosave = key;
         this.blocks = clientStorage.getData(storagePrefix+this.autosave) || [];
         this.recalculateSchemaMaybe();
+        return this;
     }
 
     recalculateSchemaMaybe() {

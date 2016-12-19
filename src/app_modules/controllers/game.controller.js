@@ -1,5 +1,5 @@
 
-const TICKMS = 17;
+const TICKMS = 15;
 
 export class GameController {
     _tickInterval;

@@ -86,6 +86,18 @@
 
 @mixin texture($prefix) {
 
+  // Marker
+  &-team_start {
+    &_red {
+      border: 2px solid rgba(255,0,0,.5);
+      border-radius: 100px;
+    }
+    &_blue {
+      border: 2px solid rgba(0,0,255,.5);
+      border-radius: 100px;
+    }
+  }
+
   // Floor
   &-dirt {
     background: url($prefix + 'assets/batch-1.png') 0 * $size-cell 12 * $size-cell;

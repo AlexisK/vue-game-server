@@ -33,7 +33,7 @@ export class ClientController {
     }
 
     messageHandlers = {
-        'state' : data => {
+        'levelState' : data => {
             console.log('Current state is:', data);
             this.stage = this.stages[1];
         },

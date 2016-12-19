@@ -12,13 +12,30 @@ export class Level {
     schema;
 
     constructor(map) {
-        this.map    = map;
-        this.actors = [];
+        this.map         = map;
+        this.actors      = [];
         this.projectiles = [];
-        this.logic  = new GameController();
+        this.logic       = new GameController();
         this.logic.setLevel(this);
 
         this._createSchema();
+    }
+
+    getState() {
+        let schema = [];
+        this.schema.forEach((row, y) => {
+            schema[y] = [];
+            this.schema[y].forEach((levelMap, x) => {
+                schema[y][x] = {};
+                Object.keys(levelMap).forEach(level => {
+                     schema[y][x][level] = this.schema[y][x][level].getSerializable();
+                });
+            });
+        });
+
+        let projectiles = this.projectiles.map(p => p.getSerializable());
+
+        return { schema, projectiles };
     }
 
 
@@ -50,8 +67,8 @@ export class Level {
 
     // Registering entities
     registerActor(actor, x, y) {
-        actor.x = x;
-        actor.y = y;
+        actor.x     = x;
+        actor.y     = y;
         actor.level = this;
         this.logic.actors.push(actor);
         this.actors.push(actor);
@@ -101,12 +118,12 @@ export class Level {
      * 2. This shitty-to-read algorithm has O(1) complexity, so if you thinking to rewrite it JUST FUCK OFF!
      */
     static filterPositionCollision(collisions, x, y, angle) {
-        let blockX   = gameSceneService.unitToBlock(x);
-        let blockY   = gameSceneService.unitToBlock(y);
-        let blockNX  = Math.floor(blockX);
-        let blockNY  = Math.floor(blockY);
-        let blockCX  = Math.ceil(blockX);
-        let blockCY  = Math.ceil(blockY);
+        let blockX  = gameSceneService.unitToBlock(x);
+        let blockY  = gameSceneService.unitToBlock(y);
+        let blockNX = Math.floor(blockX);
+        let blockNY = Math.floor(blockY);
+        let blockCX = Math.ceil(blockX);
+        let blockCY = Math.ceil(blockY);
 
         if ( collisions[blockNY] && collisions[blockNY][blockNX] ) {
             //console.log('collission top-left!');
@@ -114,18 +131,18 @@ export class Level {
             let diffY = blockCY - blockY;
 
             if ( diffX < diffY ) {
-                if (!collisions[blockNY][blockCX]) {
+                if ( !collisions[blockNY][blockCX] ) {
                     x = gameSceneService.blockToUnit(blockCX);
-                } else if (!collisions[blockCY][blockNX]) {
+                } else if ( !collisions[blockCY][blockNX] ) {
                     y = gameSceneService.blockToUnit(blockCY);
                 } else {
                     x = gameSceneService.blockToUnit(blockCX);
                     y = gameSceneService.blockToUnit(blockCY);
                 }
             } else {
-                if (!collisions[blockCY][blockNX]) {
+                if ( !collisions[blockCY][blockNX] ) {
                     y = gameSceneService.blockToUnit(blockCY);
-                } else if (!collisions[blockNY][blockCX]) {
+                } else if ( !collisions[blockNY][blockCX] ) {
                     x = gameSceneService.blockToUnit(blockCX);
                 } else {
                     y = gameSceneService.blockToUnit(blockCY);
@@ -140,18 +157,18 @@ export class Level {
             let diffY = blockCY - blockY;
 
             if ( diffX < diffY ) {
-                if (!collisions[blockNY][blockNX]) {
+                if ( !collisions[blockNY][blockNX] ) {
                     x = gameSceneService.blockToUnit(blockNX);
-                } else if (!collisions[blockCY][blockCX]) {
+                } else if ( !collisions[blockCY][blockCX] ) {
                     y = gameSceneService.blockToUnit(blockCY);
                 } else {
                     x = gameSceneService.blockToUnit(blockNX);
                     y = gameSceneService.blockToUnit(blockCY);
                 }
             } else {
-                if (!collisions[blockCY][blockCX]) {
+                if ( !collisions[blockCY][blockCX] ) {
                     y = gameSceneService.blockToUnit(blockCY);
-                } else if (!collisions[blockNY][blockCX]) {
+                } else if ( !collisions[blockNY][blockCX] ) {
                     x = gameSceneService.blockToUnit(blockNX);
                 } else {
                     y = gameSceneService.blockToUnit(blockCY);
@@ -166,18 +183,18 @@ export class Level {
             let diffY = blockY - blockNY;
 
             if ( diffX < diffY ) {
-                if (!collisions[blockCY][blockCX]) {
+                if ( !collisions[blockCY][blockCX] ) {
                     x = gameSceneService.blockToUnit(blockCX);
-                } else if (!collisions[blockNY][blockNX]) {
+                } else if ( !collisions[blockNY][blockNX] ) {
                     y = gameSceneService.blockToUnit(blockNY);
                 } else {
                     x = gameSceneService.blockToUnit(blockCX);
                     y = gameSceneService.blockToUnit(blockNY);
                 }
             } else {
-                if (!collisions[blockNY][blockNX]) {
+                if ( !collisions[blockNY][blockNX] ) {
                     y = gameSceneService.blockToUnit(blockNY);
-                } else if (!collisions[blockCY][blockCX]) {
+                } else if ( !collisions[blockCY][blockCX] ) {
                     x = gameSceneService.blockToUnit(blockCX);
                 } else {
                     y = gameSceneService.blockToUnit(blockNY);
@@ -192,18 +209,18 @@ export class Level {
             let diffY = blockY - blockNY;
 
             if ( diffX < diffY ) {
-                if (!collisions[blockCY][blockNX]) {
+                if ( !collisions[blockCY][blockNX] ) {
                     x = gameSceneService.blockToUnit(blockNX);
-                } else if (!collisions[blockNY][blockCX]) {
+                } else if ( !collisions[blockNY][blockCX] ) {
                     y = gameSceneService.blockToUnit(blockNY);
                 } else {
                     x = gameSceneService.blockToUnit(blockNX);
                     y = gameSceneService.blockToUnit(blockNY);
                 }
             } else {
-                if (!collisions[blockNY][blockCX]) {
+                if ( !collisions[blockNY][blockCX] ) {
                     y = gameSceneService.blockToUnit(blockNY);
-                } else if (!collisions[blockCY][blockNX]) {
+                } else if ( !collisions[blockCY][blockNX] ) {
                     x = gameSceneService.blockToUnit(blockNX);
                 } else {
                     y = gameSceneService.blockToUnit(blockNY);
@@ -223,10 +240,10 @@ export class Level {
     }
 
     static filterProjectilePositionCollision(collisions, x, y) {
-        let blockX   = gameSceneService.unitToBlock(x);
-        let blockY   = gameSceneService.unitToBlock(y);
-        let blockNX  = Math.floor(blockX);
-        let blockNY  = Math.floor(blockY);
+        let blockX  = gameSceneService.unitToBlock(x);
+        let blockY  = gameSceneService.unitToBlock(y);
+        let blockNX = Math.floor(blockX);
+        let blockNY = Math.floor(blockY);
 
         if ( collisions[blockNY] && collisions[blockNY][blockNX] ) {
             return [x, y, blockNX, blockNY];
@@ -262,7 +279,7 @@ export class Level {
     }
 
     recalculateHitCollisions() {
-        this._recalculateCollisions(grp => grp.isDestructible, 'hitCollisions' );
+        this._recalculateCollisions(grp => grp.isDestructible, 'hitCollisions');
     }
 
 }

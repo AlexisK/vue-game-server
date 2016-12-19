@@ -23,7 +23,7 @@ export default {
         };
     },
     created: function () {
-        this.mapRef = new Map(db.mapTypes.default);
+        this.mapRef = new Map(db.mapTypes.dirt);
         this.mapRef.setSave('default');
         this.mapRef.init();
 

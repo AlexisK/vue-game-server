@@ -1,6 +1,12 @@
 import { BlockGroup } from '../app_modules/models/block-group.model';
 
 module.exports = {
+    marker: new BlockGroup({
+        isWalkable: true,
+        isCollide: false,
+        isDestructible: false,
+        level: 2
+    }),
     water : new BlockGroup({
         isWalkable     : false,
         isCollide      : false,

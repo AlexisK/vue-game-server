@@ -1,6 +1,6 @@
 import { ActorController } from './actor-controller.model';
 
-import {Level} from '../models/level.model';
+import { Level } from '../models/level.model';
 
 export class Actor {
     health;
@@ -13,11 +13,22 @@ export class Actor {
     rotation = 0;
 
     constructor(model, weapon) {
-        this.weapon = weapon;
+        this.weapon       = weapon;
         this.weapon.actor = this;
-        this.model      = model;
-        this.health     = model.maxHealth;
-        this.controller = new ActorController();
+        this.model        = model;
+        this.health       = model.maxHealth;
+        this.controller   = new ActorController();
+    }
+
+    getSerializable() {
+        return {
+            x         : this.x,
+            y         : this.y,
+            rotation  : this.rotation,
+            level     : this.level,
+            health    : this.health,
+            maxHealth : this.model.maxHealth
+        }
     }
 
     facePotentialPosition(x, y) {
@@ -50,7 +61,7 @@ export class Actor {
     }
 
     _stepAny(collisions, angle, speed) {
-        speed = speed || this.model.walkSpeed;
+        speed      = speed || this.model.walkSpeed;
         collisions = collisions || {};
 
         let rotation = this.rotation + angle;

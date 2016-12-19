@@ -8,7 +8,7 @@ class ConnectionRef {
     controller;
     connection;
     name;
-    player;
+    actor;
 
     constructor(conn, id) {
         this.connection = conn;

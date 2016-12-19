@@ -4,6 +4,16 @@ const blockGroup = require('./block-group');
 
 module.exports = {
 
+    // Marker
+    marker_team_start_red: new BlockType({
+        blockGroup : blockGroup.marker,
+        texture    : 'team_start_red'
+    }),
+    marker_team_start_blue: new BlockType({
+        blockGroup : blockGroup.marker,
+        texture    : 'team_start_blue'
+    }),
+
     // Floor
     floor_water : new BlockType({
         blockGroup : blockGroup.water,

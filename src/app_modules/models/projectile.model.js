@@ -1,6 +1,6 @@
 import { Level } from '../models/level.model';
 
-const speedStep = 31;
+const speedStep = 21;
 
 export class Projectile {
     model;
@@ -18,6 +18,15 @@ export class Projectile {
             this.move = this.moveSimple;
         } else {
             this.move = this.moveComplicated;
+        }
+    }
+
+    getSerializable() {
+        return {
+            x        : this.x,
+            y        : this.y,
+            rotation : this.rotation,
+            length   : this.model.length
         }
     }
 
@@ -53,7 +62,7 @@ export class Projectile {
 
     moveComplicated(collisions) {
         let speed = this.speed;
-        for ( ; speed > speedStep; speed -= speedStep) {
+        for (; speed > speedStep; speed -= speedStep) {
             if ( this.moveSimple(collisions, speedStep) ) {
                 return;
             }

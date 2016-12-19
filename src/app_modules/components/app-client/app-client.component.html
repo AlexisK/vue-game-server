@@ -1,9 +1,31 @@
 <div class="app-client">
     <h1>Client</h1>
-    <div class="info">
+
+    <div class="info" v-if="controller.stage == 'connect'">
         <label>
             <span>Connect to:</span>
             <input type="text" v-model="controller.serverKey" @keyup.enter="controller.connect"/>
         </label>
     </div>
+    <div class="info" v-if="controller.stage == 'register'">
+        <label>
+            <span>Please, name yourself:</span>
+            <input type="text" v-model="controller.playerName" @keyup.enter="controller.register"/>
+        </label>
+    </div>
+    <div class="info" v-if="controller.stage == 'play'">
+        <label>
+            <span>Current state:</span>
+            <strong>Ready!</strong>
+        </label>
+        <label>
+            <span>Player name:</span>
+            <strong>{{controller.playerName}}</strong>
+        </label>
+        <label>
+            <span>Server ID:</span>
+            <strong>{{controller.serverId}}</strong>
+        </label>
+    </div>
+
 </div>

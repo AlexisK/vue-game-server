@@ -1,7 +1,11 @@
+import Vue from 'vue';
 import Peer from 'peerjs';
 
 class ConnectionRef {
+    connectedAt;
+    registeredAt;
     id;
+    controller;
     connection;
     name;
     player;
@@ -9,6 +13,7 @@ class ConnectionRef {
     constructor(conn, id) {
         this.connection = conn;
         this.id = id;
+        this.connectedAt = Date.now();
     }
 
     send(data) {
@@ -27,21 +32,37 @@ class ServerConnectionService {
 
     constructor() {
         this.peer.on('connection', conn => {
-            let ind = this.getIndex();
-            this.connections[ind] = new ConnectionRef(conn, ind);
 
-            conn.on('data', data => this.handleClientMessage(this.connections[ind], data));
+            conn.on('open', () => {
+
+                let ind = this.getIndex();
+                Vue.set(this.connections, ind, new ConnectionRef(conn, ind));
+
+                conn.on('data', data => this.handleClientMessage(this.connections[ind], data));
+                conn.on('close', data => {
+                    if ( this.controller ) {
+                        this.controller.deletePlayer(ind);
+                    } else {
+                        delete this.connections[ind];
+                    }
+                });
+            });
+
         });
     }
 
-    messageHandlers = {};
     handleClientMessage(connRef, req) {
         console.log(connRef, req);
-        if ( req.action && this.messageHandlers[req.action] ) {
-            this.messageHandlers[req.action](connRef, req.data, req);
+        if ( this.controller && req.action ) {
+            this.controller.handleClientMessage(connRef, req);
         }
     }
 
+    send(data) {
+        Object.keys(this.connections).forEach(id => {
+            this.connections[id].send(data);
+        });
+    }
 }
 
 module.exports = new ServerConnectionService();

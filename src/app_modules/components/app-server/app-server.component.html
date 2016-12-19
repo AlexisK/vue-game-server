@@ -7,8 +7,18 @@
         </label>
     </div>
     <div class="connections" v-if="controller.server">
-        <div v-for="connRef in controller.server.connections">
-            <div>{{connRef.id}}</div>
-        </div>
+        <table v-for="connRef in controller.server.connections">
+            <thead>
+            <tr><td>ID</td><td>Name</td><td>connected</td><td>registered</td></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{connRef.id}}</td>
+                <td>{{connRef.name}}</td>
+                <td>{{connRef.connectedAt}}</td>
+                <td>{{connRef.registeredAt}}</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>

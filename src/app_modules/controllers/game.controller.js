@@ -1,7 +1,7 @@
 
 const TICKMS = 17;
 
-export class SessionLogic {
+export class GameController {
     _tickInterval;
     _level;
     isRunning = false;

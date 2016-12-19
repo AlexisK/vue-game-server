@@ -1,4 +1,4 @@
-import { SessionLogic } from '../game-logic/session.logic';
+import { GameController } from '../controllers/game.controller';
 import gameSceneService from '../services/game-scene.service';
 import { Block } from "./block.model";
 
@@ -15,7 +15,7 @@ export class Level {
         this.map    = map;
         this.actors = [];
         this.projectiles = [];
-        this.logic  = new SessionLogic();
+        this.logic  = new GameController();
         this.logic.setLevel(this);
 
         this._createSchema();

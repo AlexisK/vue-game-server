@@ -8,6 +8,7 @@ export class WeaponType {
     spreadSprint;
     projectile;
     blockType;
+    projectiles;
 
     constructor(data) {
         Object.assign(this, data);

@@ -3,7 +3,7 @@ export class ProjectileType {
     speed;
     texture;
     length;
-    life = 40;
+    life = 20;
 
     constructor(data) {
         Object.assign(this, data);

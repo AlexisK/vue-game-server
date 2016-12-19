@@ -5,6 +5,7 @@ const projectileType = require('./projectile-type');
 module.exports = {
     pistol: new WeaponType({
         shootCooldown: 15,
+        projectiles: 1,
         maxAmmo: 10,
         spreadStand: 0.07,
         spreadWalk: 0.07,
@@ -15,6 +16,7 @@ module.exports = {
     }),
     rifle: new WeaponType({
         shootCooldown: 5,
+        projectiles: 1,
         maxAmmo: 30,
         spreadStand: 0.05,
         spreadWalk: 0.1,
@@ -23,8 +25,20 @@ module.exports = {
         projectile: projectileType.rifle,
         blockType: blockType.actor_solider_rifle
     }),
+    shotgun: new WeaponType({
+        shootCooldown: 30,
+        projectiles: 7,
+        maxAmmo: 7,
+        spreadStand: 0.2,
+        spreadWalk: 0.2,
+        spreadRun: 0.3,
+        spreadSprint: 0.5,
+        projectile: projectileType.shotgun,
+        blockType: blockType.actor_solider_sniper
+    }),
     sniper: new WeaponType({
         shootCooldown: 50,
+        projectiles: 1,
         maxAmmo: 4,
         spreadStand: 0.01,
         spreadWalk: 0.15,

@@ -1,6 +1,6 @@
 import Peer from 'peerjs';
 
-class ConnectionService {
+class ServerConnectionService {
     peer = new Peer(null, { key: peerApiKey });
 
     constructor() {
@@ -8,4 +8,4 @@ class ConnectionService {
     }
 }
 
-module.exports = new ConnectionService();
+module.exports = new ServerConnectionService();

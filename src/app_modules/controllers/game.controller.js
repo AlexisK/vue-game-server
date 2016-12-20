@@ -1,14 +1,14 @@
-
-const TICKMS = 15;
+const TICKMS = 15; // 15
 
 export class GameController {
     _tickInterval;
     _level;
-    isRunning = false;
+    isRunning        = false;
     isProcessingTick = false;
-    tickTimePeriod = TICKMS;
-    actors = [];
-    projectiles = [];
+    tickTimePeriod   = TICKMS;
+    actors           = [];
+    projectiles      = [];
+    doOnTick         = [];
 
     constructor() {
 
@@ -38,6 +38,8 @@ export class GameController {
         // logic
         this.projectiles.forEach(this.tickProjectile.bind(this));
         this.actors.forEach(this.tickActor.bind(this));
+
+        this.doOnTick.forEach(todo => todo());
 
         this.isProcessingTick = false;
     }

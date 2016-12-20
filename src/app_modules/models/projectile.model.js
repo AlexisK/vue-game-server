@@ -31,7 +31,7 @@ export class Projectile {
     }
 
     moveSimple(collisions, distance) {
-        if ( this.lifeCooldown ) {
+        if ( this.lifeCooldown > 0 ) {
             collisions = collisions || {};
             distance   = distance || this.speed;
 

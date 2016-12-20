@@ -1,15 +1,15 @@
 import Cell from './cell';
 import Actor from './actor';
-import Projectile from './projectile';
+import ClientProjectile from './client-projectile';
 
 export default {
-    name       : 'gamefield',
+    name       : 'clientgamefield',
     components : {
-        cell  : Cell,
-        actor : Actor,
-        projectile : Projectile,
+        clientcell  : Cell,
+        clientactor : Actor,
+        clientprojectile : ClientProjectile,
     },
-    props      : ['levelRef'],
+    props      : ['controller'],
     data() {
         return {
             isLeftEmmitted: false,

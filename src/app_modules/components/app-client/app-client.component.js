@@ -1,27 +1,28 @@
-import {ClientController} from '../../controllers/client.controller';
+import { ClientController } from '../../controllers/client.controller';
 
-import Gamefield from './gamefield';
+import ClientGameField from './client-gamefield';
 
-const doOnActor = function(ref) {
+const doOnActor = function (ref) {
     return new Promise(resolve => {
-        let actor = ref.levelRef.actors[0];
+        let actor = ref.controller.controllableActor;
         if ( actor ) {
+            setTimeout(() => ref.controller.updateUserControlls(), 1);
             resolve(actor);
         }
     });
 };
 
 export default {
-    name : 'app-client',
-    components: {
-        gamefield: Gamefield
+    name       : 'app-client',
+    components : {
+        clientgamefield : ClientGameField
     },
     data() {
         return {
-            controller: new ClientController()
+            controller : new ClientController()
         };
     },
-    methods: {
+    methods    : {
         handlePointer(x, y) {
             doOnActor(this).then(actor => actor.facePotentialPosition(x, y));
         },

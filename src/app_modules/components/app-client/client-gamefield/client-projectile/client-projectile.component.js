@@ -1,5 +1,5 @@
 export default {
-    name : 'projectile',
+    name : 'clientprojectile',
     props: ['projectile'],
     data() {
         return {};

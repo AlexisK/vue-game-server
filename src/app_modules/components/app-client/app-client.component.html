@@ -29,7 +29,7 @@
             </label>
         </div>
 
-        <div v-if="controller.stage == 'play'">
+        <div v-if="controller.stage == 'play' && controller.levelRef">
             <input class="focusInput" type="text"
                    @keydown.stop.prevent.87="handleWDown"
                    @keyup.stop.prevent.87="handleWUp"
@@ -44,7 +44,7 @@
                    @keydown.stop.prevent.69="handleActionFireStart"
                    @keyup.stop.prevent.69="handleActionFireStop"/>
             <hr/>
-            <gamefield :levelRef="controller.levelRef"
+            <clientgamefield :controller="controller"
                        @pointerupdate="handlePointer"
                        @pointerrightdown="handleActionFireStart"
                        @pointerrightup="handleActionFireStop"/>

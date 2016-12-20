@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Peer from 'peerjs';
 
+const updateControlsDebounce = 20;
+
 class ConnectionRef {
     connectedAt;
     registeredAt;
@@ -10,6 +12,9 @@ class ConnectionRef {
     name;
     actor;
 
+    _updateCtrlInterval;
+    _updateCtrlData;
+
     constructor(conn, id) {
         this.connection = conn;
         this.id = id;
@@ -18,6 +23,14 @@ class ConnectionRef {
 
     send(data) {
         this.connection.send(data);
+    }
+
+    updateControls(data) {
+        this._updateCtrlData = data;
+        if ( !this._updateCtrlInterval ) {
+            this.actor.controller.setSerializable(this._updateCtrlData);
+            this._updateCtrlInterval = setTimeout(() => this._updateCtrlInterval = null, updateControlsDebounce);
+        }
     }
 }
 
@@ -52,7 +65,7 @@ class ServerConnectionService {
     }
 
     handleClientMessage(connRef, req) {
-        console.log(connRef, req);
+        //console.log(connRef, req);
         if ( this.controller && req.action ) {
             this.controller.handleClientMessage(connRef, req);
         }

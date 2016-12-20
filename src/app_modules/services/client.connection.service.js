@@ -26,7 +26,7 @@ class ClientConnectionService {
     }
 
     handleServerMessage(req) {
-        console.log(req);
+        //console.log(req);
         if ( this.controller && req.action ) {
             this.controller.handleServerMessage(req);
         }

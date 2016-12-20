@@ -33,7 +33,7 @@ export default {
         let actor = new Actor(actorTypes.solider, weapon);
         console.log(actor);
 
-        this.levelRef.registerActor(actor, 300, 300);
+        this.levelRef.spawnActor(actor, 300, 300);
         this.levelRef.start();
 
     },

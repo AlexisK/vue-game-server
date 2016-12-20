@@ -10,6 +10,7 @@ export class Level {
     projectiles;
     logic;
     schema;
+    blockUpdates = {};
 
     constructor(map) {
         this.map         = map;
@@ -38,6 +39,16 @@ export class Level {
         return { schema, projectiles };
     }
 
+    getUpdate() {
+        let data = {
+            blockUpdates: this.blockUpdates,
+            projectiles: this.projectiles.map(p => p.getSerializable())
+        };
+        this.blockUpdates = {};
+
+        return data;
+    }
+
 
     // Initialization
     _createSchema() {
@@ -57,7 +68,6 @@ export class Level {
         this.recalculateCollisions();
         this.recalculateHitCollisions();
         this.logic.start();
-        console.log(this.collisions);
     }
 
     stop() {
@@ -66,7 +76,7 @@ export class Level {
 
 
     // Registering entities
-    registerActor(actor, x, y) {
+    spawnActor(actor, x, y) {
         actor.x     = x;
         actor.y     = y;
         actor.level = this;
@@ -93,11 +103,17 @@ export class Level {
             let block = levelMap[level];
             if ( block.model.blockGroup.isDestructible ) {
                 block.health -= projectile.model.damage;
-                //console.log(block);
+
+                this.blockUpdates[y] = this.blockUpdates[y] || {};
+                this.blockUpdates[y][x] = this.blockUpdates[y][x] || {};
+
                 if ( block.health <= 0 ) {
                     Vue.delete(this.schema[y][x], level);
                     this.recalculateCollisions();
                     this.recalculateHitCollisions();
+                    this.blockUpdates[y][x][level] = 0;
+                } else {
+                    this.blockUpdates[y][x][level] = block.health;
                 }
             }
         });

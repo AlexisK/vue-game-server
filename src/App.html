@@ -1,10 +1,11 @@
 <div id="app">
     <div class="header">
+        <h1>vue test</h1>
         <strong>Current mode: {{appMode}}</strong>
-        <button @click="appMode = modes[0]">DEMO</button>
-        <button @click="appMode = modes[1]">CLIENT</button>
-        <button @click="appMode = modes[2]">SERVER</button>
-        <button @click="appMode = modes[3]">EDITOR</button>
+        <button @click="appMode = modes[0]" :class="{active: appMode == modes[0]}">DEMO</button>
+        <button @click="appMode = modes[1]" :class="{active: appMode == modes[1]}">CLIENT</button>
+        <button @click="appMode = modes[2]" :class="{active: appMode == modes[2]}">SERVER</button>
+        <button @click="appMode = modes[3]" :class="{active: appMode == modes[3]}">EDITOR</button>
     </div>
     <hr />
     <div v-if="appMode == modes[0]" class="mode mode-demo">

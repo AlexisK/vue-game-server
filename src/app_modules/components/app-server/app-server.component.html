@@ -1,39 +1,49 @@
 <div class="app-server">
-    <h1>Server</h1>
-    <div class="configure" v-if="controller.stage == 'configure'">
+    <div class="autocss">
+        <h1>Server</h1>
+        <div class="configure" v-if="controller.stage == 'configure'">
 
-        <div class="info">
-            <label>
-                <span>Select map:</span>
-                <ul class="select">
-                    <li v-for="(map, key) in maps" @click="selectMap(key)" :class="{active: controller.selectedMap == key}">{{key}}</li>
-                </ul>
-            </label>
-            <button @click="checkConfiguration">Ok</button>
+            <div class="info">
+                <label>
+                    <span>Select map</span>
+                    <ul class="select">
+                        <li v-for="(map, key) in maps" @click="selectMap(key)"
+                            :class="{active: controller.selectedMap == key}">{{key}}
+                        </li>
+                    </ul>
+                </label>
+                <button @click="checkConfiguration">Ok</button>
+            </div>
+        </div>
+        <div v-else>
+            <div class="info">
+                <label>
+                    <span>Connect to</span>
+                    <strong> {{controller.publicKey}}</strong>
+                </label>
+            </div>
+            <div class="connections" v-if="controller.server">
+                <table class="active-connections" v-for="connRef in controller.server.connections">
+                    <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Actions</td>
+                        <td>Name</td>
+                        <td>connected</td>
+                        <td>registered</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{{connRef.id}}</td>
+                        <td><button>kick</button></td>
+                        <td>{{connRef.name}}</td>
+                        <td>{{connRef.connectedAt}}</td>
+                        <td>{{connRef.registeredAt}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-    <div v-else >
-        <div class="info">
-            <label>
-                <span>Connect to:</span>
-                <strong>{{controller.publicKey}}</strong>
-            </label>
-        </div>
-        <div class="connections" v-if="controller.server">
-            <table v-for="connRef in controller.server.connections">
-                <thead>
-                <tr><td>ID</td><td>Name</td><td>connected</td><td>registered</td></tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>{{connRef.id}}</td>
-                    <td>{{connRef.name}}</td>
-                    <td>{{connRef.connectedAt}}</td>
-                    <td>{{connRef.registeredAt}}</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
 </div>

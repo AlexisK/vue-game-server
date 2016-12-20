@@ -1,3 +1,5 @@
+@import "globals";
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +8,148 @@
 body {
   font-family: arial, sans-serif;
   font-size: 14px;
+  background-color: $grey-1;
+}
+
+h1, h2 {
+  font-size: 20px;
+}
+
+input, button {
+  outline: none;
+  font-family: arial, sans-serif;
+}
+
+#app > .header {
+  height: 40px;
+  background-color: $grey-8;
+  color: #fff;
+  font-size: 0;
+
+  > h1 {
+    float: left;
+    line-height: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  > strong {
+    display: block;
+    float: left;
+    line-height: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  > button {
+    padding: 10px 20px;
+    line-height: 20px;
+    background: none;
+    border: none;
+    border-left: 1px solid $grey-9;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover, &.active {
+      background-color: $grey-9;
+    }
+  }
+}
+
+.autocss {
+  padding: 20px;
+
+  > * {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $grey-8;
+  }
+  .info {
+    padding: 20px;
+    box-shadow: 0 2px 4px $grey-8;
+    background-color: #fff;
+
+    > label {
+      display: block;
+      margin: 5px 0;
+      border-bottom: 1px solid $grey-2;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > span {
+        display: block;
+        float: left;
+        min-width: 100px;
+        &:after {
+          content: ':';
+          margin: 0 4px;
+        }
+      }
+
+      input {
+        margin-bottom: -1px;
+        padding: 0 4px;
+        background-color: $grey-2;
+        border: none;
+        border-bottom: 1px solid $grey-7;
+      }
+
+      ul.select {
+        display: block;
+        float: left;
+        cursor: pointer;
+
+        li {
+          display: block;
+          padding: 0 8px;
+          line-height: 20px;
+
+          &:before {
+            content: ' ';
+            display: inline-block;
+            width: 8px; height: 8px;
+            margin: 6px 8px 0 0;
+            background-color: $grey-3;
+            font-size: 0;
+          }
+
+          &:hover:before {
+            background-color: $grey-7;
+          }
+          &.active:before {
+            background-color: $green-1;
+          }
+        }
+      }
+    }
+
+    > button {
+      padding: 10px 20px;
+      background: $grey-8;
+      color: #fff;
+      border: none;
+      text-transform: uppercase;
+
+      &:hover, &.active {
+        background-color: $grey-9;
+        cursor: pointer;
+      }
+    }
+  }
+
 }

@@ -1,31 +1,54 @@
 <div class="app-client">
     <h1>Client</h1>
 
-    <div class="info" v-if="controller.stage == 'connect'">
-        <label>
-            <span>Connect to:</span>
-            <input type="text" v-model="controller.serverKey" @keyup.enter="controller.connect"/>
-        </label>
-    </div>
-    <div class="info" v-if="controller.stage == 'register'">
-        <label>
-            <span>Please, name yourself:</span>
-            <input type="text" v-model="controller.playerName" @keyup.enter="controller.register"/>
-        </label>
-    </div>
-    <div class="info" v-if="controller.stage == 'play'">
-        <label>
-            <span>Current state:</span>
-            <strong>Ready!</strong>
-        </label>
-        <label>
-            <span>Player name:</span>
-            <strong>{{controller.playerName}}</strong>
-        </label>
-        <label>
-            <span>Server ID:</span>
-            <strong>{{controller.serverId}}</strong>
-        </label>
+    <div>
+        <div class="info" v-if="controller.stage == 'connect'">
+            <label>
+                <span>Connect to:</span>
+                <input type="text" v-model="controller.serverKey" @keyup.enter="controller.connect"/>
+            </label>
+        </div>
+        <div class="info" v-if="controller.stage == 'register'">
+            <label>
+                <span>Please, name yourself:</span>
+                <input type="text" v-model="controller.playerName" @keyup.enter="controller.register"/>
+            </label>
+        </div>
+        <div class="info" v-if="controller.stage == 'play'">
+            <label>
+                <span>Current state:</span>
+                <strong>Ready!</strong>
+            </label>
+            <label>
+                <span>Player name:</span>
+                <strong>{{controller.playerName}}</strong>
+            </label>
+            <label>
+                <span>Server ID:</span>
+                <strong>{{controller.serverId}}</strong>
+            </label>
+        </div>
+
+        <div v-if="controller.stage == 'play'">
+            <input class="focusInput" type="text"
+                   @keydown.stop.prevent.87="handleWDown"
+                   @keyup.stop.prevent.87="handleWUp"
+                   @keydown.stop.prevent.68="handleDDown"
+                   @keyup.stop.prevent.68="handleDUp"
+                   @keydown.stop.prevent.65="handleADown"
+                   @keyup.stop.prevent.65="handleAUp"
+                   @keydown.stop.prevent.83="handleSDown"
+                   @keyup.stop.prevent.83="handleSUp"
+                   @keydown.stop.prevent.16="handleShiftDown"
+                   @keyup.stop.prevent.16="handleShiftUp"
+                   @keydown.stop.prevent.69="handleActionFireStart"
+                   @keyup.stop.prevent.69="handleActionFireStop"/>
+            <hr/>
+            <gamefield :levelRef="controller.levelRef"
+                       @pointerupdate="handlePointer"
+                       @pointerrightdown="handleActionFireStart"
+                       @pointerrightup="handleActionFireStop"/>
+        </div>
     </div>
 
 </div>

@@ -1,0 +1,21 @@
+<div class="gamefield" v-if="levelRef" :style="{backgroundColor: levelRef.ambient}">
+    <div class="calcFrom">
+        <div class="field-row" v-for="(row, y) in levelRef.schema">
+            <cell v-for="(col, x) in row" :blockList="col"/>
+        </div>
+    </div>
+    <div class="calcFrom">
+        <actor v-for="actor in levelRef.actors" :actor="actor"></actor>
+    </div>
+    <div class="calcFrom">
+        <projectile v-for="projectile in levelRef.projectiles" :projectile="projectile"></projectile>
+    </div>
+    <div class="overlay"
+         @contextmenu.stop.prevent
+         @mousemove="handleMouseMove"
+         @dragstart.stop.prevent
+         @click.stop.prevent
+         @mousemove.stop.prevent
+         @mousedown.stop.prevent="handleMouseDown"
+         @mouseup.stop.prevent="handleMouseUp"></div>
+</div>

@@ -1,3 +1,5 @@
+import Vue from 'vue';
+import { ClientLevel } from '../models/client-level.model';
 const client = require('../services/client.connection.service');
 
 const STAGES = ['connect', 'register', 'play'];
@@ -9,6 +11,7 @@ export class ClientController {
     stages    = STAGES;
     stage     = STAGES[0];
     serverId;
+    levelRef;
 
     constructor() {
         this.client            = client;
@@ -35,6 +38,8 @@ export class ClientController {
     messageHandlers = {
         'levelState' : data => {
             console.log('Current state is:', data);
+            this.levelRef = new ClientLevel();
+            this.levelRef.setState(data);
             this.stage = this.stages[1];
         },
         'registerSuccess': data => {

@@ -1,12 +1,12 @@
-import Cell from './cell';
-import Actor from './actor';
+import ClientCell from './client-cell';
+import ClientActor from './client-actor';
 import ClientProjectile from './client-projectile';
 
 export default {
     name       : 'clientgamefield',
     components : {
-        clientcell  : Cell,
-        clientactor : Actor,
+        clientcell  : ClientCell,
+        clientactor : ClientActor,
         clientprojectile : ClientProjectile,
     },
     props      : ['controller'],

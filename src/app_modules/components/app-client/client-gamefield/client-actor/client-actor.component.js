@@ -1,7 +1,7 @@
 const services = require('../../../../services');
 
 export default {
-    name : 'actor',
+    name : 'clientactor',
     props: ['actor'],
     data() {
         return {};

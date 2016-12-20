@@ -1,7 +1,7 @@
 @import "game";
 @import "textures";
 
-.cell {
+.client-cell {
   @include cell-level();
 
   .texture {

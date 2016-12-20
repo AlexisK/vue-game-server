@@ -19,7 +19,6 @@ export class Actor {
         this.model         = model;
         this.health        = model.maxHealth;
         this.controller    = new ActorController();
-        this.characterName = 'test';
     }
 
     getSerializable() {

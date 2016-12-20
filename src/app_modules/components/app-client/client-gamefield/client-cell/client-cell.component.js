@@ -1,5 +1,5 @@
 export default {
-    name : 'cell',
+    name : 'clientcell',
     props: ['blockList'],
     data() {
         return {};

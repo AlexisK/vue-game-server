@@ -6,6 +6,7 @@
   top: 0; left: 0;
   width: $size-cell;
   height: $size-cell;
+  border: 1px solid red;
 
   .texture {
     width: $size-cell + 10px;

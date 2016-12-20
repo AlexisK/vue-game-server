@@ -1,7 +1,7 @@
 @import "game";
 @import "textures";
 
-.actor {
+.client-actor {
   position: absolute;
   top: 0; left: 0;
   width: $size-cell;
@@ -17,7 +17,11 @@
   .name {
     position: absolute;
     top: -20px; right: 0; left: 0;
-    font-size: 20px;
+    margin: auto;
+    padding: 2px;
+    font-size: 12px;
     color: #fff;
+    background-color: rgba(0,0,0,.5);
+    z-index: 100;
   }
 }

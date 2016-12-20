@@ -47,6 +47,7 @@ export class ClientController {
         Vue.set(this.players[data.id], 'actor', new Actor(actorTypes[data.actorKey], weapon));
 
         this.levelRef.spawnActor(this.players[data.id].actor, data.x, data.y);
+        this.players[data.id].actor.characterName = this.players[data.id].name;
 
         if ( this.serverId === data.id ) {
             this.controllableActor = this.players[data.id].actor;

@@ -1,5 +1,5 @@
-<div class="actor" :style="{transform:'translate('+actor.x+'px, '+actor.y+'px)'}">
-    <div class="name">{{ actor.characterName }}</div>
+<div class="client-actor" :style="{transform:'translate('+actor.x+'px, '+actor.y+'px)'}">
+    <div class="name">{{actor.characterName}}</div>
     <div :class="'actor-mesh texture texture-'+actor.weapon.model.blockType.texture"
     :style="{transform:'rotate('+actor.rotation+'rad)'}"></div>
 </div>

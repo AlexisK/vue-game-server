@@ -1,6 +1,7 @@
 import { ClientController } from '../../controllers/client.controller';
 
 import ClientGameField from './client-gamefield';
+import Modal from '../modal';
 
 const doOnActor = function (ref) {
     return new Promise(resolve => {
@@ -15,11 +16,14 @@ const doOnActor = function (ref) {
 export default {
     name       : 'app-client',
     components : {
-        clientgamefield : ClientGameField
+        clientgamefield : ClientGameField,
+        modal           : Modal
     },
     data() {
         return {
-            controller : new ClientController()
+            controller : new ClientController(),
+            activeTeam : 'red',
+            chosenWeapon: null
         };
     },
     methods    : {

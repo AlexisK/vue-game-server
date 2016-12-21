@@ -19,6 +19,8 @@ export class ClientController {
     players    = {};
     controllableActor;
     savedUserControlls;
+    levelParams;
+    availableWeapons;
 
     constructor() {
         this.client            = client;
@@ -43,7 +45,7 @@ export class ClientController {
     }
 
     removeActor(data) {
-        if ( this.players[data.id].actor) {
+        if ( this.players[data.id].actor ) {
             this.levelRef.removeActor(this.players[data.id].actor);
         }
     }
@@ -95,6 +97,8 @@ export class ClientController {
         'levelState'         : data => {
             console.log('Current state is:', data);
             this.levelRef.setState(data);
+            this.levelParams      = data.levelParams;
+            this.availableWeapons = data.availableWeapons;
             if ( this.stage === this.stages[0] ) {
                 this.stage = this.stages[1];
             }

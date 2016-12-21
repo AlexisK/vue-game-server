@@ -18,6 +18,12 @@ export class ServerController {
     selectedMap = '';
     mapRef;
     levelRef;
+    availableWeapons = (() => {
+        let result = {};
+        Object.keys(weaponTypes).forEach(k => result[k] = true);
+        return result;
+    })();
+    levelParams;
 
     constructor() {
         this.server            = server;
@@ -33,9 +39,14 @@ export class ServerController {
         }
     }
 
-    checkConfiguration() {
-        console.log(this.selectedMap, maps);
-        if ( this.selectedMap && maps[this.selectedMap] ) {
+    checkConfiguration(params) {
+        this.levelParams = params;
+
+        if ( this.selectedMap && maps[this.selectedMap] &&
+            params.maxPlayers && params.maxPlayers > 0 &&
+            params.redTeamName &&
+            params.blueTeamName &&
+            Object.keys(this.availableWeapons).reduce((acc, k) => acc + (this.availableWeapons[k] && 1 || 0), 0)) {
             this.initLevel();
         }
     }
@@ -123,7 +134,11 @@ export class ServerController {
             }
         });
 
-        return this._formatGameState(this.levelRef.getState());
+        return {
+            levelParams: this.levelParams,
+            availableWeapons: this.availableWeapons,
+            ...this._formatGameState(this.levelRef.getState())
+        };
     }
 
     formatGameUpdate() {

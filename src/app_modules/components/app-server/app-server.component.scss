@@ -1,6 +1,16 @@
 @import "globals";
 
 .app-server {
+
+  .configure {
+    .red {
+      color: $red-1;
+    }
+    .blue {
+      color: $blue-1;
+    }
+  }
+
   table.active-connections {
     margin-top: 20px;
     border-collapse: collapse;

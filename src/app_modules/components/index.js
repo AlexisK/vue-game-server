@@ -4,4 +4,5 @@ module.exports = {
     'scene-player'   : require('./scene-player'),
     'app-client'     : require('./app-client'),
     'app-server'     : require('./app-server'),
+    'modal'          : require('./modal'),
 };

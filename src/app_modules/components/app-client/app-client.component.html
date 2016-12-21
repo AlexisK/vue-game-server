@@ -2,19 +2,44 @@
 
     <div class="autocss">
         <h1>Client</h1>
-        <div class="info" v-if="controller.stage == 'connect'">
-            <label>
-                <span>Connect to</span>
-                <input type="text" v-model="controller.serverKey" @keyup.enter="controller.connect"/>
-            </label>
-        </div>
-        <div class="info" v-if="controller.stage == 'register'">
-            <label>
-                <span>Please, name yourself</span>
-                <input type="text" v-model="controller.playerName" @keyup.enter="controller.register"/>
-            </label>
-        </div>
-        <div class="info" v-if="controller.stage == 'play'">
+    </div>
+
+
+    <modal v-if="controller.stage == 'connect'" title="Join Game" css="autocss">
+        <label>
+            <span>Connect to</span>
+            <input type="text" v-model="controller.serverKey" @keyup.enter="controller.connect"/>
+        </label>
+        <button @click="controller.connect">Connect</button>
+    </modal>
+
+    <modal v-if="controller.stage == 'register'" title="Register Character" css="autocss">
+        <p>You successfully connected to server.</p>
+        <label>
+            <span>Select Nickname</span>
+            <input type="text" v-model="controller.playerName" @keyup.enter="controller.register"/>
+        </label>
+        <label>
+            <span>Select Team</span>
+            <ul class="select">
+                <li @click="activeTeam = 'red'" :class="{active: activeTeam == 'red'}">{{controller.levelParams.redTeamName}}</li>
+                <li @click="activeTeam = 'blue'" :class="{active: activeTeam == 'blue'}">{{controller.levelParams.blueTeamName}}</li>
+            </ul>
+        </label>
+        <label>
+            <span>Select Weapon</span>
+            <ul class="select">
+                <li v-for="(isAvailable, key) in controller.availableWeapons" v-if="isAvailable"
+                    @click="chosenWeapon = key"
+                    :class="{active: chosenWeapon === key}">{{key}}
+                </li>
+            </ul>
+        </label>
+        <button @click="controller.register">Register</button>
+    </modal>
+
+    <div class="autocss" v-if="controller.stage == 'play'">
+        <div class="info">
             <label>
                 <span>Current state</span>
                 <strong>Ready!</strong>
@@ -29,7 +54,7 @@
             </label>
         </div>
 
-        <div v-if="controller.stage == 'play' && controller.levelRef">
+        <div v-if="controller.levelRef">
             <input class="focusInput" type="text"
                    @keydown.stop.prevent.87="handleWDown"
                    @keyup.stop.prevent.87="handleWUp"
@@ -45,9 +70,9 @@
                    @keyup.stop.prevent.69="handleActionFireStop"/>
             <hr/>
             <clientgamefield :controller="controller"
-                       @pointerupdate="handlePointer"
-                       @pointerrightdown="handleActionFireStart"
-                       @pointerrightup="handleActionFireStop"/>
+                             @pointerupdate="handlePointer"
+                             @pointerrightdown="handleActionFireStart"
+                             @pointerrightup="handleActionFireStop"/>
         </div>
     </div>
 

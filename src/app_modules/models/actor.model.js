@@ -8,17 +8,18 @@ export class Actor {
     controller;
     weapon;
     level;
+    isDead   = false;
     x        = 0;
     y        = 0;
     rotation = 0;
     characterName;
 
     constructor(model, weapon) {
-        this.weapon        = weapon;
-        this.weapon.actor  = this;
-        this.model         = model;
-        this.health        = model.maxHealth;
-        this.controller    = new ActorController();
+        this.weapon       = weapon;
+        this.weapon.actor = this;
+        this.model        = model;
+        this.health       = model.maxHealth;
+        this.controller   = new ActorController();
     }
 
     getSerializable() {
@@ -26,6 +27,7 @@ export class Actor {
             x         : this.x,
             y         : this.y,
             rotation  : this.rotation,
+            isDead    : this.isDead,
             health    : this.health,
             maxHealth : this.model.maxHealth,
             texture   : this.weapon.model.blockType.texture

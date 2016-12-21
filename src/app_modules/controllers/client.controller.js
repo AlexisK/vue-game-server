@@ -42,7 +42,14 @@ export class ClientController {
         }
     }
 
+    removeActor(data) {
+        if ( this.players[data.id].actor) {
+            this.levelRef.removeActor(this.players[data.id].actor);
+        }
+    }
+
     spawnActor(data) {
+        this.removeActor(data);
         let weapon = new Weapon(weaponTypes[data.weaponKey]);
         Vue.set(this.players[data.id], 'actor', new Actor(actorTypes[data.actorKey], weapon));
 
@@ -77,6 +84,7 @@ export class ClientController {
                 player.actor.y        = playerData.y;
                 player.actor.rotation = playerData.rotation;
                 player.actor.health   = playerData.health;
+                player.actor.isDead   = playerData.isDead;
             } else {
                 //console.log(playerData, this.players);
             }
@@ -87,7 +95,9 @@ export class ClientController {
         'levelState'         : data => {
             console.log('Current state is:', data);
             this.levelRef.setState(data);
-            this.stage = this.stages[1];
+            if ( this.stage === this.stages[0] ) {
+                this.stage = this.stages[1];
+            }
         },
         'registerSuccess'    : data => {
             this.serverId = data.id;
@@ -102,6 +112,7 @@ export class ClientController {
         },
         'playerDisconnected' : data => {
             // remove actor from scene
+            this.removeActor(data);
             delete this.players[data.id];
         },
         'spawnActor'         : data => {

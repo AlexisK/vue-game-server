@@ -129,6 +129,10 @@ module.exports = {
     }),
 
     //Decor
+    decor_grave : new BlockType({
+        blockGroup : blockGroup.decor,
+        texture    : 'grave_1'
+    }),
     decor_grass_1 : new BlockType({
         blockGroup : blockGroup.decor,
         texture    : 'grass_1'

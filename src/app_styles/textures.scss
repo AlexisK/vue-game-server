@@ -180,6 +180,9 @@
   }
 
   // Decor
+  &-grave_1 {
+    background: url($prefix + 'assets/batch-3.png') 18 * $size-cell 25 * $size-cell;
+  }
   &-grass_1 {
     background: url($prefix + 'assets/batch-2.png') 18 * $size-cell 26 * $size-cell;
   }

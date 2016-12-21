@@ -9,6 +9,7 @@ export class Projectile {
     rotation;
     lifeCooldown;
     level;
+    actor;
 
     constructor(model) {
         this.lifeCooldown = model.life;
@@ -37,7 +38,8 @@ export class Projectile {
 
             let rotation = this.rotation;
 
-            let coords = Level.filterProjectilePositionCollision(
+            let coords = this.level.filterProjectilePositionCollision(
+                this,
                 collisions,
                 this.x - distance * Math.cos(rotation),
                 this.y - distance * Math.sin(rotation)
@@ -46,7 +48,13 @@ export class Projectile {
             this.x = coords[0];
             this.y = coords[1];
 
-            if ( coords[2] ) {
+            if ( coords[4] ) { // Hit player
+                this.level.hitActorWithProjectile(coords[4], this);
+                this.level.removeProjectile(this);
+                return true;
+            }
+
+            if ( coords[2] ) { // Hit block
                 this.level.hitWithProjectile(coords[2], coords[3], this);
                 this.level.removeProjectile(this);
                 return true;

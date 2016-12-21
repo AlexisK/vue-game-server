@@ -52,6 +52,17 @@ export class ServerController {
         this.stage = this.stages[1];
     }
 
+    resetLevel() {
+        console.log('reset!');
+        this.levelRef.stop();
+        this.levelRef._createSchema();
+        this.levelRef.start();
+        this.server.send({
+            action : 'levelState',
+            data   : this.formatGameState(this.server)
+        });
+    }
+
     spawnActor(connRef) {
         let weaponKey = 'shotgun';
         let actorKey  = 'solider';

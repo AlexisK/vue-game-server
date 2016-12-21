@@ -101,12 +101,22 @@ input, button {
         }
       }
 
-      input {
+      input, button {
         margin-bottom: -1px;
         padding: 0 4px;
         background-color: $grey-2;
         border: none;
-        border-bottom: 1px solid $grey-7;
+        border-bottom: 1px solid $grey-9;
+      }
+
+      button {
+        background-color: $grey-7;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover, &.active {
+          background-color: $grey-8;
+        }
       }
 
       ul.select {

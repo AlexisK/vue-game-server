@@ -21,9 +21,13 @@
                     <span>Connect to</span>
                     <strong> {{controller.publicKey}}</strong>
                 </label>
+                <label>
+                    <span>Controlls</span>
+                    <button @click="resetLevel">Reset level</button>
+                </label>
             </div>
             <div class="connections" v-if="controller.server">
-                <table class="active-connections" v-for="connRef in controller.server.connections">
+                <table class="active-connections" >
                     <thead>
                     <tr>
                         <td>ID</td>
@@ -34,7 +38,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
+                    <tr v-for="connRef in controller.server.connections">
                         <td>{{connRef.id}}</td>
                         <td><button>kick</button></td>
                         <td>{{connRef.name}}</td>

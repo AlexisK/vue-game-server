@@ -9,9 +9,14 @@
   border: 1px solid red;
 
   .texture {
-    width: $size-cell + 10px;
-    height: $size-cell + 10px;
-    margin: -5px;
+    width: $size-cell;
+    height: $size-cell;
     @include texture('../../../../../');
+
+    &.actor-mesh {
+      width: $size-cell + 10px;
+      height: $size-cell + 10px;
+      margin: -5px;
+    }
   }
 }

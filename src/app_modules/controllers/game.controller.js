@@ -49,22 +49,24 @@ export class GameController {
     }
 
     tickActor(actor) {
-        actor.tickCooldowns();
-        if ( actor.controller.isMovingForward ) {
-            actor.stepForward(this._level.collisions);
-        }
-        if ( actor.controller.isMovingRight ) {
-            actor.stepRight(this._level.collisions);
-        }
-        if ( actor.controller.isMovingLeft ) {
-            actor.stepLeft(this._level.collisions);
-        }
-        if ( actor.controller.isMovingBackwards ) {
-            actor.stepBackwards(this._level.collisions);
-        }
-        actor.faceFromPotential();
-        if ( actor.controller.isFiring ) {
-            actor.actionFire();
+        if ( !actor.isDead ) {
+            actor.tickCooldowns();
+            if ( actor.controller.isMovingForward ) {
+                actor.stepForward(this._level.collisions);
+            }
+            if ( actor.controller.isMovingRight ) {
+                actor.stepRight(this._level.collisions);
+            }
+            if ( actor.controller.isMovingLeft ) {
+                actor.stepLeft(this._level.collisions);
+            }
+            if ( actor.controller.isMovingBackwards ) {
+                actor.stepBackwards(this._level.collisions);
+            }
+            actor.faceFromPotential();
+            if ( actor.controller.isFiring ) {
+                actor.actionFire();
+            }
         }
     }
 }

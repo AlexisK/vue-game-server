@@ -4,6 +4,13 @@ import { Block } from "./block.model";
 
 const Vue = require('vue');
 
+const blockSize         = 32;
+const actorSize         = 22;
+const actorSizeDetailed = {
+    offsetFrom : Math.floor((blockSize - actorSize) / 2),
+    offsetTo   : Math.floor((blockSize - actorSize) / 2) + actorSize,
+};
+
 export class Level {
     map;
     actors;
@@ -29,20 +36,20 @@ export class Level {
             this.schema[y].forEach((levelMap, x) => {
                 schema[y][x] = {};
                 Object.keys(levelMap).forEach(level => {
-                     schema[y][x][level] = this.schema[y][x][level].getSerializable();
+                    schema[y][x][level] = this.schema[y][x][level].getSerializable();
                 });
             });
         });
 
         let projectiles = this.projectiles.map(p => p.getSerializable());
 
-        return { schema, projectiles };
+        return {schema, projectiles};
     }
 
     getUpdate() {
-        let data = {
-            blockUpdates: this.blockUpdates,
-            projectiles: this.projectiles.map(p => p.getSerializable())
+        let data          = {
+            blockUpdates : this.blockUpdates,
+            projectiles  : this.projectiles.map(p => p.getSerializable())
         };
         this.blockUpdates = {};
 
@@ -84,8 +91,9 @@ export class Level {
         this.actors.push(actor);
     }
 
-    spawnProjectile(projectile) {
+    spawnProjectile(projectile, actor) {
         projectile.level = this;
+        projectile.actor = actor;
         this.logic.projectiles.push(projectile);
         this.projectiles.push(projectile);
     }
@@ -104,7 +112,7 @@ export class Level {
             if ( block.model.blockGroup.isDestructible ) {
                 block.health -= projectile.model.damage;
 
-                this.blockUpdates[y] = this.blockUpdates[y] || {};
+                this.blockUpdates[y]    = this.blockUpdates[y] || {};
                 this.blockUpdates[y][x] = this.blockUpdates[y][x] || {};
 
                 if ( block.health <= 0 ) {
@@ -117,6 +125,16 @@ export class Level {
                 }
             }
         });
+    }
+
+    hitActorWithProjectile(actor, projectile) {
+        let newHealth = actor.health - projectile.model.damage;
+        if ( newHealth <= 0 ) {
+            actor.health = 0;
+            actor.isDead = true;
+        } else {
+            actor.health = newHealth;
+        }
     }
 
 
@@ -255,11 +273,22 @@ export class Level {
         return [x, y];
     }
 
-    static filterProjectilePositionCollision(collisions, x, y) {
+    filterProjectilePositionCollision(projectile, collisions, x, y) {
         let blockX  = gameSceneService.unitToBlock(x);
         let blockY  = gameSceneService.unitToBlock(y);
         let blockNX = Math.floor(blockX);
         let blockNY = Math.floor(blockY);
+
+        // Check actor hit
+        for (let i = 0; i < this.actors.length; i++) {
+            let actor = this.actors[i];
+            if ( !actor.isDead &&
+                actor !== projectile.actor &&
+                x > actor.x + actorSizeDetailed.offsetFrom && x < actor.x + actorSizeDetailed.offsetTo &&
+                y > actor.y + actorSizeDetailed.offsetFrom && y < actor.y + actorSizeDetailed.offsetTo ) {
+                return [x, y, null, null, actor];
+            }
+        }
 
         if ( collisions[blockNY] && collisions[blockNY][blockNX] ) {
             return [x, y, blockNX, blockNY];

@@ -39,4 +39,11 @@ export class ClientLevel {
         actor.level = this;
         this.actors.push(actor);
     }
+
+    removeActor(actor) {
+        let ind = this.actors.indexOf(actor);
+        if ( ind >= 0 ) {
+            this.actors.splice(ind, 1);
+        }
+    }
 }

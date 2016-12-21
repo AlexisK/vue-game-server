@@ -15,6 +15,9 @@ export default {
         },
         checkConfiguration() {
             this.controller.checkConfiguration();
+        },
+        resetLevel() {
+            this.controller.resetLevel();
         }
     },
     beforeDestroy() {

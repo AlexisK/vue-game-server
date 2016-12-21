@@ -32,9 +32,13 @@ export default {
 
         let weapon = new Weapon(weaponTypes.rifle);
         let actor = new Actor(actorTypes.solider, weapon);
+
+        let weapon2 = new Weapon(weaponTypes.pistol);
+        let actor2 = new Actor(actorTypes.solider, weapon2);
         console.log(actor);
 
         this.levelRef.spawnActor(actor, 300, 300);
+        this.levelRef.spawnActor(actor2, 400, 300);
         this.levelRef.start();
 
     },

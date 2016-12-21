@@ -37,7 +37,7 @@ export class Weapon {
         projectile.y        = this.actor.y + 16;
         projectile.rotation = this.getProjectileRotation();
 
-        this.actor.level.spawnProjectile(projectile);
+        this.actor.level.spawnProjectile(projectile, this.actor);
     }
 
     tickCooldown() {

@@ -60,6 +60,7 @@ export class ServerController {
 
         let weapon = new Weapon(weaponTypes[weaponKey]);
         Vue.set(connRef, 'actor', new Actor(actorTypes[actorKey], weapon));
+        connRef.actor.keys = {weaponKey, actorKey};
 
         this.levelRef.spawnActor(connRef.actor, x, y);
 
@@ -85,9 +86,35 @@ export class ServerController {
         return {...state, actors};
     }
 
-    formatGameState() {
+    formatGameState(connRef) {
+        Object.keys(this.server.connections).forEach(uid => {
+            let pConnRef = this.server.connections[uid];
+            if ( pConnRef.name ) {
+                connRef.send({
+                    action : 'playerConnected',
+                    data   : {
+                        id   : pConnRef.id,
+                        name : pConnRef.name
+                    }
+                });
+                if ( pConnRef.actor ) {
+                    connRef.send({
+                        action : 'spawnActor',
+                        data   : {
+                            id        : uid,
+                            x         : pConnRef.actor.x,
+                            y         : pConnRef.actor.y,
+                            weaponKey : pConnRef.actor.keys.weaponKey,
+                            actorKey  : pConnRef.actor.keys.actorKey
+                        }
+                    });
+                }
+            }
+        });
+
         return this._formatGameState(this.levelRef.getState());
     }
+
     formatGameUpdate() {
         return this._formatGameState(this.levelRef.getUpdate());
     }
@@ -104,7 +131,7 @@ export class ServerController {
         'getLevelState'         : connRef => {
             connRef.send({
                 action : 'levelState',
-                data   : this.formatGameState()
+                data   : this.formatGameState(connRef)
             });
         },
         'registerPlayer'        : (connRef, data, req) => {

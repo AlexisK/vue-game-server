@@ -70,7 +70,7 @@ export class ClientController {
 
         Object.keys(data.actors).forEach(uid => {
             let playerData = data.actors[uid];
-            let player = this.players[uid];
+            let player     = this.players[uid];
 
             if ( player && player.actor ) {
                 player.actor.x        = playerData.x;
@@ -78,7 +78,7 @@ export class ClientController {
                 player.actor.rotation = playerData.rotation;
                 player.actor.health   = playerData.health;
             } else {
-                console.log(playerData, this.players);
+                //console.log(playerData, this.players);
             }
         });
     }
@@ -94,9 +94,10 @@ export class ClientController {
             this.stage    = this.stages[2];
         },
         'playerConnected'    : data => {
-            this.players[data.id]      = this.players[data.id] || {
+            this.players[data.id] = this.players[data.id] || {
                     id : data.id,
                 };
+
             this.players[data.id].name = data.name;
         },
         'playerDisconnected' : data => {

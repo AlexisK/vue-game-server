@@ -13,9 +13,9 @@ const STAGES = ['configure', 'serve'];
 export class ServerController {
     publicKey;
     server;
-    stages      = STAGES;
-    stage       = STAGES[0];
-    selectedMap = '';
+    stages           = STAGES;
+    stage            = STAGES[0];
+    selectedMap      = '';
     mapRef;
     levelRef;
     availableWeapons = (() => {
@@ -24,6 +24,10 @@ export class ServerController {
         return result;
     })();
     levelParams;
+    teamMembers      = {
+        red  : [],
+        blue : []
+    };
 
     constructor() {
         this.server            = server;
@@ -46,7 +50,7 @@ export class ServerController {
             params.maxPlayers && params.maxPlayers > 0 &&
             params.redTeamName &&
             params.blueTeamName &&
-            Object.keys(this.availableWeapons).reduce((acc, k) => acc + (this.availableWeapons[k] && 1 || 0), 0)) {
+            Object.keys(this.availableWeapons).reduce((acc, k) => acc + (this.availableWeapons[k] && 1 || 0), 0) ) {
             this.initLevel();
         }
     }
@@ -75,7 +79,7 @@ export class ServerController {
     }
 
     spawnActor(connRef) {
-        let weaponKey = 'shotgun';
+        let weaponKey = connRef.chosenWeapon;
         let actorKey  = 'solider';
         let x         = 300;
         let y         = 300;
@@ -135,8 +139,8 @@ export class ServerController {
         });
 
         return {
-            levelParams: this.levelParams,
-            availableWeapons: this.availableWeapons,
+            levelParams      : this.levelParams,
+            availableWeapons : this.availableWeapons,
             ...this._formatGameState(this.levelRef.getState())
         };
     }
@@ -161,25 +165,32 @@ export class ServerController {
             });
         },
         'registerPlayer'        : (connRef, data, req) => {
-            Vue.set(connRef, 'name', data.name);
-            Vue.set(connRef, 'registeredAt', Date.now());
+            if ( data.name && data.weapon && this.availableWeapons[data.weapon] &&
+                data.team && this.teamMembers[data.team] ) {
 
-            connRef.send({
-                action : 'registerSuccess',
-                data   : {
-                    id : connRef.id
-                }
-            });
+                Vue.set(connRef, 'chosenWeapon', data.weapon);
+                Vue.set(connRef, 'team', data.team);
+                Vue.set(connRef, 'name', data.name);
+                Vue.set(connRef, 'registeredAt', Date.now());
 
-            this.server.send({
-                action : 'playerConnected',
-                data   : {
-                    id   : connRef.id,
-                    name : connRef.name
-                }
-            });
+                connRef.send({
+                    action : 'registerSuccess',
+                    data   : {
+                        id : connRef.id
+                    }
+                });
 
-            this.spawnActor(connRef);
+                this.server.send({
+                    action : 'playerConnected',
+                    data   : {
+                        id   : connRef.id,
+                        name : connRef.name
+                    }
+                });
+
+                this.spawnActor(connRef);
+            }
+
         },
         'updateActorController' : (connRef, data) => {
             connRef.updateControls(data);

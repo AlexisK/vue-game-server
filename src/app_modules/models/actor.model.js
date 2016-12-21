@@ -13,6 +13,7 @@ export class Actor {
     y        = 0;
     rotation = 0;
     characterName;
+    team;
 
     constructor(model, weapon) {
         this.weapon       = weapon;
@@ -30,7 +31,8 @@ export class Actor {
             isDead    : this.isDead,
             health    : this.health,
             maxHealth : this.model.maxHealth,
-            texture   : this.weapon.model.blockType.texture
+            texture   : this.weapon.model.blockType.texture,
+            team      : this.team
         }
     }
 

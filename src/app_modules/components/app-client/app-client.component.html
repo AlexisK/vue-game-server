@@ -10,7 +10,7 @@
             <span>Connect to</span>
             <input type="text" v-model="controller.serverKey" @keyup.enter="controller.connect"/>
         </label>
-        <button @click="controller.connect">Connect</button>
+        <button @click="controller.connect()">Connect</button>
     </modal>
 
     <modal v-if="controller.stage == 'register'" title="Register Character" css="autocss">
@@ -22,20 +22,20 @@
         <label>
             <span>Select Team</span>
             <ul class="select">
-                <li @click="activeTeam = 'red'" :class="{active: activeTeam == 'red'}">{{controller.levelParams.redTeamName}}</li>
-                <li @click="activeTeam = 'blue'" :class="{active: activeTeam == 'blue'}">{{controller.levelParams.blueTeamName}}</li>
+                <li @click="controller.activeTeam = 'red'" :class="{active: controller.activeTeam == 'red'}">{{controller.levelParams.redTeamName}}</li>
+                <li @click="controller.activeTeam = 'blue'" :class="{active: controller.activeTeam == 'blue'}">{{controller.levelParams.blueTeamName}}</li>
             </ul>
         </label>
         <label>
             <span>Select Weapon</span>
             <ul class="select">
                 <li v-for="(isAvailable, key) in controller.availableWeapons" v-if="isAvailable"
-                    @click="chosenWeapon = key"
+                    @click="controller.chosenWeapon = chosenWeapon = key"
                     :class="{active: chosenWeapon === key}">{{key}}
                 </li>
             </ul>
         </label>
-        <button @click="controller.register">Register</button>
+        <button @click="controller.register()">Register</button>
     </modal>
 
     <div class="autocss" v-if="controller.stage == 'play'">

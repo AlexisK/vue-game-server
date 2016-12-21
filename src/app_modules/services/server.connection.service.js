@@ -11,6 +11,8 @@ class ConnectionRef {
     connection;
     name;
     actor;
+    chosenWeapon;
+    team;
 
     _updateCtrlInterval;
     _updateCtrlData;

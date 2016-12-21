@@ -22,7 +22,6 @@ export default {
     data() {
         return {
             controller : new ClientController(),
-            activeTeam : 'red',
             chosenWeapon: null
         };
     },

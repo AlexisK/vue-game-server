@@ -21,6 +21,8 @@ export class ClientController {
     savedUserControlls;
     levelParams;
     availableWeapons;
+    activeTeam = 'red';
+    chosenWeapon;
 
     constructor() {
         this.client            = client;
@@ -38,7 +40,9 @@ export class ClientController {
             this.client.send({
                 action : 'registerPlayer',
                 data   : {
-                    name : this.playerName
+                    name : this.playerName,
+                    weapon: this.chosenWeapon,
+                    team: this.activeTeam
                 }
             });
         }

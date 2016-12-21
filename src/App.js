@@ -11,6 +11,7 @@ const weaponTypes = require('./instances/weapon-type.js');
 
 const MODES = ['demo', 'client', 'server', 'editor'];
 
+
 export default {
     name: 'app',
     components,

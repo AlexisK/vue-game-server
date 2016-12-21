@@ -8,11 +8,22 @@
         <button @click="isEdit = true">Edit</button>
     </div>
 
-    <resource-menu v-if="isEdit" @brushselected="handleBrush"/>
+    <div class="editor-layout">
+        <div class="ed-line">
+            <div class="ed-block w-7 scrollable">
 
-    <div class="field" :style="{backgroundColor: mapRef.model.ambient}">
-        <div class="field-row" v-for="(row, y) in mapRef.schema">
-            <cell v-for="(col, x) in row" :blockList="col" @clicked="handleClick($event, x, y)"/>
+                <div class="field" :style="{backgroundColor: mapRef.model.ambient, width: mapRef.model.width * 32 + 'px'}">
+                    <div class="field-row" v-for="(row, y) in mapRef.schema">
+                        <cell v-for="(col, x) in row" :blockList="col" @clicked="handleClick($event, x, y)"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ed-block w-3">
+                <resource-menu v-if="isEdit" @brushselected="handleBrush"/>
+            </div>
         </div>
     </div>
+
+
 </div>

@@ -1,6 +1,6 @@
 export default {
     name : 'cell',
-    props: ['blockList'],
+    props: ['blockList', 'x', 'y'],
     data() {
         return {};
     },

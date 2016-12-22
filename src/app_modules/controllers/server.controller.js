@@ -1,4 +1,5 @@
 import Vue from 'vue';
+
 import { Level } from '../models/level.model';
 import { Actor } from '../models/actor.model';
 import { Weapon } from '../models/weapon.model';
@@ -81,20 +82,20 @@ export class ServerController {
     spawnActor(connRef) {
         let weaponKey = connRef.chosenWeapon;
         let actorKey  = 'solider';
-        let x         = 300;
-        let y         = 300;
 
         let weapon = new Weapon(weaponTypes[weaponKey]);
         Vue.set(connRef, 'actor', new Actor(actorTypes[actorKey], weapon));
         connRef.actor.keys = {weaponKey, actorKey};
+        connRef.actor.team = connRef.team;
 
-        this.levelRef.spawnActor(connRef.actor, x, y);
+        this.levelRef.spawnTeamActor(connRef.actor, connRef.team);
 
         this.server.send({
             action : 'spawnActor',
             data   : {
                 id : connRef.id,
-                x, y,
+                x: connRef.actor.x,
+                y: connRef.actor.y,
                 weaponKey, actorKey
             }
         });

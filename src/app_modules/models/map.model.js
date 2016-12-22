@@ -3,6 +3,8 @@ const Vue = require('vue');
 import { Block } from './block.model';
 import clientStorage from '../services/client-storage.service';
 
+const blockTypes = require('../../instances/block-type');
+
 class WrongMapSize {}
 
 const storagePrefix = 'map-savepoint-';
@@ -30,9 +32,41 @@ export class Map {
         ref[index] = ref[index] || (isObj && {} || []);
     }
 
+    save() {
+        if ( this.autosave ) {
+            let saveBlocks = [];
+
+            this.blocks.forEach(block => saveBlocks.push({
+                x: block.x,
+                y: block.y,
+                id: block.model.id
+            }));
+
+            clientStorage.setData(storagePrefix + this.autosave, saveBlocks);
+        }
+    }
+
+    load() {
+        if ( this.autosave ) {
+            let savedBlocks = clientStorage.getData(storagePrefix + this.autosave) || [];
+            let newBlocks = [];
+
+            savedBlocks.forEach(blockData => {
+                let block = new Block(blockTypes[blockData.id]);
+                block.x = blockData.x;
+                block.y = blockData.y;
+                newBlocks.push(block);
+            });
+
+            this.blocks = newBlocks;
+            return true;
+        }
+        return false;
+    }
+
     setSave(key) {
         this.autosave = key;
-        this.blocks = clientStorage.getData(storagePrefix+this.autosave) || [];
+        this.load();
         this.recalculateSchemaMaybe();
         return this;
     }
@@ -40,7 +74,7 @@ export class Map {
     recalculateSchemaMaybe() {
         if ( this.isInited ) {
             this.recalculateSchema();
-            console.log(this);
+            //console.log(this);
         }
     }
 
@@ -68,9 +102,7 @@ export class Map {
             }
         }
         Vue.set(this, 'schema', newSchema);
-        if ( this.autosave ) {
-            clientStorage.setData(storagePrefix+this.autosave, this.blocks);
-        }
+        this.save();
     }
 
     deleteBlock(x, y, level) {

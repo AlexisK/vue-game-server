@@ -2,6 +2,10 @@ import { GameController } from '../controllers/game.controller';
 import gameSceneService from '../services/game-scene.service';
 import { Block } from "./block.model";
 
+const blockTypes          = require('../../instances/block-type');
+const redTeamMarkerBlock  = blockTypes.marker_team_start_red;
+const blueTeamMarkerBlock = blockTypes.marker_team_start_blue;
+
 const Vue = require('vue');
 
 const blockSize         = 32;
@@ -18,6 +22,7 @@ export class Level {
     logic;
     schema;
     blockUpdates = {};
+    startingPoints;
 
     constructor(map) {
         this.map         = map;
@@ -43,7 +48,7 @@ export class Level {
 
         let projectiles = this.projectiles.map(p => p.getSerializable());
 
-        return {schema, projectiles};
+        return {schema, projectiles, mapWidth: this.map.model.width, mapHeight: this.map.model.height};
     }
 
     getUpdate() {
@@ -59,16 +64,29 @@ export class Level {
 
     // Initialization
     _createSchema() {
-        this.schema = [];
+        this.schema         = [];
+        this.startingPoints = {
+            red  : [],
+            blue : []
+        };
+
         this.map.schema.forEach((row, y) => {
             this.schema[y] = [];
             this.map.schema[y].forEach((levelMap, x) => {
                 this.schema[y][x] = {};
                 Object.keys(levelMap).forEach(level => {
                     this.schema[y][x][level] = new Block(levelMap[level].model);
+
+                    if ( levelMap[level].model.id === redTeamMarkerBlock.id ) {
+                        this.startingPoints.red.push([x, y]);
+                    }
+                    if ( levelMap[level].model.id === blueTeamMarkerBlock.id ) {
+                        this.startingPoints.blue.push([x, y]);
+                    }
                 });
             });
-        })
+        });
+        console.log(this.startingPoints);
     }
 
     start() {
@@ -83,6 +101,11 @@ export class Level {
 
 
     // Registering entities
+    spawnTeamActor(actor, team) {
+        let startingPoint = this.startingPoints[team][Math.floor(Math.random() * this.startingPoints[team].length)];
+        this.spawnActor(actor, gameSceneService.blockToUnit(startingPoint[0]), gameSceneService.blockToUnit(startingPoint[1]));
+    }
+
     spawnActor(actor, x, y) {
         actor.x     = x;
         actor.y     = y;

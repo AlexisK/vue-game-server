@@ -5,6 +5,8 @@ export class ClientLevel {
     actors;
     projectiles;
     ambient = '#000';
+    width;
+    height;
 
     constructor() {
         this.schema      = {};
@@ -14,10 +16,28 @@ export class ClientLevel {
 
     setState(data) {
         this.schema      = data.schema;
+        this.width       = data.mapWidth;
+        this.height      = data.mapHeight;
         this.projectiles = data.projectiles;
     }
+
+    fetchProjectiles(projectiles) {
+        let i = 0;
+        for ( ; i < projectiles.length; i++) {
+            if ( !this.projectiles[i] ) {
+                this.projectiles.push(projectiles[i]);
+            } else {
+                Object.assign(this.projectiles[i], projectiles[i]);
+            }
+        }
+        if ( i < this.projectiles.length ) {
+            this.projectiles.splice(i);
+        }
+    }
+
     updateState(data) {
-        this.projectiles = data.projectiles;
+        this.fetchProjectiles(data.projectiles);
+
         Object.keys(data.blockUpdates).forEach(y => {
             Object.keys(data.blockUpdates[y]).forEach(x => {
                 Object.keys(data.blockUpdates[y][x]).forEach(level => {

@@ -1,6 +1,6 @@
 export default {
     name : 'clientcell',
-    props: ['blockList'],
+    props: ['blockList', 'x', 'y'],
     data() {
         return {};
     },

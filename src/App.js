@@ -20,7 +20,7 @@ export default {
             modes: MODES,
             mapRef: null,
             levelRef: null,
-            appMode: MODES[0]
+            appMode: MODES[1]
         };
     },
     created: function () {

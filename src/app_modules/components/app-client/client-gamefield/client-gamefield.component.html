@@ -1,8 +1,10 @@
-<div class="client-gamefield" v-if="controller && controller.levelRef" :style="{backgroundColor: controller.levelRef.ambient}">
+<div class="client-gamefield" v-if="controller && controller.levelRef" :style="{backgroundColor: controller.levelRef.ambient,
+width: controller.levelRef.width * 32 + 'px',
+height: controller.levelRef.height * 32 + 'px'}">
     <div class="calcFrom">
-        <div class="field-row" v-for="(row, y) in controller.levelRef.schema">
-            <clientcell v-for="(col, x) in row" :blockList="col"/>
-        </div>
+        <template v-for="(row, y) in controller.levelRef.schema">
+            <clientcell v-for="(col, x) in row" :blockList="col" :x="x" :y="y"/>
+        </template>
     </div>
     <div class="calcFrom">
         <clientactor v-for="actor in controller.levelRef.actors" :actor="actor" />

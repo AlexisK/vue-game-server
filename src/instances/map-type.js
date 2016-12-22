@@ -4,7 +4,7 @@ const blockType = require('./block-type');
 module.exports = {
     dirt  : new MapType({
         title            : 'Dirt dusk',
-        width            : 28,
+        width            : 56,
         height           : 24,
         defaultBlockType : blockType.floor_dirt,
         ambient          : '#35312a'

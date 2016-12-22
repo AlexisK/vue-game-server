@@ -5,6 +5,8 @@
 
   .editor-layout {
     .ed-line {
+      line-height: 0;
+
       &:after {
         content: '';
         display: table;

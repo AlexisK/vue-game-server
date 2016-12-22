@@ -3,6 +3,8 @@
 
 .client-cell {
   @include cell-level();
+  position: absolute;
+  top: 0; left: 0;
 
   .texture {
     @include texture('../../../../../');

@@ -1,6 +1,9 @@
 import { Level } from '../models/level.model';
 
-const speedStep = 21;
+const speedStep = 16;
+const speedDrop = 0.96;
+const lengthDrop = 0.97;
+const bulletMinSpeed = 10;
 
 export class Projectile {
     model;
@@ -15,11 +18,13 @@ export class Projectile {
         this.lifeCooldown = model.life;
         this.speed        = model.speed + Math.random() * model.speedRnd;
         this.model        = model;
-        if ( this.speed <= 30 ) {
-            this.move = this.moveSimple;
-        } else {
-            this.move = this.moveComplicated;
-        }
+        this.length       = this.model.length;
+        //if ( this.speed <= speedStep ) {
+        //    this.move = this.moveSimple;
+        //} else {
+        //    this.move = this.moveComplicated;
+        //}
+        this.move = this.moveComplicated;
     }
 
     getSerializable() {
@@ -27,7 +32,7 @@ export class Projectile {
             x        : this.x,
             y        : this.y,
             rotation : this.rotation,
-            length   : this.model.length
+            length   : this.length
         }
     }
 
@@ -76,5 +81,10 @@ export class Projectile {
             }
         }
         this.moveSimple(collisions, speed);
+        this.speed *= speedDrop;
+        this.length *= lengthDrop;
+        if ( this.speed <= bulletMinSpeed ) {
+            this.level.removeProjectile(this);
+        }
     }
 }

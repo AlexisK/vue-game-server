@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e2e1d601-7b4d-4496-b62b-81dc9f5e2efb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.html" afterPath="$PROJECT_DIR$/src/App.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.html" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.js" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.scss" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/projectile/projectile.component.html" afterPath="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/projectile/projectile.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/projectile-type.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/projectile-type.model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_modules/models/projectile.model.js" afterPath="$PROJECT_DIR$/src/app_modules/models/projectile.model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app_styles/textures.scss" afterPath="$PROJECT_DIR$/src/app_styles/textures.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/block-type.js" afterPath="$PROJECT_DIR$/src/instances/block-type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/projectile-type.js" afterPath="$PROJECT_DIR$/src/instances/projectile-type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/instances/weapon-type.js" afterPath="$PROJECT_DIR$/src/instances/weapon-type.js" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scene-editor.component.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.scss">
+      <file leaf-file-name="weapon-type.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/instances/weapon-type.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="420">
+              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -58,9 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app_styles/textures.scss" />
-        <option value="$PROJECT_DIR$/src/app_modules/controllers/game.controller.js" />
-        <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/actor/actor.component.html" />
         <option value="$PROJECT_DIR$/src/instances/actor-type.js" />
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/actor/actor.component.scss" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/client-gamefield/client-actor/client-actor.component.html" />
@@ -82,7 +83,6 @@
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.html" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js" />
         <option value="$PROJECT_DIR$/src/app_modules/controllers/client.controller.js" />
-        <option value="$PROJECT_DIR$/src/instances/weapon-type.js" />
         <option value="$PROJECT_DIR$/src/app_modules/models/block-type.model.js" />
         <option value="$PROJECT_DIR$/src/app_modules/controllers/server.controller.js" />
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/cell/cell.component.js" />
@@ -92,11 +92,8 @@
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/gamefield.component.scss" />
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/gamefield.component.html" />
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/projectile/projectile.component.scss" />
-        <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/projectile/projectile.component.html" />
-        <option value="$PROJECT_DIR$/src/instances/projectile-type.js" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/client-gamefield/client-cell/client-cell.component.js" />
         <option value="$PROJECT_DIR$/src/app_modules/models/level.model.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/client-gamefield/client-gamefield.component.scss" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/client-gamefield/client-cell/client-cell.component.html" />
         <option value="$PROJECT_DIR$/src/app_modules/components/app-client/client-gamefield/client-gamefield.component.html" />
@@ -104,11 +101,18 @@
         <option value="$PROJECT_DIR$/src/app_modules/models/client-level.model.js" />
         <option value="$PROJECT_DIR$/src/instances/map-type.js" />
         <option value="$PROJECT_DIR$/src/app_modules/models/map.model.js" />
-        <option value="$PROJECT_DIR$/src/instances/block-type.js" />
         <option value="$PROJECT_DIR$/src/App.html" />
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.js" />
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.html" />
         <option value="$PROJECT_DIR$/src/app_modules/components/scene-editor/scene-editor.component.scss" />
+        <option value="$PROJECT_DIR$/src/instances/block-type.js" />
+        <option value="$PROJECT_DIR$/src/app_styles/textures.scss" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/projectile-type.model.js" />
+        <option value="$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/projectile/projectile.component.html" />
+        <option value="$PROJECT_DIR$/src/app_modules/models/projectile.model.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/instances/projectile-type.js" />
+        <option value="$PROJECT_DIR$/src/instances/weapon-type.js" />
       </list>
     </option>
   </component>
@@ -198,6 +202,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="instances" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,6 +329,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="scene-player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene-player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamefield" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scene-player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamefield" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projectile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="scene-editor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -360,6 +472,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client-gamefield" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client-gamefield" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client-projectile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,7 +639,7 @@
       <workItem from="1481617997476" duration="54897000" />
       <workItem from="1481801943134" duration="41371000" />
       <workItem from="1482149515263" duration="35387000" />
-      <workItem from="1482310695887" duration="26856000" />
+      <workItem from="1482310695887" duration="30468000" />
     </task>
     <task id="LOCAL-00001" summary="map-editor, actor placement">
       <created>1481801988397</created>
@@ -612,11 +788,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482402087561</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="editor update">
+      <created>1482404196072</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1482404196072</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158648000" />
+    <option name="totallyTimeSpent" value="162260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="24" width="1920" height="1056" extended-state="6" />
@@ -671,62 +854,14 @@
     <MESSAGE value="extended registration" />
     <MESSAGE value="extended registration working" />
     <MESSAGE value="correct map saves, draw cells with transition, dynamic recalculate projectiles on client(performance fix)" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct map saves, draw cells with transition, dynamic recalculate projectiles on client(performance fix)" />
+    <MESSAGE value="editor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="editor update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1482327392054" expanded="true" signature="17:311" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/modal/modal.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <marker date="1482328024402" expanded="true" signature="27:731" ph="{...}" />
-            <marker date="1482328024402" expanded="true" signature="154:729" ph="{...}" />
-            <marker date="1482328024402" expanded="true" signature="271:725" ph="{...}" />
-            <marker date="1482328024402" expanded="true" signature="370:605" ph="{...}" />
-            <marker date="1482328024402" expanded="true" signature="626:719" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/modal/modal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <marker date="1482328132837" expanded="true" signature="29:326" ph="..." />
-            <marker date="1482328132837" expanded="true" signature="55:319" ph="..." />
-            <marker date="1482328132837" expanded="true" signature="82:308" ph="..." />
-            <marker date="1482328132837" expanded="true" signature="182:293" ph="..." />
-            <marker date="1482328132837" expanded="true" signature="217:274" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/modal/modal.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding>
-            <marker date="1482328137193" expanded="true" signature="15:106" ph="{&quot;name&quot;: 'modal'...}" />
-            <marker date="1482328137193" expanded="true" signature="77:103" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="763">
@@ -950,20 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/instances/weapon-type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <marker date="1482333838600" expanded="true" signature="182:1403" ph="{...}" />
-            <marker date="1482333838600" expanded="true" signature="211:489" ph="{...}" />
-            <marker date="1482333838600" expanded="true" signature="518:790" ph="{...}" />
-            <marker date="1482333838600" expanded="true" signature="821:1095" ph="{...}" />
-            <marker date="1482333838600" expanded="true" signature="1125:1400" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app_modules/models/block-type.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1056,31 +1177,6 @@
           <folding>
             <marker date="1482338544279" expanded="true" signature="12:178" ph="{...}" />
             <marker date="1482338544279" expanded="true" signature="126:176" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/projectile/projectile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
-          <folding>
-            <marker date="1482338658874" expanded="true" signature="96:334" ph="..." />
-            <marker date="1482338658874" expanded="true" signature="170:327" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/instances/projectile-type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <marker date="1482338891995" expanded="true" signature="94:610" ph="{...}" />
-            <marker date="1482338891995" expanded="true" signature="127:212" ph="{...}" />
-            <marker date="1482338891995" expanded="true" signature="245:330" ph="{...}" />
-            <marker date="1482338891995" expanded="true" signature="365:468" ph="{...}" />
-            <marker date="1482338891995" expanded="true" signature="502:607" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1277,28 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app_modules/models/projectile.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <marker date="1482323363741" expanded="true" signature="95:2079" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="200:504" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="383:435" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="441:498" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="528:703" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="545:697" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="742:1796" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="781:1724" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="1261:1438" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="1469:1651" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="1830:2077" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="1918:2027" ph="{...}" />
-            <marker date="1482323363741" expanded="true" signature="1978:2017" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app_modules/models/client-level.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1464,50 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/instances/block-type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-          <folding>
-            <marker date="1482402004092" expanded="true" signature="132:5563" ph="{...}" />
-            <marker date="1482402004092" expanded="true" signature="192:314" ph="{&quot;id&quot;: 'marker_team_start_red'...}" />
-            <marker date="1482402004092" expanded="true" signature="360:484" ph="{&quot;id&quot;: 'marker_team_start_blue'...}" />
-            <marker date="1482402004092" expanded="true" signature="535:637" ph="{&quot;id&quot;: 'floor_water'...}" />
-            <marker date="1482402004092" expanded="true" signature="674:780" ph="{&quot;id&quot;: 'floor_water_2'...}" />
-            <marker date="1482402004092" expanded="true" signature="817:917" ph="{&quot;id&quot;: 'floor_dirt'...}" />
-            <marker date="1482402004092" expanded="true" signature="954:1054" ph="{&quot;id&quot;: 'floor_sand'...}" />
-            <marker date="1482402004092" expanded="true" signature="1091:1193" ph="{&quot;id&quot;: 'floor_grass'...}" />
-            <marker date="1482402004092" expanded="true" signature="1230:1332" ph="{&quot;id&quot;: 'floor_stone'...}" />
-            <marker date="1482402004092" expanded="true" signature="1369:1469" ph="{&quot;id&quot;: 'floor_wood'...}" />
-            <marker date="1482402004092" expanded="true" signature="1516:1645" ph="{&quot;id&quot;: 'wall_wood'...}" />
-            <marker date="1482402004092" expanded="true" signature="1679:1811" ph="{&quot;id&quot;: 'wall_stone'...}" />
-            <marker date="1482402004092" expanded="true" signature="1845:1977" ph="{&quot;id&quot;: 'wall_brick'...}" />
-            <marker date="1482402004092" expanded="true" signature="2011:2141" ph="{&quot;id&quot;: 'wall_glass'...}" />
-            <marker date="1482402004092" expanded="true" signature="2188:2294" ph="{&quot;id&quot;: 'roof_metal'...}" />
-            <marker date="1482402004092" expanded="true" signature="2352:2502" ph="{&quot;id&quot;: 'actor_solider_pistol'...}" />
-            <marker date="1482402004092" expanded="true" signature="2546:2694" ph="{&quot;id&quot;: 'actor_solider_rifle'...}" />
-            <marker date="1482402004092" expanded="true" signature="2738:2888" ph="{&quot;id&quot;: 'actor_solider_sniper'...}" />
-            <marker date="1482402004092" expanded="true" signature="2934:3061" ph="{&quot;id&quot;: 'door_wood'...}" />
-            <marker date="1482402004092" expanded="true" signature="3114:3243" ph="{&quot;id&quot;: 'asset_barrel'...}" />
-            <marker date="1482402004092" expanded="true" signature="3283:3419" ph="{&quot;id&quot;: 'asset_bin_closed'...}" />
-            <marker date="1482402004092" expanded="true" signature="3459:3595" ph="{&quot;id&quot;: 'asset_bin_opened'...}" />
-            <marker date="1482402004092" expanded="true" signature="3635:3768" ph="{&quot;id&quot;: 'asset_box_wood'...}" />
-            <marker date="1482402004092" expanded="true" signature="3808:3945" ph="{&quot;id&quot;: 'asset_box_wood_2'...}" />
-            <marker date="1482402004092" expanded="true" signature="3985:4122" ph="{&quot;id&quot;: 'asset_stone_1'...}" />
-            <marker date="1482402004092" expanded="true" signature="4172:4276" ph="{&quot;id&quot;: 'decor_grave'...}" />
-            <marker date="1482402004092" expanded="true" signature="4313:4419" ph="{&quot;id&quot;: 'decor_grass_1'...}" />
-            <marker date="1482402004092" expanded="true" signature="4456:4562" ph="{&quot;id&quot;: 'decor_grass_2'...}" />
-            <marker date="1482402004092" expanded="true" signature="4599:4705" ph="{&quot;id&quot;: 'decor_grass_3'...}" />
-            <marker date="1482402004092" expanded="true" signature="4742:4848" ph="{&quot;id&quot;: 'decor_grass_4'...}" />
-            <marker date="1482402004092" expanded="true" signature="4885:4991" ph="{&quot;id&quot;: 'decor_grass_5'...}" />
-            <marker date="1482402004092" expanded="true" signature="5028:5134" ph="{&quot;id&quot;: 'decor_grass_6'...}" />
-            <marker date="1482402004092" expanded="true" signature="5171:5277" ph="{&quot;id&quot;: 'decor_stone_1'...}" />
-            <marker date="1482402004092" expanded="true" signature="5314:5420" ph="{&quot;id&quot;: 'decor_stone_2'...}" />
-            <marker date="1482402004092" expanded="true" signature="5457:5559" ph="{&quot;id&quot;: 'decor_log_1'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-client/app-client.component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1535,19 +1565,6 @@
             <marker date="1482333431813" expanded="true" signature="1923:2015" ph="{...}" />
             <marker date="1482333431813" expanded="true" signature="2050:2138" ph="{...}" />
             <marker date="1482333431813" expanded="true" signature="2171:2260" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <marker date="1482402553013" expanded="true" signature="13:1222" ph="..." />
-            <marker date="1482402553013" expanded="true" signature="38:520" ph="..." />
-            <marker date="1482402553013" expanded="true" signature="591:648" ph="..." />
-            <marker date="1482402553013" expanded="true" signature="819:1215" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1612,20 +1629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <marker date="1482339304282" expanded="true" signature="7:325" ph="..." />
-            <marker date="1482339304282" expanded="true" signature="515:1301" ph="{&quot;name&quot;: 'app'...}" />
-            <marker date="1482339304282" expanded="true" signature="561:706" ph="{...}" />
-            <marker date="1482339304282" expanded="true" signature="578:699" ph="{...}" />
-            <marker date="1482339304282" expanded="true" signature="733:1298" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/instances/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1682,6 +1685,247 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <marker date="1482403867085" expanded="true" signature="96:684" ph="{...}" />
+            <marker date="1482403867085" expanded="true" signature="138:605" ph="{...}" />
+            <marker date="1482403867085" expanded="true" signature="176:601" ph="{...}" />
+            <marker date="1482403867085" expanded="true" signature="193:293" ph="{...}" />
+            <marker date="1482403867085" expanded="true" signature="329:428" ph="{...}" />
+            <marker date="1482403867085" expanded="true" signature="445:509" ph="{...}" />
+            <marker date="1482403867085" expanded="true" signature="528:595" ph="{...}" />
+            <marker date="1482403867085" expanded="true" signature="616:682" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instances/block-type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="182" column="38" selection-start-line="182" selection-start-column="38" selection-end-line="182" selection-end-column="38" />
+          <folding>
+            <marker date="1482405914492" expanded="true" signature="132:6329" ph="{...}" />
+            <marker date="1482405914492" expanded="true" signature="192:314" ph="{&quot;id&quot;: 'marker_team_start_red'...}" />
+            <marker date="1482405914492" expanded="true" signature="360:484" ph="{&quot;id&quot;: 'marker_team_start_blue'...}" />
+            <marker date="1482405914492" expanded="true" signature="535:637" ph="{&quot;id&quot;: 'floor_water'...}" />
+            <marker date="1482405914492" expanded="true" signature="674:780" ph="{&quot;id&quot;: 'floor_water_2'...}" />
+            <marker date="1482405914492" expanded="true" signature="817:917" ph="{&quot;id&quot;: 'floor_dirt'...}" />
+            <marker date="1482405914492" expanded="true" signature="954:1054" ph="{&quot;id&quot;: 'floor_sand'...}" />
+            <marker date="1482405914492" expanded="true" signature="1091:1193" ph="{&quot;id&quot;: 'floor_grass'...}" />
+            <marker date="1482405914492" expanded="true" signature="1230:1332" ph="{&quot;id&quot;: 'floor_stone'...}" />
+            <marker date="1482405914492" expanded="true" signature="1369:1469" ph="{&quot;id&quot;: 'floor_wood'...}" />
+            <marker date="1482405914492" expanded="true" signature="1508:1612" ph="{&quot;id&quot;: 'floor_wood_2'...}" />
+            <marker date="1482405914492" expanded="true" signature="1651:1755" ph="{&quot;id&quot;: 'floor_wood_3'...}" />
+            <marker date="1482405914492" expanded="true" signature="1802:1931" ph="{&quot;id&quot;: 'wall_wood'...}" />
+            <marker date="1482405914492" expanded="true" signature="1967:2100" ph="{&quot;id&quot;: 'wall_wood_2'...}" />
+            <marker date="1482405914492" expanded="true" signature="2134:2266" ph="{&quot;id&quot;: 'wall_stone'...}" />
+            <marker date="1482405914492" expanded="true" signature="2300:2432" ph="{&quot;id&quot;: 'wall_brick'...}" />
+            <marker date="1482405914492" expanded="true" signature="2466:2596" ph="{&quot;id&quot;: 'wall_glass'...}" />
+            <marker date="1482405914492" expanded="true" signature="2643:2749" ph="{&quot;id&quot;: 'roof_metal'...}" />
+            <marker date="1482405914492" expanded="true" signature="2807:2957" ph="{&quot;id&quot;: 'actor_solider_pistol'...}" />
+            <marker date="1482405914492" expanded="true" signature="3001:3149" ph="{&quot;id&quot;: 'actor_solider_rifle'...}" />
+            <marker date="1482405914492" expanded="true" signature="3193:3343" ph="{&quot;id&quot;: 'actor_solider_sniper'...}" />
+            <marker date="1482405914492" expanded="true" signature="3389:3516" ph="{&quot;id&quot;: 'door_wood'...}" />
+            <marker date="1482405914492" expanded="true" signature="3569:3698" ph="{&quot;id&quot;: 'asset_barrel'...}" />
+            <marker date="1482405914492" expanded="true" signature="3736:3861" ph="{&quot;id&quot;: 'asset_logs'...}" />
+            <marker date="1482405914492" expanded="true" signature="3901:4037" ph="{&quot;id&quot;: 'asset_bin_closed'...}" />
+            <marker date="1482405914492" expanded="true" signature="4077:4213" ph="{&quot;id&quot;: 'asset_bin_opened'...}" />
+            <marker date="1482405914492" expanded="true" signature="4253:4386" ph="{&quot;id&quot;: 'asset_box_wood'...}" />
+            <marker date="1482405914492" expanded="true" signature="4426:4563" ph="{&quot;id&quot;: 'asset_box_wood_2'...}" />
+            <marker date="1482405914492" expanded="true" signature="4603:4740" ph="{&quot;id&quot;: 'asset_stone_1'...}" />
+            <marker date="1482405914492" expanded="true" signature="4790:4894" ph="{&quot;id&quot;: 'decor_grave'...}" />
+            <marker date="1482405914492" expanded="true" signature="4934:5042" ph="{&quot;id&quot;: 'decor_carpet_1'...}" />
+            <marker date="1482405914492" expanded="true" signature="5079:5185" ph="{&quot;id&quot;: 'decor_grass_1'...}" />
+            <marker date="1482405914492" expanded="true" signature="5222:5328" ph="{&quot;id&quot;: 'decor_grass_2'...}" />
+            <marker date="1482405914492" expanded="true" signature="5365:5471" ph="{&quot;id&quot;: 'decor_grass_3'...}" />
+            <marker date="1482405914492" expanded="true" signature="5508:5614" ph="{&quot;id&quot;: 'decor_grass_4'...}" />
+            <marker date="1482405914492" expanded="true" signature="5651:5757" ph="{&quot;id&quot;: 'decor_grass_5'...}" />
+            <marker date="1482405914492" expanded="true" signature="5794:5900" ph="{&quot;id&quot;: 'decor_grass_6'...}" />
+            <marker date="1482405914492" expanded="true" signature="5937:6043" ph="{&quot;id&quot;: 'decor_stone_1'...}" />
+            <marker date="1482405914492" expanded="true" signature="6080:6186" ph="{&quot;id&quot;: 'decor_stone_2'...}" />
+            <marker date="1482405914492" expanded="true" signature="6223:6325" ph="{&quot;id&quot;: 'decor_log_1'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_styles/textures.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="198" column="52" selection-start-line="198" selection-start-column="52" selection-end-line="198" selection-end-column="52" />
+          <folding>
+            <marker date="1482405945195" expanded="true" signature="35:699" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="131:433" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="264:331" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="354:429" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="444:697" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="521:548" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="557:585" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="594:638" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="647:693" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="729:1475" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="880:928" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="935:983" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="990:1038" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1045:1093" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1100:1148" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1155:1203" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1210:1258" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1265:1313" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1320:1368" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1375:1424" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1439:1473" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1501:5689" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1531:1713" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1543:1620" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1632:1709" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1735:1824" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1835:1924" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="1937:2027" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2037:2127" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2138:2228" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2239:2328" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2338:2427" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2439:2529" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2541:2631" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2657:2747" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2764:2854" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2870:2960" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="2976:3065" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3081:3169" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3196:3286" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3324:3429" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3454:3558" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3584:3689" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3715:3804" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3828:3917" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="3927:4017" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4033:4121" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4137:4226" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4240:4329" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4345:4435" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4454:4544" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4569:4659" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4673:4762" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4775:4865" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4878:4968" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="4981:5071" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="5084:5174" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="5187:5277" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="5290:5380" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="5393:5483" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="5496:5586" ph="{...}" />
+            <marker date="1482405945195" expanded="true" signature="5597:5687" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <marker date="1482402553013" expanded="true" signature="13:1222" ph="..." />
+            <marker date="1482402553013" expanded="true" signature="38:520" ph="..." />
+            <marker date="1482402553013" expanded="true" signature="591:648" ph="..." />
+            <marker date="1482402553013" expanded="true" signature="819:1215" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/projectile-type.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <marker date="1482407560335" expanded="true" signature="28:161" ph="{...}" />
+            <marker date="1482407560335" expanded="true" signature="117:159" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/app-client/client-gamefield/client-projectile/client-projectile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1482230779822" expanded="true" signature="103:309" ph="..." />
+            <marker date="1482230779822" expanded="true" signature="157:302" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/components/scene-player/gamefield/projectile/projectile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+          <folding>
+            <marker date="1482407666118" expanded="true" signature="96:328" ph="..." />
+            <marker date="1482407666118" expanded="true" signature="170:321" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app_modules/models/projectile.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <marker date="1482407898155" expanded="true" signature="171:2426" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="276:686" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="482:638" ph="//..." />
+            <marker date="1482407898155" expanded="true" signature="710:879" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="727:873" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="918:1972" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="957:1900" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="1437:1614" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="1645:1827" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="2006:2424" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="2094:2203" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="2154:2193" ph="{...}" />
+            <marker date="1482407898155" expanded="true" signature="2360:2418" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+          <folding>
+            <marker date="1482407970798" expanded="true" signature="7:325" ph="..." />
+            <marker date="1482407970798" expanded="true" signature="515:1302" ph="{&quot;name&quot;: 'app'...}" />
+            <marker date="1482407970798" expanded="true" signature="561:706" ph="{...}" />
+            <marker date="1482407970798" expanded="true" signature="578:699" ph="{...}" />
+            <marker date="1482407970798" expanded="true" signature="733:1299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instances/projectile-type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <marker date="1482408030186" expanded="true" signature="94:592" ph="{...}" />
+            <marker date="1482408030186" expanded="true" signature="127:212" ph="{...}" />
+            <marker date="1482408030186" expanded="true" signature="245:330" ph="{...}" />
+            <marker date="1482408030186" expanded="true" signature="365:468" ph="{...}" />
+            <marker date="1482408030186" expanded="true" signature="502:589" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/instances/weapon-type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding />
         </state>
       </provider>

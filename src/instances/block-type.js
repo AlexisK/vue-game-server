@@ -52,6 +52,16 @@ module.exports = {
         blockGroup : blockGroup.floor,
         texture    : 'wood'
     }),
+    floor_wood_2    : new BlockType({
+        id: 'floor_wood_2',
+        blockGroup : blockGroup.floor,
+        texture    : 'wood_2'
+    }),
+    floor_wood_3    : new BlockType({
+        id: 'floor_wood_3',
+        blockGroup : blockGroup.floor,
+        texture    : 'wood_3'
+    }),
 
     // Wall
     wall_wood  : new BlockType({
@@ -59,6 +69,12 @@ module.exports = {
         blockGroup : blockGroup.wall,
         maxHealth  : 50,
         texture    : 'wall_wood',
+    }),
+    wall_wood_2  : new BlockType({
+        id: 'wall_wood_2',
+        blockGroup : blockGroup.wall,
+        maxHealth  : 75,
+        texture    : 'wall_wood_2',
     }),
     wall_stone : new BlockType({
         id: 'wall_stone',
@@ -121,6 +137,12 @@ module.exports = {
         maxHealth  : 12,
         texture    : 'barrel'
     }),
+    asset_logs     : new BlockType({
+        id: 'asset_logs',
+        blockGroup : blockGroup.asset,
+        maxHealth  : 12,
+        texture    : 'logs'
+    }),
     asset_bin_closed : new BlockType({
         id: 'asset_bin_closed',
         blockGroup : blockGroup.asset,
@@ -157,6 +179,11 @@ module.exports = {
         id: 'decor_grave',
         blockGroup : blockGroup.decor,
         texture    : 'grave_1'
+    }),
+    decor_carpet_1   : new BlockType({
+        id: 'decor_carpet_1',
+        blockGroup : blockGroup.decor,
+        texture    : 'carpet_1'
     }),
     decor_grass_1 : new BlockType({
         id: 'decor_grass_1',

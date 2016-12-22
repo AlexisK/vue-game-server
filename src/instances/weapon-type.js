@@ -4,7 +4,7 @@ const projectileType = require('./projectile-type');
 
 module.exports = {
     pistol: new WeaponType({
-        shootCooldown: 25,
+        shootCooldown: 20,
         projectiles: 1,
         maxAmmo: 10,
         spreadStand: 0.07,

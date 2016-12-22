@@ -3,28 +3,27 @@ import {ProjectileType} from '../app_modules/models/projectile-type.model';
 module.exports = {
     pistol: new ProjectileType({
         damage: 5,
-        speed: 26,
+        speed: 45,
         speedRnd: 1,
-        length: 18
+        length: 20
     }),
     rifle: new ProjectileType({
         damage: 4,
-        speed: 30,
+        speed: 60,
         speedRnd: 3,
-        length: 26
+        length: 40
     }),
     shotgun: new ProjectileType({
         damage: 1,
-        speed: 25,
+        speed: 45,
         speedRnd: 3,
-        length: 13,
-        life: 13
+        length: 20,
+        life: 40
     }),
     sniper: new ProjectileType({
         damage: 16,
-        speed: 90,
+        speed: 120,
         speedRnd: 0,
-        length: 80,
-        life: 200
+        length: 80
     })
 };

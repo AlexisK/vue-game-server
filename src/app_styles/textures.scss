@@ -109,7 +109,7 @@
     background: url($prefix + 'assets/batch-1.png') 19 * $size-cell 13 * $size-cell;
   }
   &-sand {
-    background: url($prefix + 'assets/batch-1.png') 5 * $size-cell 25 * $size-cell;
+    background: url($prefix + 'assets/batch-2.png') 21 * $size-cell 17 * $size-cell;
   }
   &-grass {
     background: url($prefix + 'assets/batch-1.png') 12 * $size-cell 28 * $size-cell;
@@ -120,10 +120,19 @@
   &-wood {
     background: url($prefix + 'assets/batch-3.png') 15 * $size-cell 9 * $size-cell;
   }
+  &-wood_2 {
+    background: url($prefix + 'assets/batch-4.png') 28 * $size-cell 13 * $size-cell;
+  }
+  &-wood_3 {
+    background: url($prefix + 'assets/batch-4.png') 27 * $size-cell 13 * $size-cell;
+  }
 
   // Wall
   &-wall_wood {
     background: url($prefix + 'assets/batch-1.png') 28 * $size-cell 22 * $size-cell;
+  }
+  &-wall_wood_2 {
+    background: url($prefix + 'assets/batch-4.png') 27 * $size-cell 13 * $size-cell;
   }
   &-wall_stone {
     background: url($prefix + 'assets/batch-1.png') 18 * $size-cell 17 * $size-cell;
@@ -163,6 +172,9 @@
   &-barrel {
     background: url($prefix + 'assets/batch-2.png') 3 * $size-cell 29 * $size-cell;
   }
+  &-logs {
+    background: url($prefix + 'assets/batch-4.png') 17 * $size-cell 14 * $size-cell;
+  }
   &-bin_closed {
     background: url($prefix + 'assets/batch-1.png') 4 * $size-cell 3 * $size-cell;
   }
@@ -173,7 +185,7 @@
     background: url($prefix + 'assets/batch-2.png') 3 * $size-cell 28 * $size-cell;
   }
   &-box_wood_2 {
-    background: url($prefix + 'assets/batch-2.png') 16 * $size-cell 9 * $size-cell;
+    background: url($prefix + 'assets/batch-2.png') 17 * $size-cell 10 * $size-cell;
   }
   &-asset_stone_1 {
     background: url($prefix + 'assets/batch-2.png') 25 * $size-cell 19 * $size-cell;
@@ -182,6 +194,9 @@
   // Decor
   &-grave_1 {
     background: url($prefix + 'assets/batch-3.png') 18 * $size-cell 25 * $size-cell;
+  }
+  &-carpet_1 {
+    background: url($prefix + 'assets/batch-4.png') 8 * $size-cell 14 * $size-cell;
   }
   &-grass_1 {
     background: url($prefix + 'assets/batch-2.png') 18 * $size-cell 26 * $size-cell;

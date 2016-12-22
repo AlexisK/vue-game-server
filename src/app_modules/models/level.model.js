@@ -8,8 +8,8 @@ const blueTeamMarkerBlock = blockTypes.marker_team_start_blue;
 
 const Vue = require('vue');
 
-const blockSize         = 32;
-const actorSize         = 22;
+const blockSize         = gameSceneService.unitsPerBlock;
+const actorSize         = gameSceneService.unitsPerBlock - 10;
 const actorSizeDetailed = {
     offsetFrom : Math.floor((blockSize - actorSize) / 2),
     offsetTo   : Math.floor((blockSize - actorSize) / 2) + actorSize,
@@ -23,6 +23,7 @@ export class Level {
     schema;
     blockUpdates = {};
     startingPoints;
+    boundaries;
 
     constructor(map) {
         this.map         = map;
@@ -32,6 +33,7 @@ export class Level {
         this.logic.setLevel(this);
 
         this._createSchema();
+        this.recalculateBoundaries();
     }
 
     getState() {
@@ -86,7 +88,6 @@ export class Level {
                 });
             });
         });
-        console.log(this.startingPoints);
     }
 
     start() {
@@ -174,7 +175,10 @@ export class Level {
      * 1. This is shitty-to-read algorithm of checking boxes collissions
      * 2. This shitty-to-read algorithm has O(1) complexity, so if you thinking to rewrite it JUST FUCK OFF!
      */
-    static filterPositionCollision(collisions, x, y, angle) {
+    filterPositionCollision(collisions, x, y, angle) {
+        x = Math.min(this.boundaries.maxX, Math.max(0, x));
+        y = Math.min(this.boundaries.maxY, Math.max(0, y));
+
         let blockX  = gameSceneService.unitToBlock(x);
         let blockY  = gameSceneService.unitToBlock(y);
         let blockNX = Math.floor(blockX);
@@ -340,6 +344,13 @@ export class Level {
             }
         }
         this[key] = newCollisions;
+    }
+
+    recalculateBoundaries() {
+        this.boundaries = {
+            maxX: gameSceneService.blockToUnit(this.map.model.width) - gameSceneService.unitsPerBlock,
+            maxY: gameSceneService.blockToUnit(this.map.model.height) - gameSceneService.unitsPerBlock
+        };
     }
 
     recalculateCollisions() {

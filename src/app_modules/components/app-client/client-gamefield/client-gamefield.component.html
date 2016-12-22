@@ -9,7 +9,7 @@ height: controller.levelRef.height * 32 + 'px'}">
     <div class="calcFrom">
         <clientactor v-for="actor in controller.levelRef.actors" :actor="actor" />
     </div>
-    <div class="calcFrom">
+    <div class="calcFrom" :style="{display: controller.levelRef.shouldRenderProjectiles && 'block' || 'none'}">
         <clientprojectile v-for="projectile in controller.levelRef.projectiles" :projectile="projectile" />
     </div>
     <div class="overlay"

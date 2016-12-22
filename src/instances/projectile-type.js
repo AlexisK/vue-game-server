@@ -1,6 +1,12 @@
 import {ProjectileType} from '../app_modules/models/projectile-type.model';
 
 module.exports = {
+    dummy: new ProjectileType({
+        damage: 1,
+        speed: 1,
+        speedRnd: 1,
+        length: 10
+    }),
     pistol: new ProjectileType({
         damage: 5,
         speed: 45,

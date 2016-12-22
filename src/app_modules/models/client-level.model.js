@@ -1,9 +1,16 @@
 const Vue = require('vue');
+import {Projectile} from './projectile.model';
+const projectileTypes = require('../../instances/projectile-type');
+
+const projectileBufferSize = 100;
+const dummyProjectile = new Projectile(projectileTypes.dummy);
 
 export class ClientLevel {
+    shouldRenderProjectiles = true;
     schema;
     actors;
     projectiles;
+    projectilesFetched = 0;
     ambient = '#000';
     width;
     height;
@@ -11,28 +18,25 @@ export class ClientLevel {
     constructor() {
         this.schema      = {};
         this.actors      = [];
-        this.projectiles = [];
+        this.projectiles = new Array(projectileBufferSize).fill().map(() => dummyProjectile.getSerializable());
     }
 
     setState(data) {
         this.schema      = data.schema;
         this.width       = data.mapWidth;
         this.height      = data.mapHeight;
-        this.projectiles = data.projectiles;
+        this.fetchProjectiles(data.projectiles);
     }
 
     fetchProjectiles(projectiles) {
         let i = 0;
-        for ( ; i < projectiles.length; i++) {
-            if ( !this.projectiles[i] ) {
-                this.projectiles.push(projectiles[i]);
-            } else {
-                Object.assign(this.projectiles[i], projectiles[i]);
-            }
+        for ( let limit = Math.min(projectiles.length, projectileBufferSize); i < limit; i++) {
+            Object.assign(this.projectiles[i], projectiles[i]);
         }
-        if ( i < this.projectiles.length ) {
-            this.projectiles.splice(i);
+        for ( let j = i; j < this.projectilesFetched; j++) {
+            this.projectiles[j].length = 0;
         }
+        this.projectilesFetched = i;
     }
 
     updateState(data) {

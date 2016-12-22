@@ -72,7 +72,7 @@ export class Actor {
         let rotation = this.rotation + angle;
         let distance = speed;
 
-        let coords = Level.filterPositionCollision(
+        let coords = this.level.filterPositionCollision(
             collisions,
             this.x - distance * Math.cos(rotation),
             this.y - distance * Math.sin(rotation),

@@ -1,4 +1,4 @@
-<div class="client-projectile" :style="{transform:'translate('+projectile.x+'px, '+projectile.y+'px)'}">
-    <div :class="'actor-mesh texture texture-notex'"
+<div class="client-projectile" :style="parentCls">
+    <div class="rot"
          :style="{transform:'rotate('+projectile.rotation+'rad)', width: projectile.length+'px', marginLeft: -projectile.length/2 + 'px'}"></div>
 </div>

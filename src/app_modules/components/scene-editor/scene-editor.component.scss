@@ -1,34 +1,32 @@
 @import "globals";
 
-.scene {
+$editor-toolset-width: 40px;
+$editor-resources-width: 320px;
+
+.scene-editor {
   position: relative;
 
   .editor-layout {
-    .ed-line {
-      line-height: 0;
+    position: relative;
 
-      &:after {
-        content: '';
-        display: table;
-        clear: both;
+    .block {
+      &-editor {
+        margin: 0 $editor-resources-width 0 $editor-toolset-width;
+        overflow: auto;
       }
-
-      .ed-block {
-        float: left;
-        height: 100%;
-
-        &.w-1 { width: 10%;}
-        &.w-2 { width: 20%;}
-        &.w-3 { width: 30%;}
-        &.w-4 { width: 40%;}
-        &.w-5 { width: 50%;}
-        &.w-6 { width: 60%;}
-        &.w-7 { width: 70%;}
-        &.w-8 { width: 80%;}
-        &.w-9 { width: 90%;}
-        &.w-10 { width: 100%;}
-
-        &.scrollable {overflow: auto;}
+      &-toolset,
+      &-resources {
+        position: absolute;
+        top: 0; bottom: 0;
+        background-color: $grey-2;
+      }
+      &-toolset {
+        left: 0;
+        width: $editor-toolset-width;
+      }
+      &-resources {
+        right: 0;
+        width: $editor-resources-width;
       }
     }
   }

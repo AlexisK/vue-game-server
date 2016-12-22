@@ -1,32 +1,36 @@
-
 import Cell from './cell';
 import ResourceMenu from './resource-menu';
+import Modal from '../modal';
+
+const mapRefs = require('../../../instances/map');
 
 export default {
-    name: 'scene-editor',
-    props: ['mapRef'],
-    components: {
-        cell: Cell,
-        resourceMenu: ResourceMenu
+    name       : 'scene-editor',
+    components : {
+        cell         : Cell,
+        resourceMenu : ResourceMenu,
+        modal        : Modal
     },
     data() {
         return {
-            isEdit: false,
-            currentBrush: null
+            maps         : mapRefs,
+            mapRef       : null,
+            currentBrush : null
         };
     },
-    methods: {
+    methods    : {
+        selectMap(mapRef) {
+            this.mapRef = mapRef;
+        },
         handleClick(ev, x, y) {
-            if ( this.isEdit ) {
-                if ( this.currentBrush ) {
-                    if ( ev.button === 2 ) {
-                        this.mapRef.clearBlock(x, y, this.currentBrush.blockGroup.level);
-                    } else {
-                        this.mapRef.createBlock(this.currentBrush, x, y);
-                    }
-                } else if ( ev.button === 2 ) {
-                    this.mapRef.clearBlock(x, y);
+            if ( this.currentBrush ) {
+                if ( ev.button === 2 ) {
+                    this.mapRef.clearBlock(x, y, this.currentBrush.blockGroup.level);
+                } else {
+                    this.mapRef.createBlock(this.currentBrush, x, y);
                 }
+            } else if ( ev.button === 2 ) {
+                this.mapRef.clearBlock(x, y);
             }
         },
         handleBrush(brush) {

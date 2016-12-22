@@ -1,27 +1,30 @@
-<div v-if="mapRef && mapRef.isInited" class="scene autocss">
-    <h1>Scene Editor</h1>
-
-    <div v-if="isEdit" class="panel">
-        <button @click="isEdit = false">Save</button>
-    </div>
-    <div v-else class="panel">
-        <button @click="isEdit = true">Edit</button>
+<div class="scene-editor">
+    <div class="autocss">
+        <h1>Scene Editor</h1>
     </div>
 
-    <div class="editor-layout">
-        <div class="ed-line">
-            <div class="ed-block w-7 scrollable">
+    <modal v-if="!mapRef" title="Map Editor" css="autocss">
+        <label>
+            <span>Select map</span>
+            <ul class="select">
+                <li v-for="(map, key) in maps" @click="selectMap(map)"
+                    :class="{active: mapRef == map}">{{key}} ({{map.model.width}}x{{map.model.height}})
+                </li>
+            </ul>
+        </label>
+    </modal>
 
-                <div class="field" :style="{backgroundColor: mapRef.model.ambient, width: mapRef.model.width * 32 + 'px'}">
-                    <div class="field-row" v-for="(row, y) in mapRef.schema">
-                        <cell v-for="(col, x) in row" :blockList="col" @clicked="handleClick($event, x, y)"/>
-                    </div>
+    <div v-else class="editor-layout">
+        <div class="block block-toolset"></div>
+        <div class="block block-editor">
+            <div class="field" :style="{backgroundColor: mapRef.model.ambient, width: mapRef.model.width * 32 + 'px'}">
+                <div class="field-row" v-for="(row, y) in mapRef.schema">
+                    <cell v-for="(col, x) in row" :blockList="col" @clicked="handleClick($event, x, y)"/>
                 </div>
             </div>
-
-            <div class="ed-block w-3">
-                <resource-menu v-if="isEdit" @brushselected="handleBrush"/>
-            </div>
+        </div>
+        <div class="block block-resources">
+            <resource-menu @brushselected="handleBrush"/>
         </div>
     </div>
 

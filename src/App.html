@@ -14,7 +14,7 @@
     <app-client v-if="appMode == modes[1]"></app-client>
     <app-server v-if="appMode == modes[2]"></app-server>
     <div v-if="appMode == modes[3]" class="mode editor">
-        <scene-editor :map-ref="mapRef"/>
+        <scene-editor />
         <texture-helper :texture="'./static/img/batch-1.png'" :width="30" :height="30" />
         <texture-helper :texture="'./static/img/batch-2.png'" :width="30" :height="30" />
         <texture-helper :texture="'./static/img/batch-3.png'" :width="30" :height="30" />

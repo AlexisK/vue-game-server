@@ -1,5 +1,6 @@
 export class WeaponType {
     isAutomatic = false;
+    title;
     shootCooldown;
     maxAmmo;
     spreadStand;
@@ -9,6 +10,7 @@ export class WeaponType {
     projectile;
     blockType;
     projectiles;
+    lengthMultiplier = 1;
 
     constructor(data) {
         Object.assign(this, data);

@@ -67,31 +67,31 @@ module.exports = {
     wall_wood  : new BlockType({
         id: 'wall_wood',
         blockGroup : blockGroup.wall,
-        maxHealth  : 50,
+        maxHealth  : 100,
         texture    : 'wall_wood',
     }),
     wall_wood_2  : new BlockType({
         id: 'wall_wood_2',
         blockGroup : blockGroup.wall,
-        maxHealth  : 75,
+        maxHealth  : 150,
         texture    : 'wall_wood_2',
     }),
     wall_stone : new BlockType({
         id: 'wall_stone',
         blockGroup : blockGroup.wall,
-        maxHealth  : 300,
+        maxHealth  : 500,
         texture    : 'wall_stone',
     }),
     wall_brick : new BlockType({
         id: 'wall_brick',
         blockGroup : blockGroup.wall,
-        maxHealth  : 300,
+        maxHealth  : 500,
         texture    : 'wall_brick',
     }),
     wall_glass : new BlockType({
         id: 'wall_glass',
         blockGroup : blockGroup.wall,
-        maxHealth  : 3,
+        maxHealth  : 10,
         texture    : 'wall_glass',
     }),
 
@@ -106,19 +106,19 @@ module.exports = {
     actor_solider_pistol : new BlockType({
         id: 'actor_solider_pistol',
         blockGroup : blockGroup.actor,
-        maxHealth  : 4,
+        maxHealth  : 1,
         texture    : 'actor_solider_pistol'
     }),
     actor_solider_rifle  : new BlockType({
         id: 'actor_solider_rifle',
         blockGroup : blockGroup.actor,
-        maxHealth  : 4,
+        maxHealth  : 1,
         texture    : 'actor_solider_rifle'
     }),
     actor_solider_sniper : new BlockType({
         id: 'actor_solider_sniper',
         blockGroup : blockGroup.actor,
-        maxHealth  : 4,
+        maxHealth  : 1,
         texture    : 'actor_solider_sniper'
     }),
 
@@ -126,7 +126,7 @@ module.exports = {
     door_wood : new BlockType({
         id: 'door_wood',
         blockGroup : blockGroup.door,
-        maxHealth  : 8,
+        maxHealth  : 20,
         texture    : 'door_wood'
     }),
 
@@ -134,43 +134,43 @@ module.exports = {
     asset_barrel     : new BlockType({
         id: 'asset_barrel',
         blockGroup : blockGroup.asset,
-        maxHealth  : 12,
+        maxHealth  : 50,
         texture    : 'barrel'
     }),
     asset_logs     : new BlockType({
         id: 'asset_logs',
         blockGroup : blockGroup.asset,
-        maxHealth  : 12,
+        maxHealth  : 75,
         texture    : 'logs'
     }),
     asset_bin_closed : new BlockType({
         id: 'asset_bin_closed',
         blockGroup : blockGroup.asset,
-        maxHealth  : 5,
+        maxHealth  : 15,
         texture    : 'bin_closed'
     }),
     asset_bin_opened : new BlockType({
         id: 'asset_bin_opened',
         blockGroup : blockGroup.asset,
-        maxHealth  : 5,
+        maxHealth  : 15,
         texture    : 'bin_opened'
     }),
     asset_box_wood   : new BlockType({
         id: 'asset_box_wood',
         blockGroup : blockGroup.asset,
-        maxHealth  : 14,
+        maxHealth  : 50,
         texture    : 'box_wood'
     }),
     asset_box_wood_2 : new BlockType({
         id: 'asset_box_wood_2',
         blockGroup : blockGroup.asset,
-        maxHealth  : 14,
+        maxHealth  : 75,
         texture    : 'box_wood_2'
     }),
     asset_stone_1    : new BlockType({
         id: 'asset_stone_1',
         blockGroup : blockGroup.asset,
-        maxHealth  : 26,
+        maxHealth  : 100,
         texture    : 'asset_stone_1'
     }),
 

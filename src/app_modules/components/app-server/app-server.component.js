@@ -1,6 +1,7 @@
 import { ServerController } from '../../controllers/server.controller';
 import Modal from '../modal';
 const maps = require('../../../instances/map');
+const weaponTypes = require('../../../instances/weapon-type');
 
 export default {
     name       : 'app-server',
@@ -13,7 +14,8 @@ export default {
             redTeamName  : 'Red team',
             blueTeamName : 'Blue team',
             maxPlayers   : 8,
-            maps
+            maps,
+            weaponTypes
         };
     },
     methods    : {

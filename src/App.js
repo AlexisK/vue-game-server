@@ -30,10 +30,10 @@ export default {
 
         this.levelRef = new Level(this.mapRef);
 
-        let weapon = new Weapon(weaponTypes.rifle);
+        let weapon = new Weapon(weaponTypes.m4);
         let actor = new Actor(actorTypes.solider, weapon);
 
-        let weapon2 = new Weapon(weaponTypes.pistol);
+        let weapon2 = new Weapon(weaponTypes.sig226);
         let actor2 = new Actor(actorTypes.solider, weapon2);
         console.log(actor);
 

@@ -31,7 +31,7 @@
             <ul class="select">
                 <li v-for="(isAvailable, key) in controller.availableWeapons" v-if="isAvailable"
                     @click="controller.chosenWeapon = chosenWeapon = key"
-                    :class="{active: chosenWeapon === key}">{{key}}
+                    :class="{active: chosenWeapon === key}">{{weaponTypes[key].title}}
                 </li>
             </ul>
         </label>

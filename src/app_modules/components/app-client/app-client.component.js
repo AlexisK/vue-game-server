@@ -2,6 +2,7 @@ import { ClientController } from '../../controllers/client.controller';
 
 import ClientGameField from './client-gamefield';
 import Modal from '../modal';
+const weaponTypes = require('../../../instances/weapon-type');
 
 const doOnActor = function (ref) {
     return new Promise(resolve => {
@@ -22,7 +23,8 @@ export default {
     data() {
         return {
             controller : new ClientController(),
-            chosenWeapon: null
+            chosenWeapon: null,
+            weaponTypes
         };
     },
     methods    : {

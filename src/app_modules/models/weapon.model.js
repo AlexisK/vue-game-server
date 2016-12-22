@@ -36,6 +36,9 @@ export class Weapon {
         projectile.x        = this.actor.x + 16;
         projectile.y        = this.actor.y + 16;
         projectile.rotation = this.getProjectileRotation();
+        projectile.damage *= this.model.lengthMultiplier;
+        projectile.speed *= this.model.lengthMultiplier;
+        projectile.length *= this.model.lengthMultiplier;
 
         this.actor.level.spawnProjectile(projectile, this.actor);
     }

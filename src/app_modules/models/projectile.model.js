@@ -1,8 +1,6 @@
 import { Level } from '../models/level.model';
 
-const speedStep = 16;
-const speedDrop = 0.96;
-const lengthDrop = 0.97;
+const speedStep      = 16;
 const bulletMinSpeed = 10;
 
 export class Projectile {
@@ -13,11 +11,13 @@ export class Projectile {
     lifeCooldown;
     level;
     actor;
+    damage;
 
     constructor(model) {
         this.lifeCooldown = model.life;
         this.speed        = model.speed + Math.random() * model.speedRnd;
         this.model        = model;
+        this.damage       = this.model.damage;
         this.length       = this.model.length;
         //if ( this.speed <= speedStep ) {
         //    this.move = this.moveSimple;
@@ -81,8 +81,8 @@ export class Projectile {
             }
         }
         this.moveSimple(collisions, speed);
-        this.speed *= speedDrop;
-        this.length *= lengthDrop;
+        this.speed *= this.model.slowdown;
+        this.length *= this.model.slowdown;
         if ( this.speed <= bulletMinSpeed ) {
             this.level.removeProjectile(this);
         }

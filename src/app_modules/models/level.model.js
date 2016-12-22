@@ -134,7 +134,7 @@ export class Level {
         Object.keys(levelMap).forEach(level => {
             let block = levelMap[level];
             if ( block.model.blockGroup.isDestructible ) {
-                block.health -= projectile.model.damage;
+                block.health -= projectile.damage;
 
                 this.blockUpdates[y]    = this.blockUpdates[y] || {};
                 this.blockUpdates[y][x] = this.blockUpdates[y][x] || {};
@@ -152,7 +152,7 @@ export class Level {
     }
 
     hitActorWithProjectile(actor, projectile) {
-        let newHealth = actor.health - projectile.model.damage;
+        let newHealth = actor.health - projectile.damage;
         if ( newHealth <= 0 ) {
             actor.health = 0;
             actor.isDead = true;

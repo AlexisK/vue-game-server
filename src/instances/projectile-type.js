@@ -7,29 +7,36 @@ module.exports = {
         speedRnd: 1,
         length: 10
     }),
-    pistol: new ProjectileType({
-        damage: 5,
-        speed: 45,
-        speedRnd: 1,
+    '9x19': new ProjectileType({
+        damage: 6,
+        speed: 50,
+        speedRnd: 3,
         length: 20
     }),
-    rifle: new ProjectileType({
-        damage: 4,
+    '5.56x45': new ProjectileType({
+        damage: 5,
         speed: 60,
         speedRnd: 3,
         length: 40
     }),
-    shotgun: new ProjectileType({
-        damage: 1,
+    '7.62x39': new ProjectileType({
+        damage: 7,
+        speed: 63,
+        speedRnd: 5,
+        length: 47,
+        slowdown: 0.98
+    }),
+    'g12': new ProjectileType({
+        damage: 2,
         speed: 45,
         speedRnd: 3,
         length: 20,
         life: 40
     }),
-    sniper: new ProjectileType({
-        damage: 16,
-        speed: 120,
+    '308lapua': new ProjectileType({
+        damage: 8,
+        speed: 65,
         speedRnd: 0,
-        length: 80
+        length: 48
     })
 };

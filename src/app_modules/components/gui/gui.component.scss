@@ -1,0 +1,16 @@
+@import "globals";
+
+.gui {
+  > .block {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba($grey-7, .5);
+    color: #fff;
+    z-index: 10;
+
+    &-ammo {
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}

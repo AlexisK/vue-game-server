@@ -22,8 +22,8 @@ export class Weapon {
     }
 
     actionFire() {
-        console.log(this.ammo);
-        if ( !this.ammo ) {
+        //console.log(this.ammo);
+        if ( !this.ammo || !this.isReloaded ) {
             return;
         }
 

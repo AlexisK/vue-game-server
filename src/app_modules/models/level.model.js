@@ -24,6 +24,7 @@ export class Level {
     blockUpdates = {};
     startingPoints;
     boundaries;
+    onKill       = () => {};
 
     constructor(map) {
         this.map         = map;
@@ -50,7 +51,7 @@ export class Level {
 
         let projectiles = this.projectiles.map(p => p.getSerializable());
 
-        return {schema, projectiles, mapWidth: this.map.model.width, mapHeight: this.map.model.height};
+        return {schema, projectiles, mapWidth : this.map.model.width, mapHeight : this.map.model.height};
     }
 
     getUpdate() {
@@ -111,8 +112,12 @@ export class Level {
         actor.x     = x;
         actor.y     = y;
         actor.level = this;
-        this.logic.actors.push(actor);
-        this.actors.push(actor);
+        if ( this.logic.actors.indexOf(actor) === -1 ) {
+            this.logic.actors.push(actor);
+        }
+        if ( this.actors.indexOf(actor) === -1 ) {
+            this.actors.push(actor);
+        }
     }
 
     spawnProjectile(projectile, actor) {
@@ -156,6 +161,7 @@ export class Level {
         if ( newHealth <= 0 ) {
             actor.health = 0;
             actor.isDead = true;
+            this.onKill(actor, projectile.actor);
         } else {
             actor.health = newHealth;
         }
@@ -348,8 +354,8 @@ export class Level {
 
     recalculateBoundaries() {
         this.boundaries = {
-            maxX: gameSceneService.blockToUnit(this.map.model.width) - gameSceneService.unitsPerBlock,
-            maxY: gameSceneService.blockToUnit(this.map.model.height) - gameSceneService.unitsPerBlock
+            maxX : gameSceneService.blockToUnit(this.map.model.width) - gameSceneService.unitsPerBlock,
+            maxY : gameSceneService.blockToUnit(this.map.model.height) - gameSceneService.unitsPerBlock
         };
     }
 

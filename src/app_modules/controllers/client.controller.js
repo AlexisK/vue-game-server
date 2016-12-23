@@ -5,24 +5,29 @@ import { Weapon } from '../models/weapon.model';
 const client      = require('../services/client.connection.service');
 const actorTypes  = require('../../instances/actor-type');
 const weaponTypes = require('../../instances/weapon-type');
+import { STATES as gameSessionStates } from './game-session.controller';
 
 const STAGES = ['connect', 'register', 'play'];
 
+export { gameSessionStates };
 export class ClientController {
-    serverKey  = '';
-    playerName = '';
+    serverKey         = '';
+    playerName        = '';
     client;
-    stages     = STAGES;
-    stage      = STAGES[0];
+    stages            = STAGES;
+    stage             = STAGES[0];
     serverId;
-    levelRef   = new ClientLevel();
-    players    = {};
+    levelRef          = new ClientLevel();
+    players           = {};
     controllableActor;
     savedUserControlls;
     levelParams;
     availableWeapons;
-    activeTeam = 'red';
+    activeTeam        = 'red';
     chosenWeapon;
+    gameSessionStates = gameSessionStates;
+    gameSessionState  = gameSessionStates.lobby;
+    winTeam;
 
     constructor() {
         this.client            = client;
@@ -40,12 +45,16 @@ export class ClientController {
             this.client.send({
                 action : 'registerPlayer',
                 data   : {
-                    name : this.playerName,
-                    weapon: this.chosenWeapon,
-                    team: this.activeTeam
+                    name   : this.playerName,
+                    weapon : this.chosenWeapon,
+                    team   : this.activeTeam
                 }
             });
         }
+    }
+
+    getPlayersByTeam(team) {
+
     }
 
     removeActor(data) {
@@ -125,10 +134,20 @@ export class ClientController {
         },
         'spawnActor'         : data => {
             this.players[data.id] = this.players[data.id] || {id : data.id};
+            Vue.set(this.players[data.id], 'team', data.team);
             this.spawnActor(data);
         },
         'tickUpdate'         : data => {
             this.handleTick(data);
+        },
+        'gameSessionState'   : data => {
+            this.gameSessionState = data;
+        },
+        'sessionScore': data => {
+            Object.keys(data.scores).forEach(pid => {
+                this.players[pid].score = data.scores[pid];
+            });
+            this.winTeam = data.winTeam;
         }
     };
 

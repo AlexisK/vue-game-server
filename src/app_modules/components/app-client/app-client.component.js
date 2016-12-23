@@ -1,6 +1,7 @@
 import { ClientController } from '../../controllers/client.controller';
 
 import ClientGameField from './client-gamefield';
+import ScoreWidget from './score-widget';
 import Modal from '../modal';
 const weaponTypes = require('../../../instances/weapon-type');
 
@@ -18,16 +19,20 @@ export default {
     name       : 'app-client',
     components : {
         clientgamefield : ClientGameField,
+        scorewidget     : ScoreWidget,
         modal           : Modal
     },
     data() {
         return {
-            controller : new ClientController(),
-            chosenWeapon: null,
+            controller   : new ClientController(),
+            chosenWeapon : null,
             weaponTypes
         };
     },
     methods    : {
+        teamPlayersAmount(team) {
+            return Object.keys(this.controller.players).reduce((acc, id) => acc + (this.controller.players[id].team === team ? 1 : 0), 0);
+        },
         handlePointer(x, y) {
             doOnActor(this).then(actor => actor.facePotentialPosition(x, y));
         },

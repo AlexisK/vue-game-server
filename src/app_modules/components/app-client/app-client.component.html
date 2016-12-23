@@ -22,8 +22,14 @@
         <label>
             <span>Select Team</span>
             <ul class="select">
-                <li @click="controller.activeTeam = 'red'" :class="{active: controller.activeTeam == 'red'}">{{controller.levelParams.redTeamName}}</li>
-                <li @click="controller.activeTeam = 'blue'" :class="{active: controller.activeTeam == 'blue'}">{{controller.levelParams.blueTeamName}}</li>
+                <li @click="controller.activeTeam = 'red'" :class="{active: controller.activeTeam == 'red'}">
+                    {{controller.levelParams.redTeamName}}
+                    ({{teamPlayersAmount('red')}})
+                </li>
+                <li @click="controller.activeTeam = 'blue'" :class="{active: controller.activeTeam == 'blue'}">
+                    {{controller.levelParams.blueTeamName}}
+                    ({{teamPlayersAmount('blue')}})
+                </li>
             </ul>
         </label>
         <label>
@@ -38,12 +44,10 @@
         <button @click="controller.register()">Register</button>
     </modal>
 
-    <div class="autocss" v-if="controller.stage == 'play'">
-        <div class="info">
-            <label>
-                <span>Current state</span>
-                <strong>Ready!</strong>
-            </label>
+    <template v-if="controller.stage == 'play'">
+
+        <modal v-if="controller.gameSessionState === controller.gameSessionStates.lobby" css="autocss" title="Lobby">
+            <p>Waiting for other players to join</p>
             <label>
                 <span>Player name</span>
                 <strong>{{controller.playerName}}</strong>
@@ -52,28 +56,48 @@
                 <span>Server ID</span>
                 <strong>{{controller.serverId}}</strong>
             </label>
-        </div>
+        </modal>
 
-        <div v-if="controller.levelRef">
-            <input class="focusInput" type="text"
-                   @keydown.stop.prevent.87="handleWDown"
-                   @keyup.stop.prevent.87="handleWUp"
-                   @keydown.stop.prevent.68="handleDDown"
-                   @keyup.stop.prevent.68="handleDUp"
-                   @keydown.stop.prevent.65="handleADown"
-                   @keyup.stop.prevent.65="handleAUp"
-                   @keydown.stop.prevent.83="handleSDown"
-                   @keyup.stop.prevent.83="handleSUp"
-                   @keydown.stop.prevent.16="handleShiftDown"
-                   @keyup.stop.prevent.16="handleShiftUp"
-                   @keydown.stop.prevent.69="handleActionFireStart"
-                   @keyup.stop.prevent.69="handleActionFireStop"/>
-            <hr/>
-            <clientgamefield :controller="controller"
-                             @pointerupdate="handlePointer"
-                             @pointerrightdown="handleActionFireStart"
-                             @pointerrightup="handleActionFireStop"/>
-        </div>
-    </div>
+        <template v-if="controller.gameSessionState === controller.gameSessionStates.play">
+            <div v-if="controller.levelRef">
+                <input class="focusInput" type="text"
+                       @keydown.stop.prevent.87="handleWDown"
+                       @keyup.stop.prevent.87="handleWUp"
+                       @keydown.stop.prevent.68="handleDDown"
+                       @keyup.stop.prevent.68="handleDUp"
+                       @keydown.stop.prevent.65="handleADown"
+                       @keyup.stop.prevent.65="handleAUp"
+                       @keydown.stop.prevent.83="handleSDown"
+                       @keyup.stop.prevent.83="handleSUp"
+                       @keydown.stop.prevent.16="handleShiftDown"
+                       @keyup.stop.prevent.16="handleShiftUp"
+                       @keydown.stop.prevent.69="handleActionFireStart"
+                       @keyup.stop.prevent.69="handleActionFireStop"/>
+                <hr/>
+                <clientgamefield :controller="controller"
+                                 @pointerupdate="handlePointer"
+                                 @pointerrightdown="handleActionFireStart"
+                                 @pointerrightup="handleActionFireStop"/>
+            </div>
+
+            <div class="autocss">
+                <div class="info">
+                    <label>
+                        <span>Player name</span>
+                        <strong>{{controller.playerName}}</strong>
+                    </label>
+                    <label>
+                        <span>Server ID</span>
+                        <strong>{{controller.serverId}}</strong>
+                    </label>
+                </div>
+            </div>
+        </template>
+
+        <modal v-if="controller.gameSessionState === controller.gameSessionStates.finish" title="Level Clear!">
+            <scorewidget :controller="controller" />
+        </modal>
+
+    </template>
 
 </div>

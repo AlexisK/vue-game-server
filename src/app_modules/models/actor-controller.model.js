@@ -4,6 +4,7 @@ export class ActorController {
     isMovingRight;
     isMovingBackwards;
     isFiring;
+    isReloading;
     isSprinting;
     facingX;
     facingY;
@@ -23,6 +24,7 @@ export class ActorController {
             isMovingRight     : this.isMovingRight,
             isMovingBackwards : this.isMovingBackwards,
             isFiring          : this.isFiring,
+            isReloading       : this.isReloading,
             isSprinting       : this.isSprinting,
             facingX           : this.facingX,
             facingY           : this.facingY

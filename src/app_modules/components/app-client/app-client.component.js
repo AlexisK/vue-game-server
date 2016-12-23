@@ -72,6 +72,10 @@ export default {
         },
         handleActionFireStop() {
             doOnActor(this).then(actor => actor.controller.isFiring = false);
-        }
+        },
+        handleActionReload() {
+            doOnActor(this).then(actor => actor.controller.isReloading = true);
+        },
+        // handleActionReload - !!! NO STOP !!! - this happens in actor model as reload is single-time triggered action
     },
 };

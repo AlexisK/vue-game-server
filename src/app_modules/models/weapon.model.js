@@ -3,8 +3,10 @@ import { Projectile } from './projectile.model';
 export class Weapon {
     ammo;
     model;
-    isReadyToFire = true;
-    cooldown      = 0;
+    isReadyToFire  = true;
+    isReloaded     = true;
+    cooldown       = 0;
+    reloadCooldown = 0;
     actor;
 
     constructor(model) {
@@ -20,14 +22,27 @@ export class Weapon {
     }
 
     actionFire() {
+        console.log(this.ammo);
+        if ( !this.ammo ) {
+            return;
+        }
+
         if ( this.isReadyToFire ) {
             this.isReadyToFire = false;
             this.cooldown      = this.model.shootCooldown;
+            this.ammo -= 1;
 
             for (let i = 0; i < this.model.projectiles; i++) {
                 this.spawnProjectile();
             }
 
+        }
+    }
+
+    actionReload() {
+        if ( this.isReloaded ) {
+            this.isReloaded     = false;
+            this.reloadCooldown = this.model.reloadCooldown;
         }
     }
 
@@ -48,6 +63,14 @@ export class Weapon {
             this.cooldown -= 1;
         } else {
             this.isReadyToFire = true;
+        }
+        if ( this.reloadCooldown === 1 ) {
+            this.ammo = this.model.maxAmmo;
+            this.reloadCooldown -= 1;
+        } else if ( this.reloadCooldown ) {
+            this.reloadCooldown -= 1;
+        } else {
+            this.isReloaded = true;
         }
     }
 }

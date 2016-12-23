@@ -62,6 +62,9 @@ export default {
         },
         handleActionFireStop() {
             doOnActor(this).then(actor => actor.controller.isFiring = false);
+        },
+        handleActionReload() {
+            doOnActor(this).then(actor => actor.controller.isReloading = true);
         }
     },
 };

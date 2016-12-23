@@ -2,6 +2,7 @@ export class WeaponType {
     isAutomatic = false;
     title;
     shootCooldown;
+    reloadCooldown;
     maxAmmo;
     spreadStand;
     spreadWalk;

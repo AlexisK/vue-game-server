@@ -12,7 +12,8 @@
            @keydown.stop.prevent.16="handleShiftDown"
            @keyup.stop.prevent.16="handleShiftUp"
            @keydown.stop.prevent.69="handleActionFireStart"
-           @keyup.stop.prevent.69="handleActionFireStop"/>
+           @keyup.stop.prevent.69="handleActionFireStop"
+           @keydown.stop.prevent.82="handleActionReload"/>
     <hr/>
     <gamefield :levelRef="levelRef"
                @pointerupdate="handlePointer"

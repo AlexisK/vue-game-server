@@ -90,4 +90,9 @@ export class Actor {
     actionFire() {
         this.weapon.actionFire();
     }
+
+    actionReload() {
+        this.controller.isReloading = false;
+        this.weapon.actionReload();
+    }
 }

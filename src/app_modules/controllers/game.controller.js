@@ -64,7 +64,10 @@ export class GameController {
                 actor.stepBackwards(this._level.collisions);
             }
             actor.faceFromPotential();
-            if ( actor.controller.isFiring ) {
+
+            if ( actor.controller.isReloading ) {
+                actor.actionReload();
+            } else if ( actor.controller.isFiring ) {
                 actor.actionFire();
             }
         }

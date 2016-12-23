@@ -1,7 +1,5 @@
 import Gamefield from './gamefield';
 
-import Gui from '../gui';
-
 const doOnActor = function(ref) {
     return new Promise(resolve => {
         let actor = ref.levelRef.actors[0];
@@ -14,8 +12,7 @@ const doOnActor = function(ref) {
 export default {
     name : 'scene-player',
     components: {
-        gamefield: Gamefield,
-        gui: Gui
+        gamefield: Gamefield
     },
     props: ['levelRef'],
     data() {

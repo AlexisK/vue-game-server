@@ -95,11 +95,14 @@ export class ClientController {
             let player     = this.players[uid];
 
             if ( player && player.actor ) {
-                player.actor.x        = playerData.x;
-                player.actor.y        = playerData.y;
-                player.actor.rotation = playerData.rotation;
-                player.actor.health   = playerData.health;
-                player.actor.isDead   = playerData.isDead;
+                player.actor.x         = playerData.x;
+                player.actor.y         = playerData.y;
+                player.actor.rotation  = playerData.rotation;
+                player.actor.health    = playerData.health;
+                player.actor.maxHealth = playerData.maxHealth;
+                player.actor.ammo      = playerData.ammo;
+                player.actor.maxAmmo   = playerData.maxAmmo;
+                player.actor.isDead    = playerData.isDead;
             } else {
                 //console.log(playerData, this.players);
             }
@@ -143,7 +146,7 @@ export class ClientController {
         'gameSessionState'   : data => {
             this.gameSessionState = data;
         },
-        'sessionScore': data => {
+        'sessionScore'       : data => {
             Object.keys(data.scores).forEach(pid => {
                 this.players[pid].score = data.scores[pid];
             });

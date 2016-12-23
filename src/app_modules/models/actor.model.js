@@ -31,6 +31,8 @@ export class Actor {
             isDead    : this.isDead,
             health    : this.health,
             maxHealth : this.model.maxHealth,
+            ammo      : this.weapon.ammo,
+            maxAmmo   : this.weapon.model.maxAmmo,
             texture   : this.weapon.model.blockType.texture,
             team      : this.team
         }

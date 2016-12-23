@@ -2,6 +2,7 @@ import { ClientController } from '../../controllers/client.controller';
 
 import ClientGameField from './client-gamefield';
 import ScoreWidget from './score-widget';
+import Gui from './gui';
 import Modal from '../modal';
 const weaponTypes = require('../../../instances/weapon-type');
 
@@ -20,7 +21,8 @@ export default {
     components : {
         clientgamefield : ClientGameField,
         scorewidget     : ScoreWidget,
-        modal           : Modal
+        modal           : Modal,
+        gui             : Gui
     },
     data() {
         return {

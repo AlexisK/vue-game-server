@@ -16,7 +16,6 @@
            @keydown.stop.prevent.82="handleActionReload"/>
     <hr/>
     <div class="scene-container">
-        <gui :actor="levelRef.actors[0]" />
         <gamefield :levelRef="levelRef"
                    @pointerupdate="handlePointer"
                    @pointerrightdown="handleActionFireStart"

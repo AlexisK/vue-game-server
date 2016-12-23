@@ -59,7 +59,9 @@
         </modal>
 
         <template v-if="controller.gameSessionState === controller.gameSessionStates.play">
-            <div v-if="controller.levelRef">
+
+            <div v-if="controller.levelRef" class="gui-related">
+                <gui :actor="controller.controllableActor" />
                 <input class="focusInput" type="text"
                        @keydown.stop.prevent.87="handleWDown"
                        @keyup.stop.prevent.87="handleWUp"
